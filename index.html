@@ -14,23 +14,7 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');</style>
     <script>                              // script  데이터와 실행 가능한 코드를 문서에 포함할 때 사용
       $(document).ready(function(){     // 문서가 준비되면 매개변수로 넣은 콜백 함수를 실행
-      
       });
-      
-    // $(function(){                        // 즉시실행함수
-      // var best = $('aside > .best');   // best 변수 지정 (베스트상품 목록) 
-      // $(window).scroll(function(){     // 1. $(window).scrollTop(): 스크롤의 위치에 따라 변하는 값 (세로 좌표)   , 맨 위에서 0으로 시작하여 맨아래 도달시 스크롤 길이 max값을 가짐.
-      //   var t = $(this).scrollTop();   // .scrollTop()은 선택한 요소의 스크롤바 수직 위치를 반환하거나 스크롤바 수직 위치를 정합니다.
-      //   if(t >= 0){    //scrollTop 값이 header 부분의 2px 을 포함해 620 을 초과하면 
-      //     best.css({   
-      //       'position':'fixed',       // best의 위치를 고정해버림
-      //       'top': '0'          //  best 의 위치값
-      //     });
-      //   }else{                                // 위치가 620 이하이면  
-      //     best.css({'position':'static'});   // best의 위치를 'static' (기본상태) 선언 
-      //   }
-      // });
-    // });
     $(function(){
         $('main > aside > .best >a:nth-child(1)').click(function(){
             $('body,html').animate({scrollTop:0},1000);
@@ -82,18 +66,16 @@
         <div>
           
           <a href="https://byeonjinha.github.io/introduce.github.io/"><i class="far fa-address-card"></i>&nbsp;소개</a>  <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
-          <a href="./project.html"><i class="fas fa-bars"></i>&nbsp;프로젝트</a>   <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
-            <a href="./bigdata.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;빅데이터수업</a>  <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
-            <a href="./gominjoong.html"><i class="fas fa-child"></i>&nbsp;고민중</a> <!-- 아이콘 태그  -->
+          <a href="https://byeonjinha.github.io/introduce.github.io/project"><i class="fas fa-bars"></i>&nbsp;프로젝트</a>   <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
+          <a href="https://byeonjinha.github.io/introduce.github.io/bigdata" aria-hidden="true"></i>&nbsp;빅데이터수업</a>  <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
+          <a href="./gominjoong.html"><i class="fas fa-child"></i>&nbsp;고민중</a> <!-- 아이콘 태그  -->
     </div>
 
 
     </header>
     <main>       <!-- <main> 태그는 해당 문서의 <body> 요소의 주 콘텐츠(main content)를 정의할 때 사용 -->
-      <!-- 카테고리/베스트 상품 영역 -->
       <aside>   <!-- <aside> 태그는 페이지의 다른 콘텐츠들과 약간의 연관성을 가지고 있지만, 해당 콘텐츠들로부터 분리시킬 수 있는 콘텐츠로 구성된 페이지 영역을 정의할 때 사용-->
 
-          <!-- 베스트상품 배너 -->
           <article class="best">   <!-- <article> 태그는 해당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의할 때 사용합니다. -->
                 <a href="#">목록<br> <br></a> 
                 <a href="#">1. About me<br> <br></a> 
