@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>빅데이터수업내용</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/style3.css"/>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');</style>
+    <script>                              // script  데이터와 실행 가능한 코드를 문서에 포함할 때 사용
+      $(document).ready(function(){     // 문서가 준비되면 매개변수로 넣은 콜백 함수를 실행
+        $('.slider1 > ul').bxSlider({   // 이미지 슬라이더 사용 
+            pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
+            easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
+        });
+        $('.slider2 > ul').bxSlider({   // 이미지 슬라이더 사용 
+            pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
+            easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
+        });
+        $('.slider3 > ul').bxSlider({   // 이미지 슬라이더 사용 
+            pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
+            easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
+        });
+        $('.slider4 > ul').bxSlider({   // 이미지 슬라이더 사용 
+            pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
+            easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
+        });
+        $('.slider5 > ul').bxSlider({   // 이미지 슬라이더 사용 
+            pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
+            easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
+        });
+        $('.slider6 > ul').bxSlider({   // 이미지 슬라이더 사용 
+            pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
+            easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
+        });
+        $('.slider7 > ul').bxSlider({   
+            pager: false,               
+            easing: 'linear',           
+        });
+        $('.slider8 > ul').bxSlider({   
+            pager: false,               
+            easing: 'linear',           
+        });
+      });
+      
+    // $(function(){                        // 즉시실행함수
+      // var best = $('aside > .best');   // best 변수 지정 (베스트상품 목록) 
+      // $(window).scroll(function(){     // 1. $(window).scrollTop(): 스크롤의 위치에 따라 변하는 값 (세로 좌표)   , 맨 위에서 0으로 시작하여 맨아래 도달시 스크롤 길이 max값을 가짐.
+      //   var t = $(this).scrollTop();   // .scrollTop()은 선택한 요소의 스크롤바 수직 위치를 반환하거나 스크롤바 수직 위치를 정합니다.
+      //   if(t >= 0){    //scrollTop 값이 header 부분의 2px 을 포함해 620 을 초과하면 
+      //     best.css({   
+      //       'position':'fixed',       // best의 위치를 고정해버림
+      //       'top': '0'          //  best 의 위치값
+      //     });
+      //   }else{                                // 위치가 620 이하이면  
+      //     best.css({'position':'static'});   // best의 위치를 'static' (기본상태) 선언 
+      //   }
+      // });
+    // });
+    $(function(){
+        $('main > aside > .best >a:nth-child(1)').click(function(){
+            $('body,html').animate({scrollTop:0},1000);
+            return false;
+          });
+        $('main > aside > .best >a:nth-child(2)').click(function(){
+          $('body,html').animate({scrollTop:40},1000);
+          return false;
+        });
+        $('main > aside > .best >a:nth-child(3)').click(function(){
+          $('body,html').animate({scrollTop:690},1000);
+          return false;
+        });
+        $('main > aside > .best >a:nth-child(4)').click(function(){
+          $('body,html').animate({scrollTop:1350},1000);
+          return false;
+        });
+        $('main > aside > .best >a:nth-child(5)').click(function(){
+          $('body,html').animate({scrollTop:2010},1000);
+          return false;
+        });
+        $('main > aside > .best >a:nth-child(6)').click(function(){
+          $('body,html').animate({scrollTop:2660},1000);
+          return false;
+        });
+        $('main > aside > .best >a:nth-child(7)').click(function(){
+          $('body,html').animate({scrollTop:3320},1000);
+          return false;
+        });
+        $('main > aside > .best >a:nth-child(8)').click(function(){
+          $('body,html').animate({scrollTop:3980},1000);
+          return false;
+        });
+        $('main > aside > .best >a:nth-child(9)').click(function(){
+          $('body,html').animate({scrollTop:4580},1000);
+          return false;
+        });
+        });
+
+        
+  </script>          <!-- 스크립트 종료 선언-->                  
+</head>
+<body>
+  <div id="wrapper"> 
+    <div class='outer-scratch'>
+      <div class="inner-scratch">
+        <div class="background grain"></div>
+    
+    <header>
+    
+      <div class="top">   <!-- class : '복수'의 요소에 스타일을 적용  -->
+       
+        <div>
+          
+          <a href="../DongDong/introduce.html"><i class="far fa-address-card"></i>&nbsp;소개</a>  <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
+          <a href="../DongDong/project.html"><i class="fas fa-bars"></i>&nbsp;프로젝트</a>   <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
+            <a href="../DongDong/bigdata.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;빅데이터수업</a>  <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
+            <a href="../DongDong/gominjoong.html"><i class="fas fa-child"></i>&nbsp;고민중</a> <!-- 아이콘 태그  -->
+        </div>
+    </div>
+
+
+    </header>
+    <main>       <!-- <main> 태그는 해당 문서의 <body> 요소의 주 콘텐츠(main content)를 정의할 때 사용 -->
+      <!-- 카테고리/베스트 상품 영역 -->
+      <aside>   <!-- <aside> 태그는 페이지의 다른 콘텐츠들과 약간의 연관성을 가지고 있지만, 해당 콘텐츠들로부터 분리시킬 수 있는 콘텐츠로 구성된 페이지 영역을 정의할 때 사용-->
+
+          <!-- 베스트상품 배너 -->
+          <article class="best">   <!-- <article> 태그는 해당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의할 때 사용합니다. -->
+                <a href="#">목록<br> <br></a> 
+                <a href="#">1. 빅데이터환경분석<br> <br></a> 
+                <a href="#">2. 빅데이터분석기획<br> <br></a> 
+                <a href="#">3. 빅데이터수집시스템개발<br> <br></a> 
+                <a href="#">4. 빅데이터저장시스템개발 <br> <br> </a> 
+                <a href="#">5. 빅데이터처리시스템개발<br> <br></a> 
+                <a href="#">6. 빅데이터분석시스템개발<br> <br></a> 
+                <a href="#">7. 빅데이터품질관리시스템개발<br> <br></a> 
+                <a href="#">8. 빅데이터플랫폼테스트<br> <br> <br></a> 
+          </article>
+      </aside>
+      
+      
+      <section>   <!-- <section>요소 는 HTML 문서의 독립적 인 구획을 나타내며, 더 적합한 의미를 가진 요소가 없을 때 사용 -->
+          <!-- 슬라이더 영역 -->
+          <h6><span>1. 빅데이터환경분석</span></h6>
+          <section class="slider1"> 
+              <ul>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드1.PNG" alt="item1"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드2.PNG" alt="item2"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드3.PNG" alt="item3"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드4.PNG" alt="item4"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드5.PNG" alt="item4"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드6.PNG" alt="item6"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드7.PNG" alt="item7"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드8.PNG" alt="item8"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드9.PNG" alt="item9"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드10.PNG" alt="item10"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드11.PNG" alt="item11"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드12.PNG" alt="item12"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드13.PNG" alt="item13"></a></li>
+                  <li><a href="#"><img src="./1빅데이터환경분석/슬라이드14.PNG" alt="item14"></a></li>
+                  
+              </ul>
+            </section>
+          <h6><span>2. 빅데이터분석기획</span></h6>
+          <section class="slider2">
+              <ul>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드1.PNG" alt="item1"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드2.PNG" alt="item2"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드3.PNG" alt="item3"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드4.PNG" alt="item4"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드5.PNG" alt="item5"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드6.PNG" alt="item6"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드7.PNG" alt="item7"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드8.PNG" alt="item8"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드9.PNG" alt="item9"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드10.PNG" alt="item10"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드11.PNG" alt="item11"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드12.PNG" alt="item12"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드13.PNG" alt="item13"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드14.PNG" alt="item14"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드15.PNG" alt="item15"></a></li>
+                  <li><a href="#"><img src="./2빅데이터분석기획/슬라이드16.PNG" alt="item16"></a></li>
+              </ul>
+          </section>
+
+            <h6><span>3. 빅데이터수집시스템개발</span></h6>
+            <section class="slider3">
+                <ul>
+                    <li><a href="#"><img src="./3빅데이터수집시스템개발/슬라이드1.PNG" alt="item1"></a></li>
+                    <li><a href="#"><img src="./3빅데이터수집시스템개발/슬라이드2.PNG" alt="item2"></a></li>
+                    <li><a href="#"><img src="./3빅데이터수집시스템개발/슬라이드3.PNG" alt="item3"></a></li>
+        
+                </ul>
+            </section>
+            
+            <h6><span>4. 빅데이터저장시스템개발</span></h6>
+            <section class="slider4">
+                <ul>
+                    <li><a href="#"><img src="./4빅데이터저장시스템개발/슬라이드1.PNG" alt="item1"></a></li>
+                    <li><a href="#"><img src="./4빅데이터저장시스템개발/슬라이드2.PNG" alt="item2"></a></li>
+                    <li><a href="#"><img src="./4빅데이터저장시스템개발/슬라이드3.PNG" alt="item3"></a></li>
+                    <li><a href="#"><img src="./4빅데이터저장시스템개발/슬라이드4.PNG" alt="item4"></a></li>
+                    <li><a href="#"><img src="./4빅데이터저장시스템개발/슬라이드5.PNG" alt="item5"></a></li>
+                    <li><a href="#"><img src="./4빅데이터저장시스템개발/슬라이드6.PNG" alt="item6"></a></li>
+                    <li><a href="#"><img src="./4빅데이터저장시스템개발/슬라이드7.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./4빅데이터저장시스템개발/슬라이드8.PNG" alt="item8"></a></li>
+                    <li><a href="#"><img src="./4빅데이터저장시스템개발/슬라이드9.PNG" alt="item9"></a></li>
+ 
+                </ul>
+            </section>
+            <h6><span>5. 빅데이터처리시스템개발</span></h6>
+            <section class="slider5">
+                <ul>
+                    <li><a href="#"><img src="./5빅데이터처리시스템개발/슬라이드1.PNG" alt="item1"></a></li>
+                    <li><a href="#"><img src="./5빅데이터처리시스템개발/슬라이드2.PNG" alt="item2"></a></li>
+                    <li><a href="#"><img src="./5빅데이터처리시스템개발/슬라이드3.PNG" alt="item3"></a></li>
+                    <li><a href="#"><img src="./5빅데이터처리시스템개발/슬라이드4.PNG" alt="item4"></a></li>
+                    <li><a href="#"><img src="./5빅데이터처리시스템개발/슬라이드5.PNG" alt="item5"></a></li>
+                    <li><a href="#"><img src="./5빅데이터처리시스템개발/슬라이드6.PNG" alt="item6"></a></li>
+                    <li><a href="#"><img src="./5빅데이터처리시스템개발/슬라이드7.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./5빅데이터처리시스템개발/슬라이드8.PNG" alt="item8"></a></li>
+                    <li><a href="#"><img src="./5빅데이터처리시스템개발/슬라이드9.PNG" alt="item9"></a></li>
+                    <li><a href="#"><img src="./5빅데이터처리시스템개발/슬라이드10.PNG" alt="item10"></a></li>
+                    <li><a href="#"><img src="./5빅데이터처리시스템개발/슬라이드11.PNG" alt="item11"></a></li>
+
+                </ul>
+            </section>
+            <h6><span>6. 빅데이터분석시스템개발</span></h6>
+            <section class="slider6">
+                <ul>
+                    <li><a href="#"><img src="./6빅데이터분석시스템개발/슬라이드1.PNG" alt="item1"></a></li>
+                    <li><a href="#"><img src="./6빅데이터분석시스템개발/슬라이드2.PNG" alt="item2"></a></li>
+                    <li><a href="#"><img src="./6빅데이터분석시스템개발/슬라이드3.PNG" alt="item3"></a></li>
+                    <li><a href="#"><img src="./6빅데이터분석시스템개발/슬라이드4.PNG" alt="item4"></a></li>
+                    <li><a href="#"><img src="./6빅데이터분석시스템개발/슬라이드5.PNG" alt="item5"></a></li>
+                    <li><a href="#"><img src="./6빅데이터분석시스템개발/슬라이드6.PNG" alt="item6"></a></li>
+                    <li><a href="#"><img src="./6빅데이터분석시스템개발/슬라이드7.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./6빅데이터분석시스템개발/슬라이드8.PNG" alt="item8"></a></li>
+                    <li><a href="#"><img src="./6빅데이터분석시스템개발/슬라이드9.PNG" alt="item9"></a></li>
+                    <li><a href="#"><img src="./6빅데이터분석시스템개발/슬라이드10.PNG" alt="item10"></a></li>
+                    <li><a href="#"><img src="./6빅데이터분석시스템개발/슬라이드11.PNG" alt="item11"></a></li>
+                </ul>
+            </section>
+            <h6><span>7. 품질관리시스템개발</span></h6>
+            <section class="slider7">
+                <ul>
+                    <li><a href="#"><img src="./7빅데이터품질관리시스템개발/슬라이드1.PNG" alt="item1"></a></li>
+                    <li><a href="#"><img src="./7빅데이터품질관리시스템개발/슬라이드2.PNG" alt="item2"></a></li>
+                    <li><a href="#"><img src="./7빅데이터품질관리시스템개발/슬라이드3.PNG" alt="item3"></a></li>
+                    <li><a href="#"><img src="./7빅데이터품질관리시스템개발/슬라이드4.PNG" alt="item4"></a></li>
+                    <li><a href="#"><img src="./7빅데이터품질관리시스템개발/슬라이드5.PNG" alt="item5"></a></li>
+                    <li><a href="#"><img src="./7빅데이터품질관리시스템개발/슬라이드6.PNG" alt="item6"></a></li>
+                    <li><a href="#"><img src="./7빅데이터품질관리시스템개발/슬라이드7.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./7빅데이터품질관리시스템개발/슬라이드8.PNG" alt="item8"></a></li>
+                    <li><a href="#"><img src="./7빅데이터품질관리시스템개발/슬라이드9.PNG" alt="item9"></a></li>
+                    <li><a href="#"><img src="./7빅데이터품질관리시스템개발/슬라이드10.PNG" alt="item10"></a></li>
+                    <li><a href="#"><img src="./7빅데이터품질관리시스템개발/슬라이드11.PNG" alt="item11"></a></li>
+                </ul>
+            </section>
+            
+            <h6><span>8. 빅데이터플랫폼테스트</span></h6>
+            <section class="slider7">
+                <ul>
+                    <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드1.PNG" alt="item1"></a></li>
+                    <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드2.PNG" alt="item2"></a></li>
+                    <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드3.PNG" alt="item3"></a></li>
+                    <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드4.PNG" alt="item4"></a></li>
+                    <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드5.PNG" alt="item5"></a></li>
+                    <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드6.PNG" alt="item6"></a></li>
+                    <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드7.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드8.PNG" alt="item8"></a></li>
+                    <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드9.PNG" alt="item9"></a></li>
+                    <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드10.PNG" alt="item10"></a></li>
+                    <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드11.PNG" alt="item11"></a></li>
+                </ul>
+            </section>
+
+          </section>
+      </section>
+  </main>
+  </div>
+  </div>
+  </div>
+  <footer>
+  </footer>
+  </div>
+  </body>
+
+  </html>
