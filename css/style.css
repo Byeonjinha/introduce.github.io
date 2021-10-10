@@ -15,7 +15,7 @@ a {text-decoration: none; color:rgb(145, 144, 144);}  /* text-decoration CSS 단
     background-image: url(../img/korea-g6bfd67397_1920.jpg);
     background-attachment: fixed;
     height: 100%;
-    background-size: 100vw;
+    background-size: cover;
     z-index: 0;
     
     
