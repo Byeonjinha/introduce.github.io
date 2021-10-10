@@ -1,12 +1,10 @@
 /* 전체 초기화  */
 * {
-    margin: 0;                /* 바깥 여백 */
-    padding: 0;               /* 내부 여백 */
-    font: normal 30px '돋움체';   /* 폰트 설정  */
+  margin: 0;                /* 바깥 여백 */
+  padding: 0;               /* 내부 여백 */
+  font: normal 25px '돋움체';   /* 폰트 설정  */
 
-    font-family: 'Hi Melody', cursive;
-    
-}
+  font-family: 'Noto Sans KR', sans-serif;}
 
 
 .outer-scratch, .inner-scratch {
@@ -206,29 +204,18 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
 ul, ol {list-style : none;}    /* unorderlist , orderlist list-style (속성) 정의 / 기타 알파벳이나 로마문자 , 숫자 등등을 정의해 줄 수 있음 */
-a {text-decoration: none; color: rgb(255, 255, 255);}  /* text-decoration CSS 단축 속성은 글씨의 장식(선) 색을 지정  none 대신 green wavy underline underline overline #FF3028 등을 넣을 수 있음  */
+a {text-decoration: none; color: rgb(145, 144, 144) ;}  /* text-decoration CSS 단축 속성은 글씨의 장식(선) 색을 지정  none 대신 green wavy underline underline overline #FF3028 등을 넣을 수 있음  */
 
 #wrapper {        /* #( id선택자   , .은 클래스선택자임 )  wrapper  */   
     position: relative;
     width: 100%;  /*  넓이 100% */
-    background-image: url(../img/3.jpg); 
+    background-image: url(../img/alley-ge7df62e32_1920.jpg); 
     background-attachment: fixed;
     height: 100%;
     background-size: cover;
     z-index: 0;
-    
 }
-
 /* header 속성정의 */
 header {
     width: 100%;
@@ -237,46 +224,41 @@ header {
     background-size: cover;
     z-index: 0;
 }
-
 header > div {    
     width: 100%;            
     box-sizing: border-box;  /* box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성 // border-box 는  테두리를 기준으로 크기를 정함*/
-
     height: 100vw;
     background-size: cover;
   }
-
-
 header > .top {     /* header 의 .(클래스 선택자) top */
   
     height: 100px;
     border-bottom: 1px solid #e9e9e9;  /*요소 테두리의 아래쪽 스타일을 지정 1px , solid(실선) , 선색  */
-    background-color: #222;
 }
 
 header > .top > div {
-    width: 930px;
-    height: 100%;
-    margin: 0 auto;     /* margin 바깥여백 0  , auto는 가로 중앙에 배치한다는 의미 */        
-    text-align:center;  /* text-align 속성은 텍스트의 정렬 방향을 의미 */
-    
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;     /* margin 바깥여백 0  , auto는 가로 중앙에 배치한다는 의미 */        
+  text-align:center;  /* text-align 속성은 텍스트의 정렬 방향을 의미 */
+   
 }
 
 header > .top > div > a {     /* <a> 태그는 하이퍼링크를 걸어주는 태그 */
-    vertical-align: text-bottom;
-    display: inline-block; /* display 속성은 웹페이지 상에서 엘리먼트들이 어떻게 보여지고 다른 엘리먼트와 어떻게 상호 배치되는지를 결정*/
-    /* 속성이 inline으로 지정된 엘리먼트는 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 */
-    /* 속성이 block으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지 */    
-    /* 속성이 inline-block으로 지정된 엘리먼트는 기본적으로 inline 엘리먼트처럼 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 */
-    height: 100%;
-    line-height: 100px;  /* line-height는 줄 높이를 정하는 속성 */
-    width: 200px;
-    border-left: 1px solid #e9e9e9; /* border-left 는 요소의 왼쪽 테두리를 설정 */
-    border-right: 1px solid #e9e9e9; 
-    padding: 0 10px;      /* 내부 여백 */
-    color: #d3d3d3;
-
-    
+  display: inline-block; /* display 속성은 웹페이지 상에서 엘리먼트들이 어떻게 보여지고 다른 엘리먼트와 어떻게 상호 배치되는지를 결정*/
+  /* 속성이 inline으로 지정된 엘리먼트는 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 */
+  /* 속성이 block으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지 */    
+  /* 속성이 inline-block으로 지정된 엘리먼트는 기본적으로 inline 엘리먼트처럼 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 */
+  height: 100%;
+  line-height: 100px;  /* line-height는 줄 높이를 정하는 속성 */
+  width: 230px;
+  border-left: 5px solid #232d58; /* border-left 는 요소의 왼쪽 테두리를 설정 */
+  border-right: 5px solid #232d58;       /* 내부 여백 */
+  color: rgb(145, 144, 144);
+  background-color:  #e4fafa;
+  border-radius: 10px 10px 10px 10px;
+  border : 4px solid rgb(38, 27, 100); 
+  outline : 4px solid #f3f3f3; 
 }
 header > .top > div > a:nth-child(1).button {
   width: 200px; 
@@ -287,98 +269,16 @@ header > .top > div > a:nth-child(1).button {
 		transition:0.5s;
 	-webkit-transition:0.5s;
 	-moz-transition:0.5s;
-}
-header > .top > div > a:last-child {  /* <a> 태그는 하이퍼링크를 걸어주는 태그 */
-    border-right: 1px solid #e9e9e9;  /* border-right 는 요소의 오른쪽 테두리를 설정 */
 
 }
 
 header > .top > div > a:hover { /* a:link 방문하기전의 링크 / a:visited  방문한 링크 / a:hover : 링크에 마우스 포인터를 올려 놓았을 때 / a:active : 링크를 마우스로 클릭한 순간 */
-    color: rgb(145, 144, 144); 
-    border-bottom: 1px solid #444;
+  color: rgb(80, 80, 80); 
 }
 
-header > .logo { /* header 하위의  logo 클래스 */
-    margin : 0 auto;
-    height: 100%;
-    border-bottom: 1px solid #e9e9e9;
-}
-header > .logo > div {
-    position: relative;
-    width: 160px;
-    height: 100%;
-    margin: 0 auto;
-}
-header > .logo > div > a {
-    display: inline-block;
-    margin-top: 10px;
-}
-header > .logo > div > form {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -185px;
-    margin-top: -22px;
-    display: inline-block;
-    width: 370px;
-    height: 45px;            
-}
-header > .logo > div > form > input {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #000;
-    border-radius: 5px;
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 30px;
-    box-sizing: border-box;
-}
-
-header > .logo > div > form > button {
-    position: absolute;
-    right: 6px;
-    top: 10px;
-    background: #fff;
-    border: none;
-    font-size: 20px;
-    color: #333;
-    outline:none;
-}    
-
-header > .menu {
-    height: 46px;
-    background: #f2f2f2;
-    border-bottom: 1px solid #ddd;
-    box-sizing: border-box;
-}
-header > .menu > div {
-    width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-}
-header > #background_IMG {position: relative;    background-size: cover; z-index: 0;}
-header > .menu > div > ul {
-    display: inline-block;
-    margin-top: 16px;
-}        
-
-
-
-header > .menu > div > ul:nth-child(1) {float: left;}    /* 히트상품 , 추천상품, 최신상품, 인기상품 , 할인상품*/
-header > .menu > div > ul:nth-child(2) {float: right;}   /*쿠폰존 , 사용후기, 개인결제, 고객센터, FAQ */
-header > .menu > div > ul > li {float: left;}      /* 목록 왼쪽에 띄움 */
-header > .menu > div > ul > li > a {
-    border-left: 1px solid #e9e9e9;
-    padding: 0 10px;
-}
-header > .menu > div > ul > li:last-child > a {
-    border-right: 1px solid #e9e9e9;
-}
 
 /* main 속성 정의 */
 main {           
-  
     width: 1200px;
     height: auto;
     margin: 0 auto;            
@@ -399,66 +299,35 @@ main > aside {    /* main > aside 선택  (카테고리 메뉴 + 베스트메뉴
     float: left ; /* 왼쪽에 띄움*/
     width: 0px; 
     height: 100%;
-   
-    
 }
 
-
-main > aside > .category ol {   /*패션, 가전, 식품, 홈 등등 상위 카테고리 밑의 하위카테고리*/
-    position: absolute;
-    left: 0 px;
-    top: 0;
-    display: none;  /* 마우스 올리기전엔 보여지지 않음*/
-    width: 0px;
-    height: 100%;
-    border: 1px solid #787f89;   /* 태그의 테두리를 설정하는 속성 */
-    background: #fff;
-    box-sizing: border-box;
-    z-index: 10000;
-}
-
-main > aside > .category ol > li {
-    width: 100%;
-    height: 24px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-main > aside > .category ol > li > a:hover {  /* a:hover : 링크에 마우스 포인터를 올려 놓았을 때*/
-    color: #41ab47;
-    text-decoration: underline;  /* 밑줄 */ 
-}
-
-/* 베스트상품 */
-main > aside > .best {
+main > aside > .catelist  {
+  border : 4px solid rgb(38, 27, 100); 
+  outline : 4px solid #f3f3f3; 
     position: fixed;
-    margin-left : -240px;
+    top: 230px;
+    margin-left : -300px;
     padding-top: 40px;
     font-size: 10px;
-    width: 240px;
+    width: 300px;
     height: auto;
-    border: 2px solid #dbdbdb;
     box-sizing: border-box;
-    box-shadow: 0 0 5px rgba(55, 55, 5, 0.2);    /* 베스트 상품 전체 테두리 음영 */
     z-index: 2;
-    background-color: #1e2732;
+    background-color: #e4fafa;
     border-radius: 10px 10px 10px 10px ;
 }
 
-main > aside > .best > h1 {
-    font-size: 14px;
-    font-weight: bold;
-    color: #111;
-    margin: 6px;
-}
-main > aside > .best > h1 > i {   /*아이콘속성*/
-    margin-right: 6px;
-    font-size: 18px;
+main > aside > .catelist >a {
+  font-size: 20px;
+  margin-left: 20px;
 }
 
-main > aside > .best > ol {
+
+
+main > aside > .catelist > ol {
     width: 100%;
 }
-main > aside > .best > ol > li {
+main > aside > .catelist > ol > li {
     width: 100%;
     height: 100%;
     padding: 0 6px;
@@ -467,35 +336,57 @@ main > aside > .best > ol > li {
 }
 
 
-main > aside > .best >a {
+main > aside > .catelist >a {
     font-size: 20px;
-    margin-left: 5px;
 }
-main > aside > .best >a:nth-child(1) {
+
+main > aside > .catelist >a:nth-child(1) {
   font-size: 20px;
   margin-left: 20px;
 }
-main > aside > .best >a:hover {
-  color: rgb(145, 144, 144); 
+main > aside > .catelist >a:hover {
+  color: rgb(80, 80, 80); 
   border-bottom: 1px solid #444;
 }
 
 
 /* main > section 속성 */
 main > section {
-    margin : 0 auto;
-    float: none;
-    width: 985px;
-    height: auto;
-    box-sizing: border-box;
-    color :ivory;
+  margin : 0 auto;
+  float: none;
+  width: 985px;
+  height: auto;
+  box-sizing: border-box;
+  color :black;
 }
 
-main > section > h6> span {
-   background-color: #233549;
+main > section >span {
+  
+  border : 1px solid rgb(38, 27, 100); 
+  outline : 4px solid #f3f3f3;
+  float: left;
+  font-size: 30px;
+   background-color: #e4fafa;
    border-radius: 10px 10px 10px 10px;
-   padding: 5px;
-    
+   padding: 10px;
+   margin: 20px;
+  font-weight: 700;
+    margin-top    : 20px;
+}
+
+main > section > section {
+  border : 4px solid rgb(38, 27, 100); 
+  outline : 4px solid #f3f3f3; 
+  padding: 20px;
+  width: 1000px;
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px; 
+  background-color: #f3f3f3;
+  float:left;
+}
+
+main > section > section > a {
+color : black;
 }
 main > section > section > article {
     float: left;
@@ -517,55 +408,17 @@ main > section > section > article > a {
     box-sizing: border-box;            
 }
 
-main > section > section > article .thumb {
-    width: 100%;
-    height: 230px;
-    margin: 0px auto;
-    overflow: hidden;
-    text-align: center;
+main > section > section>ul {
+  position:relative;
+  float:left;
+  width: 100%;
+  height: auto;
+  margin: 0px;
 }
-
-main > section > section > article h2 {            
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 4px;
-    text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap; /* white-space는 스페이스와 탭, 줄바꿈, 자동줄바꿈을 어떻게 처리할지 정하는 속성 */
-    overflow: hidden;
-}
-
-main > section > section > article p {
-    color: #222;
-    font-size: 12px;
-    line-height: 16px;
-    margin: 4px 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-main > section > section > article > a:hover > p {text-decoration: underline;}
-
-main > section > section > article del::after {content: "원";}
-main > section > section > article ins::after {content: "원";}        
-main > section > section > article .org_price > del {
-    color: #aaa;
-}
-main > section > section > article .org_price > span {
-    color: #eb000a;
-}
-main > section > section > article .org_price > span::after { content: "↓"; }
-main > section > section > article .dis_price { margin-top: 4px; }
-main > section > section > article .dis_price > ins {            
-    font-size: 14px;
-    text-decoration: none;
-}
-
-
 /* slider 속성 */
 main > section > .slider {
     width: 100%;
-    height: 600px;
+    height: 6000px;
     overflow: hidden;
 }
 main > section > .slider > .bx-wrapper {
@@ -577,69 +430,22 @@ main > section > .slider > .bx-wrapper {
 }
 
 
-main > section > .hit {}
-main > section > .recommend {}
-main > section > .new {}
-main > section > .discount {}
 
+main > #admin-index > article > table>tbody > tr > td > img {
 
+  background-color: #41ab47;
+height: 100%;
+width: 100%;
+}
 
-/* �명꽣�곸뿭 */
 footer {
     width: 100%;
     height: 192px;
-    background: #f8f8f8;
     border-top: 1px solid #e9e9e9;
-    box-sizing: border-box;
     z-index: 3;
 }
-footer > ul {
-    width: 1200px;
-    height: 39px;
-    margin: 0 auto;
-    padding: 15px 0;
-    border-bottom: 1px solid #e9e9e9;
-    box-sizing: border-box;
-    text-align: center;
-}
-footer > ul > li {
-    display: inline-block;
-    font-weight: bold;
-    border-right: 1px solid #d7d7d7;
-    padding: 0 10px;
-}
-footer > ul > li:first-child {border-left: 1px solid #d7d7d7;}
 
-footer > div {
-    width: 1200px;
-    height: 100%;
-    padding-top: 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
 
-footer p {
-    float: left;
-    height: 100%;
-    font-size: 11px;
-    line-height: 15px;
-    color: #676767;            
-}
-footer p:nth-of-type(2) {
-    width: 300px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-footer p > strong {
-    display: inline-block;
-    padding: 6px 15px 7px 0;
-    color: #464646;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-/* �ㅻⅨ履� �섎떒 �곷떒 �대룞踰꾪듉 */
 #top {
     position: fixed;
     left: 50%;
@@ -648,1471 +454,7 @@ footer p > strong {
     /* display: none; */
     width: 42px;
     height: 42px;
-    background-image: url('../img/top.png');
     border: none;
     font-size: 0;
     cursor: pointer;
-}
-
-
-/* shop 怨듯넻 */
-main > section > nav {
-    width: 100%;
-    height: 36px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #000;
-    box-sizing: border-box;
-}
-main > section > nav > p {
-    float: right;
-    margin-top: 10px;
-}
-main > section > nav > h1 {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.5em;
-    padding: 0 0 7px;
-    line-height: 1em;
-}
-
-h6.rating {
-    font-size: 11px;
-    background-image: url('../img/rating_star.png');
-    background-repeat: no-repeat;
-    background-position: 36px 0px;
-    background-size: auto 100%;
-}
-h6.rating.star1 {width: 50px;}
-h6.rating.star3 {width: 78px;}
-h6.rating.star2 {width: 64px;}
-h6.rating.star4 {width: 91px;}
-h6.rating.star5 {width: 106px;}
-
-h5.rating {
-    width: 150px;
-    height: 20px;
-    font-size: 0px;
-    background-image: url(../img/ico_rating_star.png);
-    background-repeat: no-repeat;
-    background-position: 36px 0px;
-    text-indent: 86px;
-}
-h5.rating.star1 {background-position: 0 -40px;}
-h5.rating.star2 {background-position: 0 -80px;}
-h5.rating.star3 {background-position: 0 -120px;}
-h5.rating.star4 {background-position: 0 -160px;}
-h5.rating.star5 {background-position: 0 -200px;}
-
-.badge {
-    font-size: 0;
-    width: 80px;
-    height: 19px;
-    background-repeat: no-repeat;
-}
-
-.badge.power {background-image: url('../img/ico_power_dealer.gif');}
-.badge.great {background-image: url('../img/ico_great_seller.gif');}
-.badge.power.great {
-    background: url('../img/ico_power_dealer.gif') no-repeat, url('../img/ico_great_seller.gif') no-repeat 63px;
-    width: 160px;
-}
-
-
-/* list�섏씠吏� */
-#list {
-  padding: 16px;
-  box-sizing: border-box;
-}
-
-#list > .sort {
-    margin: 0 0 20px 0;
-    border-top: 2px solid #111;
-    border-bottom: 1px solid #dfdfdf;
-    overflow: hidden;
-}
-#list > .sort > li {
-    float: left;
-    position: relative;
-    padding: 15px 0;
-    line-height: 15px;
-}
-#list > .sort > li > a {
-    display: block;
-    padding: 0 10px;
-    border-right: 1px solid #ddd;
-}
-
-#list > section > article {
-    width: 100%;
-    height: 200px;
-    border-bottom: 1px solid #ececec;
-}
-
-#list > section > article > ul {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-#list > section > article > ul > li {
-    position: relative;
-    float: left;
-    height: 100%;
-    padding: 30px 10px;
-    box-sizing: border-box;
-}
-#list > section > article > ul > li:nth-child(1) {width: 20%; padding: 0;}
-#list > section > article > ul > li:nth-child(2) {width: 40%;}
-#list > section > article > ul > li:nth-child(3) {width: 20%;}
-#list > section > article > ul > li:nth-child(4) {width: 20%;}
-
-#list > section > article .thumb {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-#list > section > article .thumb > img { width: 100%; }
-
-#list > section > article .name {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 6px;
-}
-#list > section > article .desc > a {
-    font-size: 12px;
-    color: #333;
-}
-
-#list > section > article .desc > a:hover {
-    text-decoration: underline;
-}
-
-#list > section > article .org_price {}
-#list > section > article .org_price > del::after {content: "원";}
-#list > section > article .org_price > ins::after {content: "원";}
-#list > section > article .org_price > del {
-    font-size: 12px;
-    color: #aaa;
-}
-#list > section > article .org_price > span {
-    color: #eb000a;
-    font-size: 10px;
-}
-#list > section > article .org_price > span::after { content: "↓"; }
-#list > section > article .dis_price {}
-#list > section > article .dis_price > ins {
-    font-size: 16px;
-    text-decoration: none;
-}
-#list > section > article .dis_price > ins::after { content: "원"; }
-#list > section > article span.freeshipping {
-    display: inline-block;
-    font-size: 0;
-    vertical-align: text-bottom;
-    width: 55px;
-    height: 13px;
-    background: url('../img/ico_freeshipping.gif') no-repeat;
-    margin-top: 4px;
-}
-
-#list > section > article .seller {
-    color: #444;
-    font-size: 12px;
-    margin-bottom: 6px;
-}
-
-#list > section > article .rating {
-    position: absolute;
-    left: 10px;
-    bottom: 30px;
-}
-
-#list > .paging {
-    width: 100%;
-    padding: 30px 0;
-    text-align: center;
-}
-
-
-#list > .paging > span > a {
-    color: #777;            
-    font-size: 11px;
-    letter-spacing: -1px;
-}
-
-#list > .paging > span > a:hover {
-    text-decoration: underline;
-}
-
-#list > .paging > .num > a {
-    display: inline-block;
-    min-width: 14px;
-    margin: 0 2px;
-    padding: 8px 9px;
-    border: 1px solid #c4c4c4;
-    background: url() 0 0 repeat-x;
-    color: #000;
-    font-size: 12px;
-    text-align: center;
-    text-decoration: none;
-}
-#list > .paging > .num > a:hover {
-    border: 1px solid #454c5f;
-    text-decoration: none;
-}
-#list > .paging > .num > a.on {
-    color: #fe434c;
-    font-weight: bold;
-}
-
-/* view : �쒗뭹二쇰Ц�곸꽭�섏씠吏� */
-#view {
-    padding: 16px;
-    box-sizing: border-box;
-}
-#view > section {}
-#view > section > article {
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-}
-
-#view > section > article:after {
-    clear:both;
-    display:block;
-    content:'';
-}
-
-#view .info {}
-#view .info > div {
-    float: left;
-    width: 50%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-#view .info > .image {
-
-}
-#view .info > .image > img {
-    width: 100%;
-}
-#view .info > .summary * {
-}
-#view .info > .summary > nav {
-    border-bottom: 1px solid #eaeaea;
-    padding-bottom: 10px;
-    margin-bottom: 12px;
-    overflow: hidden;
-}
-#view .info > .summary > nav > h1 {
-    float: left;
-    color: #1e2732;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-#view .info > .summary > nav > h2 {
-    float: right;
-    color: #777;
-    margin-top: 8px;
-}
-
-#view .info > .summary > p {
-    font-size: 18px;
-    color: #474747;
-    line-height: 36px;
-    letter-spacing: -1px;
-}
-#view .info > .summary .rating > a {
-    color: #346aff;
-    text-decoration: underline;
-}
-
-#view .info > .summary .org_price {}
-#view .info > .summary .org_price > del::after {content: "원";}
-#view .info > .summary .org_price > ins::after {content: "원";}
-#view .info > .summary .org_price > del {
-    font-size: 18px;
-    color: #aaa;
-}
-#view .info > .summary .org_price > span {
-    color: #eb000a;
-    font-size: 16px;
-    margin-left: 6px;
-}
-#view .info > .summary .org_price > span::after { content: "↓"; }
-#view .info > .summary .dis_price {}
-#view .info > .summary .dis_price > ins {
-    font-size: 26px;
-    font-weight: bold;
-    text-decoration: none;
-}
-#view .info > .summary .dis_price > ins::after { content: "↓"; }
-
-#view .info > .summary .delivery {
-    font-size: 16px;
-    color: #2e8de5;
-}
-#view .info > .summary .arrival {
-    font-size: 14px;
-    margin-left: 10px;
-}
-#view .info > .summary .desc {
-    display: block;
-    color: #aaa;
-}
-
-
-#view .info > .summary .card > i {
-    display: inline-block;
-    width: 30px;
-    height: 18px;
-    top: 4px;
-    background-image: url('../img/sp_icon.png');
-    font-size: 0;
-    vertical-align: text-top;
-    margin-right: 2px;
-}
-
-#view .info > .summary .cardfree > i { background-position: -126px 0; }
-#view .info > .summary .cardadd  > i { background-position: -51px -21px; }
-#view .info > .summary .origin { font-size: 16px;}
-#view .info > .summary .banner { width: 100%;}
-
-#view .info > .summary .option {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-#view .info > .summary .option > strong {
-    display: inline-block;
-    font-weight: normal;
-    font-size: 16px;
-    color: #1e2732;
-    margin-bottom: 6px;
-}
-#view .info > .summary .option button {
-    display: block;
-    width: 100%;
-    text-align: left;
-    padding: 12px 15px 12px 15px;
-    background: #fff;
-    color: #233549;
-    border: 1px solid #d6d7d8;
-    border-bottom: 1px solid #2e8de5;
-    cursor: pointer;
-}
-
-#view .info > .summary .option button > .txt {
-    font-size: 16px;
-}
-#view .info > .summary .option button > .ico {
-    float: right;
-    display: block;
-    width: 16px;
-    height: 9px;
-    margin-top: 10px;
-    background-image: url('../img/sp_icon.png');
-    background-position: -196px 0;
-    font-size: 0;
-}
-#view .info > .summary .option > div {
-    position: relative;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-#view .info > .summary .option > div.disable {
-    display: none;
-}
-#view .info > .summary .option > div.on {
-    border: 1px solid #2e8de5;
-    z-index: 100;
-}
-
-#view .info > .summary .option > div.on > button {
-    border: none;
-    background: #f8f9fa;
-}
-#view .info > .summary .option > div.on > button > .ico {
-    background-position: -232px 0;
-}
-#view .info > .summary .option > div.on > ul {
-    position: absolute;
-    display: block;
-    z-index: 100;
-}
-
-#view .info > .summary .option ul {
-    display: none;
-    width: 100%;
-    max-height: 200px;
-    background: #fff;
-    border: 1px solid #2e8de5;
-    border-top: none;
-    border-radius: 0px;
-    overflow: hidden;
-    overflow-y: auto;
-    margin-left: -1px;
-}
-#view .info > .summary .option ul > li {
-    display: block;
-    width: 100%;
-    height: 43px;
-    color: #000;
-    line-height: 18px;
-    letter-spacing: -0.87px;
-    border-top: 1px solid #ececec;
-}
-#view .info > .summary .option ul > li > a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    line-height: 43px;
-    padding-left: 14px;
-    font-size: 14px;
-}
-
-#view .info > .summary .option ul > li > a:hover {
-    color: #2e8de5;
-    background: #f8fbff;
-}
-
-#view .info > .summary .items {
-    width: 100%;
-}
-#view .info > .summary .items > ul {}
-#view .info > .summary .items > ul > li {
-    width: 100%;
-    padding: 10px;
-    background: #f9f9fa;
-    border: 1px solid #f2f2f2;
-    border-bottom: 1px solid #bec1c7;
-    box-sizing: border-box;
-}
-#view .info > .summary .items > ul > li > div {
-}
-#view .info > .summary .items .title {
-    border-bottom: 1px dotted #e2e2e3;
-    overflow: hidden;
-}
-#view .info > .summary .items .title > p {
-    float: left;
-    font-size: 14px;
-    color: #000;
-}
-
-#view .info > .summary .items button {
-    border: none;
-    font-size: 0;
-    background-color: transparent;
-    background-image: url('../img/sp_icon.png');
-    cursor: pointer;
-}
-#view .info > .summary .items .title > button {
-    float: right;
-    width: 26px;
-    height: 26px;
-    background-position: -442px -122px;
-}
-
-#view .info > .summary .items .price {
-    margin-top: 6px;
-}
-#view .info > .summary .items .price > span {}
-#view .info > .summary .items .price > span > button {
-    width: 21px;
-    height: 21px;
-    vertical-align: top;
-}
-#view .info > .summary .items .price > span > .decrease {
-    background-position: 0 -74px;
-}
-#view .info > .summary .items .price > span > .increase {
-    background-position: -48px -74px;
-}
-#view .info > .summary .items .price > span > input {
-    width: 30px;
-    height: 21px;
-    border: 1px solid #ececec;
-    line-height: 21px;
-    color: #233549;
-    font-size: 14px;
-    text-align: center;
-}
-#view .info > .summary .items .price > ins {
-    float: right;
-    font-size: 16px;
-    color: #111;
-    text-decoration: none;
-}
-#view .info > .summary .items .price > ins::after {
-    content: "원";
-}
-
-#view .info > .summary .total {
-    overflow: hidden;
-    margin-top: 16px;
-}
-#view .info > .summary .total > em {
-    float: right;
-    display: block;
-    width: 100px;
-    height: 22px;
-    padding: 10px 0 0;
-    font-size: 16px;
-    line-height: 22px;
-    color: #5e636d;
-    letter-spacing: -1px;
-}
-#view .info > .summary .total > span {
-    float: right;
-    display: inline-block;
-    line-height: 38px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-    text-align: right;
-    letter-spacing: -0.5px;
-}
-
-#view .info > .summary .total > span::after {
-    content: "원";
-}
-
-#view .info > .summary > .button {
-    overflow: hidden;
-    margin-top: 16px;
-}
-
-#view .info > .summary > .button > input {
-    float: left;
-    width: 49%;
-    height: 50px;
-    margin: 2px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 2px;
-    cursor: pointer;
-}
-#view .info > .summary > .button > .cart {
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    color: #233549;
-}
-#view .info > .summary > .button > .order {
-    background: #2e8de5;
-    border: 1px solid #217fd7;
-    color: #fff;
-}
-
-#view .notice {}
-#view article > nav {
-    border-bottom: 1px solid #a4a9b0;
-    padding: 6px 0;
-    margin-bottom: 12px;
-    overflow: hidden;
-}
-
-#view article > nav > h1 {
-    float: left;
-    color: #1e2732;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-#view article > nav > p {
-    float: left;
-    color: #777;
-    margin-top: 6px;
-    margin-left: 6px;
-}
-
-#view .notice > table {
-    width: 100%;
-}
-#view .notice > table:nth-of-type(2) {
-    border-top: 1px solid #ececec;
-}
-#view .notice > table tr > td {
-    padding: 5px 0 6px 21px;
-    font-size: 14px;
-    color: #777;
-}
-
-#view .notice > table tr > td:nth-child(1) {
-    width: 20%;
-    color: #222;
-}
-#view .notice > table tr > td:nth-child(2) {}
-#view .notice > .notice {
-    margin: 20px 0;
-    padding: 21px 26px 20px 19px;
-    line-height: 20px;
-    font-size: 14px;
-    color: #757c8a;
-    background: #fafafa;
-    border-radius: 2px;    
-    white-space: normal;
-}
-
-#view .review * {
-}
-#view .review > ul {
-    padding: 10px;
-    box-sizing: border-box;
-}
-#view .review > ul > li {
-    padding-top: 16px;
-    border-bottom: 1px solid #ececec;
-    box-sizing: border-box;
-}
-#view .review > ul > li > div {
-    overflow: hidden;
-}
-#view .review > ul > li > div > h5 {
-    float: left;
-}
-
-#view .review > ul > li > div > span {
-    float: right;
-    color: #555;
-}
-#view .review > ul > li > h3 {
-    color: #555;
-    margin-top: 6px;
-}
-#view .review > ul > li > p {
-    width: 100%;
-    height: 60px;
-    color: #555;
-    font-size: 14px;
-    line-height: 19px;
-    word-break: break-all;
-    word-wrap: break-word;
-    margin-top: 10px;
-}
-
-#view .review > .paging {
-    width: 100%;
-    padding: 30px 0;
-    text-align: center;
-}
-
-#view .review > .paging > .prev {}
-#view .review > .paging > .next {}
-#view .review > .paging > .num {}
-
-#view .review > .paging > span > a {
-    color: #777;
-    font-size: 11px;
-    letter-spacing: -1px;
-}
-
-#view .review > .paging > span > a:hover {
-    text-decoration: underline;
-}
-
-#view .review > .paging > .num > a {
-    display: inline-block;
-    min-width: 14px;
-    margin: 0 2px;
-    padding: 8px 9px;
-    border: 1px solid #c4c4c4;
-    background: url() 0 0 repeat-x;
-    color: #000;
-    font-size: 12px;
-    text-align: center;
-    text-decoration: none;
-}
-#view .review > .paging > .num > a:hover {
-    border: 1px solid #454c5f;
-    text-decoration: none;
-}
-#view .review > .paging > .num > a.on {
-    color: #fe434c;
-    font-weight: bold;
-}
-
-
-/* �λ컮援щ땲 */
-#cart {
-    padding: 16px;
-    box-sizing: border-box;
-}
-
-#cart form > input[name=del] {
-  border-color: #bdbdbd;
-  border-bottom-color: #828282;
-  background: #fafafa;
-  color: #4d4d4d;
-  padding: 6px 11px;
-  border-width: 1px;
-  margin-top: 6px;
-}
-#cart form > table {
-  width: 100%;
-  border-bottom: 1px solid #d3d3d3;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-#cart form > table th {
-  padding: 12px 0;
-  border-top: 2px solid #000;
-  border-bottom: 1px solid #d3d3d3;
-  background: #fff;
-  color: #383838;
-  font-size: 0.95em;
-  text-align: center;
-  letter-spacing: -0.1em;
-}
-#cart form > table tbody {}
-
-#cart form > table .empty {
-  display: none;
-}
-#cart form > table .empty td {
-  padding: 50px 0 !important;
-  text-align: center;
-  color: #777 !important;
-}
-#cart form > table td {
-  text-align: center;
-}
-#cart form > table th:first-child {
-  width: 60px;
-}
-#cart form > table td:first-child {
-  width: 60px;
-}
-
-#cart form > table td:last-child {
-  color:#ff006c;
-  font-weight: bold;
-}
-#cart form > table td > article {
-  overflow: hidden;
-}
-#cart form > table td > article > a {
-  float: left;
-  display: inline-block;
-}
-#cart form > table td > article > div {
-  float: left;
-  margin-top: 10px;
-}
-#cart form > table td > article > div a {
-  font-size: 15px;
-  font-family: 'Malgun Gothic', dotum, sans-serif;
-}
-#cart form > table td > article > div > p {
-  text-align: left;
-  color: #777;
-  margin-top: 4px;
-}
-#cart form > table article img {width: 80px;}
-#cart > .info {
-  float: right;
-  width: 360px;
-  height: 412px;
-  padding: 20px;
-  background: #fff;
-  border: 1px solid #d3d3d3;
-  box-sizing: border-box;
-}
-
-#cart > .info * {
-  font-weight: bold;  
-}
-
-#cart > .info > h2 {
-  width: 100%;
-  font-weight: bold;
-  font-size: 16px;
-  border-bottom: 1px solid #111;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  box-sizing: border-box;
-  color: #1e1e1e;
-}
-#cart > .info > table {
-  width: 100%;
-}
-
-#cart > .info > table tr {}
-#cart > .info > table tr:nth-last-child(2) {}
-
-#cart > .info > table tr:nth-last-child(1) td {
-  font-size: 20px;
-}
-#cart > .info > table tr:nth-last-child(1) td:last-child {
-  color: #ff006c;  
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#cart > .info > table td {
-  padding: 10px 0;
-  font-size: 14px;
-  color: #555;
-}
-
-#cart > .info > table td:last-child {
-  text-align: right;
-}
-#cart > .info > input[type=button] {
-  width: 100%;
-  height: 56px;
-  font-size: 26px;
-  border-width: 1px;
-  border-color: #d81818;
-  border-bottom-color: #9e1212;
-  background: #ed2f2f;
-  background-image: linear-gradient(#ed2f2f, #dd0e0e);
-  background-image: -webkit-linear-gradient(#ed2f2f, #dd0e0e);
-  color: #fff;
-  box-sizing: border-box;
-  margin-top: 10px;
-}
-
-/* 二쇰Ц寃곗젣 */
-#order {
-    padding: 16px;
-    box-sizing: border-box;
-}
-#order .product > input[name=del] {
-  border-color: #bdbdbd;
-  border-bottom-color: #828282;
-  background: #fafafa;
-  color: #4d4d4d;
-  padding: 6px 11px;
-  border-width: 1px;
-  margin-top: 6px;
-}
-#order .product > table {
-  width: 100%;  
-  border-collapse: collapse;
-  border-spacing: 0;
-  border-top: 2px solid #000;
-}
-#order .product > table th {
-  padding: 12px 0;    
-  background: #fff;
-  color: #383838;
-  font-size: 0.95em;
-  text-align: center;
-  letter-spacing: -0.1em;
-}
-#order .product > table tbody {}
-
-#order .product > table .empty {
-  display: none;
-}
-#order .product > table .empty td {
-  padding: 50px 0 !important;
-  text-align: center;
-  color: #777 !important;
-}
-
-#order .product > table tr {
-  border-bottom: 1px solid #d3d3d3;
-}
-
-#order .product > table td {
-  text-align: center;
-}
-
-
-#order .product > table td:last-child {
-  color:#ff006c;
-  font-weight: bold;
-}
-#order .product > table td > article {
-  overflow: hidden;
-}
-#order .product > table td > article > a {
-  float: left;
-  display: inline-block;
-}
-#order .product > table td > article > div {
-  float: left;
-  margin-top: 10px;
-}
-#order .product > table td > article > div a {
-  font-size: 15px;
-  font-family: 'Malgun Gothic', dotum, sans-serif;
-}
-#order .product > table td > article > div > p {
-  text-align: left;
-  color: #777;
-  margin-top: 4px;
-}
-#order .product > table article img {width: 80px;}
-#order .product > h3 {  
-  font-size: 15px;
-  font-weight: bold;
-  padding: 10px 0;
-
-}
-#order .product > h3 > span {
-  font-size: inherit;
-  font-weight: inherit;
-  color:#ff006c;
-
-}
-
-#order form section {
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-}
-
-#order form section > article {
-  width: 560px;
-  height: auto;
-  margin-bottom: 10px;  
-}
-
-#order form section > article > h1 {  
-  font-weight: bold;
-  font-size: 14px;  
-  padding: 6px 0;
-  border-bottom: 1px solid #111;  
-}
-
-#order form section > article > div {
-  padding: 6px;
-  box-sizing: border-box;
-}
-
-#order form section input {  
-  color: #555;
-  font-weight: bold;
-  outline: none;
-  padding: 2px 0;  
-}
-
-
-#order .delivery {}
-#order .delivery > table {
-  margin-top: 10px;
-}
-#order .delivery > table tr > td:nth-child(1) {  
-  padding: 6px;
-}
-
-#order .delivery > table input[name=addr1] {width: 400px;} 
-#order .delivery > table input[name=addr2] {width: 400px;}
-#order .delivery > table input[type=button] {
-  padding: 4px 6px;
-  border: 1px solid #ccc;
-  background-color: #F0F4F9;
-  border-color: #acc0e0;
-  color: #3371C9;
-  outline: none;
-}
-
-
-#order .discount {}
-#order .discount > div {
-  overflow: hidden;
-}
-#order .discount > div > p {
-  float: left;
-}
-#order .discount > div > label{
-  float: right;
-}
-
-#order .discount > div > label > input[type=text] {
-  display: inline-block;
-  outline: none;
-}
-#order .discount > div > label > input[type=button]{
-  padding: 4px 6px;
-  border: 1px solid #ccc;
-  background-color: #F0F4F9;
-  border-color: #acc0e0;
-  color: #3371C9;
-  outline: none;
-}
-
-
-#order .discount > div > span {
-  display: block;
-  margin-top: 20px;
-  color: #888;
-}
-#order .discount {}
-#order .payment {}
-#order .payment > div {
-  margin-bottom: 10px;
-}
-#order .payment > div > span {
-  display: inline-block;
-  color: #3a85c8;
-  margin: 6px 0;
-}
-#order .payment > div > p {}
-#order .payment > div label {
-  margin-right: 16px;
-}
-#order .payment > div input {
-  vertical-align: bottom;
-  margin-right: 4px;
-}
-#order .payment {}
-
-#order form section > .alert {
-  width: 560px;
-  background-color: #f7f7f7;
-  padding: 6px;
-  padding-left: 20px;
-  color: #999;
-  box-sizing: border-box;
-}
-
-#order form section > .alert > ul {
-  list-style: inherit;
-}
-
-#order form section > .alert > ul > li {
-  line-height: 20px;  
-}
-#order form section > .alert > ul > li > span {
-  position: relative;
-  left: -6px;
-}
-
-
-
-#order .info {
-  position: absolute;
-  right: 0;
-  top: 26px;
-  width: 360px;
-  height: 412px;
-  padding: 20px;
-  background: #fff;
-  border: 1px solid #d3d3d3;
-  box-sizing: border-box;
-}
-
-#order .info * {
-  font-weight: bold;  
-}
-
-
-#order .info > h2 {
-  width: 100%;
-  font-weight: bold;
-  font-size: 16px;
-  border-bottom: 1px solid #111;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  box-sizing: border-box;
-  color: #1e1e1e;
-}
-#order .info > table {width: 100%;}
-#order .info > table tr {}
-#order .info > table tr:nth-last-child(2) {}
-#order .info > table tr:nth-last-child(1) td {font-size: 20px;}
-#order .info > table tr:nth-last-child(1) td:last-child {
-  color: #ff006c;  
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#order .info > table td {
-  padding: 10px 0;
-  font-size: 14px;
-  color: #555;
-}
-#order .info > table td:last-child {
-  text-align: right;
-}
-#order .info > input[type=button] {
-  width: 100%;
-  height: 56px;
-  font-size: 26px;
-  border-width: 1px;
-  border-color: #d81818;
-  border-bottom-color: #9e1212;
-  background: #ed2f2f;
-  background-image: linear-gradient(#ed2f2f, #dd0e0e);
-  background-image: -webkit-linear-gradient(#ed2f2f, #dd0e0e);
-  color: #fff;
-  box-sizing: border-box;
-  margin-top: 10px;
-}
-
-/* 二쇰Ц�꾨즺 */
-#order-complete {
-    padding: 16px;
-    box-sizing: border-box;
-}
-#order-complete > section {}
-#order-complete > section > div {}
-#order-complete > section > div > h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  color: #555;
-  padding: 10px;
-}
-
-#order-complete > section > div > h2 > i {
-  font-size: 26px;
-}
-#order-complete > section > div > p {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-}
-
-#order-complete > section > section{}
-#order-complete > section > section > article{
-  margin-top: 16px;
-}
-#order-complete > section > section > article > h1 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #111;
-  padding: 6px 0;  
-}
-#order-complete table {
-  width: 100%;  
-  border-collapse: collapse;
-  border-spacing: 0;
-  border-top: 2px solid #000;
-}
-#order-complete table tr {
-  border-bottom: 1px solid #d3d3d3;
-}
-#order-complete table tr > th {
-  padding: 12px 0;    
-  background: #fff;
-  color: #383838;
-  font-size: 0.95em;
-  text-align: center;
-  letter-spacing: -0.1em;
-}
-#order-complete table tr > th:last-child {
-  width: 200px;
-}      
-
-#order-complete .product {}
-#order-complete .product table tr > td {
-  text-align: center;
-}      
-
-#order-complete .product table tr > td:last-child {
-  color:#ff006c;
-  font-weight: bold;
-  text-align: right;
-}
-#order-complete .product table tr > td > article {
-  overflow: hidden;
-}
-#order-complete .product table tr > td img {
-  float: left;
-  width: 80px;
-}
-#order-complete .product table tr > td div {
-  float: left;
-  margin-top: 10px;
-  text-align: left;
-}
-
-#order-complete .product .total > td > table {border: none;}
-#order-complete .product .total > td > table tr {border: none;}
-#order-complete .product .total > td > table tr:last-child span {
-  font-weight: bold;
-  color: #ff006c;
-}
-#order-complete .product .total > td > table td {
-  text-align: right;        
-  color: #111;
-  background: #f2f2f2;
-  font-weight: normal;
-  border-bottom: none;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-
-
-#order-complete .order {}
-#order-complete .order table {}
-#order-complete .order table tr {}
-#order-complete .order table tr > td {        
-  padding: 10px;
-  box-sizing: border-box;
-}
-#order-complete .order table span {
-  font-weight: bold;
-  color: #ff006c;
-}
-#order-complete .order table tr > td:nth-child(1) {width: 160px; background:#f2f2f2;}
-#order-complete .order table tr > td:nth-child(2) {width: auto;}
-#order-complete .order table tr > td:nth-child(3) {width: 100px; text-align: right; vertical-align: top; background:#f2f2f2;}
-#order-complete .order table tr > td:nth-child(4) {width: 100px; text-align: right; vertical-align: top; background:#f2f2f2;}
-
-
-
-#order-complete .delivery {}
-#order-complete .delivery table {}
-#order-complete .delivery table tr {}
-#order-complete .delivery table tr > td {
-  padding: 10px;
-  box-sizing: border-box;
-}
-#order-complete .delivery table tr > td:nth-child(1) {width: 160px; background:#f2f2f2;}
-#order-complete .delivery table tr > td:nth-child(3) {width: 200px; background:#f2f2f2;}
-
-#order-complete .alert {
-  width: 100%;
-  background-color: #f7f7f7;
-  padding: 10px;
-  padding-left: 24px;
-  color: #999;
-  box-sizing: border-box;
-}
-#order-complete .alert > h1 {margin-left: -12px;}
-
-#order-complete .alert > ul {
-  list-style: inherit;
-}
-
-#order-complete .alert > ul > li {
-  line-height: 20px;  
-}
-#order-complete .alert > ul > li > span {
-  position: relative;
-  left: -6px;
-}
-
-/* 검색 속성 */
-#search {
-  padding: 16px;
-  box-sizing: border-box;
-}
-
-#search > .detail_search {  /* 세부 검색 결과 */
-  width: 100%;
-  margin: 16px 0 0;
-  border: 1px solid #d7d7d7;
-}
-#search > .detail_search * {
-  font-family: 'Noto Sans KR', sans-serif;
-}
-
-#search > .detail_search > h3 {
-  border-bottom: 1px solid #d7d7d7;
-  color: #111;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 30px;
-  padding: 10px 15px;
-}
-
-#search > .detail_search > h3 > strong {
-  color: #d50c0d;
-  font-size: 18px;
-  margin-right: 6px;
-}
-#search > .detail_search > h3 > em {color: #888; font-size: 14px;}
-#search > .detail_search > h3 span {color: #d50c0d;}
-
-#search > .detail_search > form {
-  border-bottom: 1px solid #d7d7d7;
-  padding: 10px 15px;
-}
-#search > .detail_search > form > input[type=text] {
-  height: 30px;
-  border: 1px solid #bbb;
-  padding: 0 10px;
-}
-
-#search > .detail_search > form > input[type=submit] {
-  height: 32px;
-  padding: 0 5px;
-  font-weight: bold;
-  font-family: 'Malgun Gothic', dotum, sans-serif;
-  background: #d50c0c;
-  color: #fff;
-  border: 0;
-}
-#search > .detail_search > form > span {
-  float: right;
-  margin-top: 0px;
-}
-#search > .detail_search > form > span > label {
-  margin-right: 10px;
-}
-
-#search > .detail_search > form > span > input {
-  width: 100px;
-  height: 30px;
-  border: 1px solid #bbb;
-  padding: 0 10px;
-}
-
-#search > .detail_search > .info {
-  padding: 15px;
-  background: #f5f5f5;
-  color: #737373;
-}
-
-
-#search > .sort {
-  margin: 0 0 20px 0;
-  border-bottom: 1px solid #dfdfdf;
-  overflow: hidden;
-}
-#search > .sort > li {
-  float: left;
-  position: relative;
-  padding: 15px 0;
-  line-height: 15px;
-}
-#search > .sort > li > a {
-  display: block;
-  padding: 0 10px;
-  border-right: 1px solid #ddd;
-}
-
-#search > section > article {
-  width: 100%;
-  height: 200px;
-  border-bottom: 1px solid #ececec;
-}
-
-#search > section > article > ul {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-#search > section > article > ul > li {
-  position: relative;
-  float: left;
-  height: 100%;
-  padding: 30px 10px;
-  box-sizing: border-box;
-}
-#search > section > article > ul > li:nth-child(1) {width: 20%; padding: 0;}
-#search > section > article > ul > li:nth-child(2) {width: 40%;}
-#search > section > article > ul > li:nth-child(3) {width: 20%;}
-#search > section > article > ul > li:nth-child(4) {width: 20%;}
-
-#search > section > article .thumb {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-#search > section > article .thumb > img { width: 100%; }
-
-#search > section > article .name {
-  font-size: 16px;
-  font-family: 'Malgun Gothic', dotum, sans-serif;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 6px;
-}
-#search > section > article .desc > a {
-  font-size: 12px;
-  font-family: '援대┝';
-  color: #333;
-}
-
-#search > section > article .desc > a:hover {
-  text-decoration: underline;
-}
-
-#search > section > article .org_price {}
-#search > section > article .org_price > del::after {content: "원";}
-#search > section > article .org_price > ins::after {content: "원";}
-#search > section > article .org_price > del {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 12px;
-  color: #aaa;
-}
-#search > section > article .org_price > span {
-  color: #eb000a;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 10px;
-}
-#search > section > article .org_price > span::after { content: "↓"; }
-#search > section > article .dis_price {}
-#search > section > article .dis_price > ins {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 16px;
-  text-decoration: none;
-}
-#search > section > article .dis_price > ins::after { content: "원"; }
-#search > section > article span.freeshipping {
-  display: inline-block;
-  font-size: 0;
-  vertical-align: text-bottom;
-  width: 55px;
-  height: 13px;
-  background: url('../img/ico_freeshipping.gif') no-repeat;
-  margin-top: 4px;
-}
-
-#search > section > article .seller {
-  color: #444;
-  font-size: 12px;
-  margin-bottom: 6px;
-}
-
-#search > section > article .rating {
-  position: absolute;
-  left: 10px;
-  bottom: 30px;
-}
-
-#search > .paging {
-  width: 100%;
-  padding: 30px 0;
-  text-align: center;
-}
-
-#search > .paging > .prev {}
-#search > .paging > .next {}
-#search > .paging > .num {}
-
-#search > .paging > span > a {
-  color: #777;
-  font-family: "�뗭�", Dotum, Tahoma, sans-serif;
-  font-size: 11px;
-  letter-spacing: -1px;
-}
-
-#search > .paging > span > a:hover {
-  text-decoration: underline;
-}
-
-#search > .paging > .num > a {
-  display: inline-block;
-  min-width: 14px;
-  margin: 0 2px;
-  padding: 8px 9px;
-  border: 1px solid #c4c4c4;
-  background: url() 0 0 repeat-x;
-  color: #000;
-  font-family: Tahoma;
-  font-size: 12px;
-  text-align: center;
-  text-decoration: none;
-}
-#search > .paging > .num > a:hover {
-  border: 1px solid #454c5f;
-  text-decoration: none;
-}
-#search > .paging > .num > a.on {
-  color: #fe434c;
-  font-weight: bold;
 }
