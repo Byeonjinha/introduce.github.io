@@ -11,63 +11,59 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/style2.css"/>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');</style>
-    <script>                              // script  데이터와 실행 가능한 코드를 문서에 포함할 때 사용
+
+
+    <script src="https://static.parastorage.com/polyfill/v3/polyfill.min.js?features=default,es6,es7,es2017,es2018,es2019,fetch&flags=gated&unknown=polyfill"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+</style>
+    <script>                            // script  데이터와 실행 가능한 코드를 문서에 포함할 때 사용
       $(document).ready(function(){     // 문서가 준비되면 매개변수로 넣은 콜백 함수를 실행
-        $('.slider1 > ul').bxSlider({   // 이미지 슬라이더 사용 
+        $('#slider1 > ul').bxSlider({   // 이미지 슬라이더 사용 
             pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
             easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
         });
-        $('.slider2 > ul').bxSlider({   // 이미지 슬라이더 사용 
+        $('#slider2 > ul').bxSlider({   // 이미지 슬라이더 사용 
             pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
             easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
         });
-        $('.slider3 > ul').bxSlider({   // 이미지 슬라이더 사용 
-            pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
-            easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
-        });
-        $('.slider4 > ul').bxSlider({   // 이미지 슬라이더 사용 
-            pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
-            easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
-        });
-        $('.slider5 > ul').bxSlider({   // 이미지 슬라이더 사용 
-            pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
-            easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
-        });
-        $('.slider6 > ul').bxSlider({   // 이미지 슬라이더 사용 
-            pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
-            easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
-        });
-        $('.slider7 > ul').bxSlider({   // 이미지 슬라이더 사용 
+        $('#slider3 > ul').bxSlider({   // 이미지 슬라이더 사용 
             pager: false,               //페이지 바로가기 버튼 보여지게 유무(true, false) 
             easing: 'linear',            // CSS 전환 및 애니메이션을 통해 애니메이션에 사용할 easing (타이머라고 볼 수 있음) 종류를 선택
         });
       });
 
+
+
     $(function(){
-        $('main > aside > .best >a:nth-child(1)').click(function(){
+        $('main > aside > .catelist >a:nth-child(1)').click(function(){
+  
             $('body,html').animate({scrollTop:0},1000);
             return false;
           });
-        $('main > aside > .best >a:nth-child(2)').click(function(){
-          $('body,html').animate({scrollTop:40},1000);
+        $('main > aside > .catelist >a:nth-child(2)').click(function(){  //클릭했을 때
+          const slider = document.getElementById('slider1'); // 요소의 id 값이 target이라 가정
+          const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
+          const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
+          const scrolledTopLength = window.pageYOffset;
+          const absoluteTop = scrolledTopLength + relativeTop;
+          $('body,html').animate({scrollTop: absoluteTop-300},1000);
           return false;
         });
-        $('main > aside > .best >a:nth-child(3)').click(function(){
-          $('body,html').animate({scrollTop:830},1000);
-          return false;
-        });
-        $('main > aside > .best >a:nth-child(4)').click(function(){
-          $('body,html').animate({scrollTop:1550},1000);
-          return false;
-        });
-        $('main > aside > .best >a:nth-child(5)').click(function(){
-          $('body,html').animate({scrollTop:2250},1000);
+        $('main > aside > .catelist >a:nth-child(3)').click(function(){
+          const slider = document.getElementById('slider2'); // 요소의 id 값이 target이라 가정
+          const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
+          const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
+          const scrolledTopLength = window.pageYOffset;
+          const absoluteTop = scrolledTopLength + relativeTop;
+          $('body,html').animate({scrollTop: absoluteTop-300},1000);
           return false;
         });
         });
-
-        
   </script>          <!-- 스크립트 종료 선언-->                  
 </head>
 <body>
@@ -75,20 +71,16 @@
     <div class='outer-scratch'>
       <div class="inner-scratch">
         <div class="background grain"></div>
-    
     <header>
-    
       <div class="top">   <!-- class : '복수'의 요소에 스타일을 적용  -->
-       
         <div>
           
-          <a href="https://byeonjinha.github.io/introduce.github.io/"><i class="far fa-address-card"></i>&nbsp;소개</a>  <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
-          <a href="https://byeonjinha.github.io/introduce.github.io/project"><i class="fas fa-bars"></i>&nbsp;프로젝트</a>   <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
-          <a href="https://byeonjinha.github.io/introduce.github.io/bigdata" aria-hidden="true"></i>&nbsp;빅데이터수업</a>  <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
-          <a href="./gominjoong.html"><i class="fas fa-child"></i>&nbsp;고민중</a> <!-- 아이콘 태그  -->
+          <a href="../DongDong/index.html"><i class="far fa-address-card"></i>&nbsp;소개</a>  <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
+          <a href="../DongDong/project.html"><i class="fas fa-bars"></i>&nbsp;프로젝트</a>   <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
+            <a href="../DongDong/bigdata.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;빅데이터수업</a>  <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
+            <a href="../DongDong/gominjoong.html"><i class="fas fa-child"></i>&nbsp;고민중</a> <!-- 아이콘 태그  -->
         </div>
     </div>
-
 
     </header>
     <main>       <!-- <main> 태그는 해당 문서의 <body> 요소의 주 콘텐츠(main content)를 정의할 때 사용 -->
@@ -96,50 +88,49 @@
       <aside>   <!-- <aside> 태그는 페이지의 다른 콘텐츠들과 약간의 연관성을 가지고 있지만, 해당 콘텐츠들로부터 분리시킬 수 있는 콘텐츠로 구성된 페이지 영역을 정의할 때 사용-->
 
           <!-- 베스트상품 배너 -->
-          <article class="best">   <!-- <article> 태그는 해당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의할 때 사용합니다. -->
+          <article class="catelist">   <!-- <article> 태그는 해당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의할 때 사용합니다. -->
                 <a href="#">목록<br> <br></a> 
                 <a href="#">1. 게시판만들기<br> <br></a> 
                 <a href="#">2. 팜스토리<br> <br></a> 
-                <a href="#">3. 케이마켓(진행중)<br> <br></a> 
-      
+                <a href="#">3. 케이마켓 진행중<br> <br> <br></a> 
           </article>
       </aside>
       
-      
       <section>   <!-- <section>요소 는 HTML 문서의 독립적 인 구획을 나타내며, 더 적합한 의미를 가진 요소가 없을 때 사용 -->
           <!-- 슬라이더 영역 -->
-          <h6><span>1. 게시판만들기</span></h6>
-          <a href="https://github.com/Byeonjinha/Jsp/tree/master/Jboard1" target="_blank"><h2>소스코드 (https://github.com/Byeonjinha/Jsp/tree/master/Jboard1)</h2></a>
-          <a href="http://13.209.14.14:8080/Farmstory3/" target="_blank"><h4>배포주소 (http://13.209.14.14:8080/Farmstory3/)</h4></a>
-          <section class="slider1"> 
+          <span>게시판만들기</span>
+          <section>
+          <a href="https://github.com/Byeonjinha/Jsp/tree/master/Jboard1" target="_blank">소스코드 (https://github.com/Byeonjinha/Jsp/tree/master/Jboard1)</a><br>
+          <a href="http://13.209.14.14:8080/Jboard1/index.jsp" target="_blank">배포주소 (http://13.209.14.14:8080/Jboard1/index.jsp)</a>
+        </section>
+          <section id="slider1"> 
               <ul>
                   <li><a href="#"><img src="./img/Jboard1.png" alt="item1"></a></li>
                   <li><a href="#"><img src="./img/Jboard2.png" alt="item2"></a></li>
                   <li><a href="#"><img src="./img/Jboard3.png" alt="item3"></a></li>
                   <li><a href="#"><img src="./img/Jboard4.png" alt="item4"></a></li>
-    
-                  
               </ul>
             </section>
-          <h6><span>2. 팜스토리</span></h6>
-          <a href="https://github.com/Byeonjinha/Jsp/tree/master/Farmstory3" target="_blank"><h2>소스코드 (https://github.com/Byeonjinha/Jsp/tree/master/Farmstory3)</h2></a>
-          <a href="http://13.209.14.14:8080/Farmstory3/" target="_blank"><h4>배포주소 (http://13.209.14.14:8080/Jboard1/index.jsp)</h4></a>
-          <section class="slider2">
+          <span>팜스토리</span>
+          <section>
+          <a href="https://github.com/Byeonjinha/Jsp/tree/master/Farmstory3" target="_blank">소스코드 (https://github.com/Byeonjinha/Jsp/tree/master/Farmstory3)</a><br>
+          <a href="http://13.209.14.14:8080/Farmstory3/" target="_blank">배포주소 (http://13.209.14.14:8080/Farmstory3/)</a>
+        </section>
+          <section id="slider2">
               <ul>
                   <li><a href="#"><img src="./img/Farmstory1.png" alt="item1"></a></li>
                   <li><a href="#"><img src="./img/Farmstory2.png" alt="item2"></a></li>
                   <li><a href="#"><img src="./img/Farmstory3.png" alt="item3"></a></li>
               </ul>
           </section>
-
       </section>
   </main>
-  </div>
   </div>
   </div>
   <footer>
   </footer>
   </div>
+
   </body>
 
   </html>
