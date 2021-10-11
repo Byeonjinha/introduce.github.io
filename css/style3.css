@@ -6,22 +6,19 @@
 
   font-family: 'Noto Sans KR', sans-serif;}
 
-
-
 ul, ol {list-style : none;}    /* unorderlist , orderlist list-style (속성) 정의 / 기타 알파벳이나 로마문자 , 숫자 등등을 정의해 줄 수 있음 */
 a {text-decoration: none; color: rgb(145, 144, 144) ;}  /* text-decoration CSS 단축 속성은 글씨의 장식(선) 색을 지정  none 대신 green wavy underline underline overline #FF3028 등을 넣을 수 있음  */
 
 #wrapper {        /* #( id선택자   , .은 클래스선택자임 )  wrapper  */   
-    position: relative;
-    width: 100%;  /*  넓이 100% */
-    height: 100%;
-    
-    padding-top: calc(10/1000*100%);
-    background-image: url(../img/alley-ge7df62e32_1920.jpg); 
-    background-attachment: fixed;
-    
-    background-size: cover;
-    z-index: 0;
+  position: relative;
+  width: 100%;  /*  넓이 100% */
+  height: 100%;
+  padding-top: calc(10/1000*100%);
+  background-image: url(../img/alley-ge7df62e32_1920.jpg); 
+  background-attachment: fixed;
+  
+  background-size: cover;
+  z-index: 0;
 }
 /* header 속성정의 */
 header {
@@ -90,7 +87,7 @@ main {
     width: 1200px;
     height: auto;
     margin: 0 auto;            
-    
+    overflow: hidden;
 /* overflow 에 사용할 수 있는 값
 - visible : 기본 값입니다. 넘칠 경우 컨텐츠가 상자 밖으로 보임
 - hidden : 넘치는 부분은 잘려서 보여지지 않음
