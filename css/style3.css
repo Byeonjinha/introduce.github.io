@@ -210,9 +210,11 @@ a {text-decoration: none; color: rgb(145, 144, 144) ;}  /* text-decoration CSS �
 #wrapper {        /* #( id선택자   , .은 클래스선택자임 )  wrapper  */   
     position: relative;
     width: 100%;  /*  넓이 100% */
+    height: 100%;
+    padding-top: calc(10/1000*100%);
     background-image: url(../img/alley-ge7df62e32_1920.jpg); 
     background-attachment: fixed;
-    height: 100%;
+    
     background-size: cover;
     z-index: 0;
 }
@@ -431,6 +433,7 @@ main > section > .slider > .bx-wrapper {
 }
 
 
+
 main > #admin-index > article > table>tbody > tr > td > img {
 
   background-color: #41ab47;
@@ -444,6 +447,8 @@ footer {
     border-top: 1px solid #e9e9e9;
     z-index: 3;
 }
+
+
 #top {
     position: fixed;
     left: 50%;
