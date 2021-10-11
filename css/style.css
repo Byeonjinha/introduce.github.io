@@ -10,15 +10,15 @@ ul, ol {list-style : none;}    /* unorderlist , orderlist list-style (속성) �
 a {text-decoration: none; color:rgb(145, 144, 144);}  /* text-decoration CSS 단축 속성은 글씨의 장식(선) 색을 지정  none 대신 green wavy underline underline overline #FF3028 등을 넣을 수 있음  */
 
 #wrapper {        /* #( id선택자   , .은 클래스선택자임 )  wrapper  */   
-    position: relative;
-    width: 100%;  /*  넓이 100% */
-    background-image: url(../img/korea-g6bfd67397_1920.jpg);
-    background-attachment: fixed;
-    height: 100%;
-    background-size: cover;
-    z-index: 0;
-    
-    
+  position: relative;
+  width: 100%;  /*  넓이 100% */
+  height: 100%;
+  padding-top: calc(10/1000*100%);
+  background-image: url(../img/korea-g6bfd67397_1920.jpg); 
+  background-attachment: fixed;
+  
+  background-size: cover;
+  z-index: 0;
 }
 
 /* header 속성정의 */
