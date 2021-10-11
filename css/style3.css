@@ -431,7 +431,6 @@ main > section > .slider > .bx-wrapper {
 }
 
 
-
 main > #admin-index > article > table>tbody > tr > td > img {
 
   background-color: #41ab47;
@@ -445,8 +444,6 @@ footer {
     border-top: 1px solid #e9e9e9;
     z-index: 3;
 }
-
-
 #top {
     position: fixed;
     left: 50%;
