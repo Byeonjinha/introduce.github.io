@@ -55,6 +55,10 @@
             pager: false,               
             easing: 'linear',           
         });
+        $('#slider9 > ul').bxSlider({   
+            pager: false,               
+            easing: 'linear',           
+        });
       });
     $(function(){
         $('main > aside > .catelist >a:nth-child(1)').click(function(){
@@ -133,6 +137,15 @@
           $('body,html').animate({scrollTop: absoluteTop-230},1000);
           return false;
         });
+        $('main > aside > .catelist >a:nth-child(10)').click(function(){
+          const slider = document.getElementById('slider9'); // 요소의 id 값이 target이라 가정
+          const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
+          const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
+          const scrolledTopLength = window.pageYOffset;
+          const absoluteTop = scrolledTopLength + relativeTop;
+          $('body,html').animate({scrollTop: absoluteTop-230},1000);
+          return false;
+        });
         });
 
         
@@ -170,7 +183,8 @@
                 <a href="#">5. 빅데이터처리시스템개발<br> <br></a> 
                 <a href="#">6. 빅데이터분석시스템개발<br> <br></a> 
                 <a href="#">7. 빅데이터품질관리시스템개발<br> <br></a> 
-                <a href="#">8. 빅데이터플랫폼테스트<br> <br> <br></a> 
+                <a href="#">8. 빅데이터플랫폼테스트<br> <br></a> 
+                <a href="#">9. 빅데이터플랫폼아키텍쳐설계<br> <br> <br></a> 
           </article>
       </aside>
       
@@ -310,7 +324,21 @@
                     <li><a href="#"><img src="./8빅데이터플랫폼 테스트/슬라이드11.PNG" alt="item11"></a></li>
                 </ul>
             </section>
-
+            <span>9. 빅데이터플랫폼아키텍쳐설계</span>
+            <section id="slider9">
+                <ul>
+                    <li><a href="#"><img src="./9빅데이터플랫폼아키텍쳐설계/슬라이드1.PNG" alt="item1"></a></li>
+                    <li><a href="#"><img src="./9빅데이터플랫폼아키텍쳐설계/슬라이드2.PNG" alt="item2"></a></li>
+                    <li><a href="#"><img src="./9빅데이터플랫폼아키텍쳐설계/슬라이드3.PNG" alt="item3"></a></li>
+                    <li><a href="#"><img src="./9빅데이터플랫폼아키텍쳐설계/슬라이드4.PNG" alt="item4"></a></li>
+                    <li><a href="#"><img src="./9빅데이터플랫폼아키텍쳐설계/슬라이드5.PNG" alt="item5"></a></li>
+                    <li><a href="#"><img src="./9빅데이터플랫폼아키텍쳐설계/슬라이드6.PNG" alt="item6"></a></li>
+                    <li><a href="#"><img src="./9빅데이터플랫폼아키텍쳐설계/슬라이드7.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./9빅데이터플랫폼아키텍쳐설계/슬라이드8.PNG" alt="item8"></a></li>
+                    <li><a href="#"><img src="./9빅데이터플랫폼아키텍쳐설계/슬라이드9.PNG" alt="item9"></a></li>
+                    <li><a href="#"><img src="./9빅데이터플랫폼아키텍쳐설계/슬라이드10.PNG" alt="item10"></a></li>
+                </ul>
+            </section>
           </section>
       </section>
   </main>
