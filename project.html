@@ -66,6 +66,15 @@
           $('body,html').animate({scrollTop: absoluteTop-300},1000);
           return false;
         });
+        $('main > aside > .catelist >a:nth-child(4)').click(function(){
+          const slider = document.getElementById('slider3'); // 요소의 id 값이 target이라 가정
+          const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
+          const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
+          const scrolledTopLength = window.pageYOffset;
+          const absoluteTop = scrolledTopLength + relativeTop;
+          $('body,html').animate({scrollTop: absoluteTop-300},1000);
+          return false;
+        });
       });
   </script>          <!-- 스크립트 종료 선언-->                  
 </head>
@@ -92,13 +101,13 @@
                 <a href="#">목록<br> <br></a> 
                 <a href="#">1. 게시판만들기<br> <br></a> 
                 <a href="#">2. 팜스토리<br> <br></a> 
-                <a href="#">3. 케이마켓 진행중<br> <br> <br></a> 
+                <a href="#">3. 팜스토리_Spring<br> <br> <br></a> 
           </article>
       </aside>
       
       <section>   <!-- <section>요소 는 HTML 문서의 독립적 인 구획을 나타내며, 더 적합한 의미를 가진 요소가 없을 때 사용 -->
           <!-- 슬라이더 영역 -->
-          <span>게시판만들기</span>
+          <span>게시판만들기 (ID : admin , PASS : admin)</span>
           <section>
           <a href="https://github.com/Byeonjinha/Jsp/tree/master/Jboard1" target="_blank">소스코드 (https://github.com/Byeonjinha/Jsp/tree/master/Jboard1)</a><br>
           <a href="http://13.209.14.14:8080/Jboard1/index.jsp" target="_blank">배포주소 (http://13.209.14.14:8080/Jboard1/index.jsp)</a>
@@ -111,12 +120,24 @@
                   <li><a href="#"><img src="./img/Jboard4.png" alt="item4"></a></li>
               </ul>
             </section>
-          <span>팜스토리</span>
+          <span>팜스토리 (ID : admin , PASS : admin)</span>
           <section>
           <a href="https://github.com/Byeonjinha/Jsp/tree/master/Farmstory3" target="_blank">소스코드 (https://github.com/Byeonjinha/Jsp/tree/master/Farmstory3)</a><br>
           <a href="http://13.209.14.14:8080/Farmstory3/" target="_blank">배포주소 (http://13.209.14.14:8080/Farmstory3/)</a>
         </section>
           <section id="slider2">
+              <ul>
+                  <li><a href="#"><img src="./img/Farmstory1.png" alt="item1"></a></li>
+                  <li><a href="#"><img src="./img/Farmstory2.png" alt="item2"></a></li>
+                  <li><a href="#"><img src="./img/Farmstory3.png" alt="item3"></a></li>
+              </ul>
+          </section>
+          <span>팜스토리_Spring_MVC (ID : admin , PASS : admin)</span>
+          <section>
+          <a href="https://github.com/Byeonjinha/Workspace/tree/master/Spring/Farmstory" target="_blank">소스코드 (https://github.com/Byeonjinha/Workspace/tree/master/Spring/Farmstory)</a><br>
+          <a href="http://13.209.14.14:8080/Farmstory/" target="_blank">배포주소 (http://13.209.14.14:8080/Farmstory/)</a>
+        </section>
+          <section id="slider3">
               <ul>
                   <li><a href="#"><img src="./img/Farmstory1.png" alt="item1"></a></li>
                   <li><a href="#"><img src="./img/Farmstory2.png" alt="item2"></a></li>
