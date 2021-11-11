@@ -1,0 +1,54 @@
+.breadcrumb{
+    color: #767676;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: calc(1 * (100vw - var(--scrollbar-width)) / 25);
+    padding-right: calc(1 * (100vw - var(--scrollbar-width)) / 25);
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+};
+
+.zoomable-img{
+    width: 100%;
+    position: relative;
+    cursor: zoom-in;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    color: #292929;
+    display: inline-block;
+    --mq-desktop-only: only screen and (min-width: 1191px);
+    --mq-desktop-wide-only: only screen and (min-width: 1501px);
+    
+};
+
+.buyarea{
+    flex: 0 0 auto;
+    width: calc(25 * (100vw - var(--scrollbar-width)) / 25);
+    margin-left: calc(2 * (100vw - var(--scrollbar-width)) / 25);
+    padding-top: calc(1 * (100vw - var(--scrollbar-width)) / 25);
+    padding-bottom: calc(1 * (100vw - var(--scrollbar-width)) / 25);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    
+    
+}
+
+.js-lazyload-wrapper with-placeholder l-relative{
+    width:auto;
+    height: 850px;
+
+}
