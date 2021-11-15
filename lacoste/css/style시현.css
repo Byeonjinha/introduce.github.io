@@ -1,0 +1,307 @@
+
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    
+ }
+
+ body{
+     width: 100%;
+     height: 100%;
+    
+    }
+/*헤더 영역*/
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+.menu > div > li {
+    margin-top: 30px;
+    padding: 20px;
+}    
+
+
+
+a {text-decoration: none;}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    
+}
+
+nav {
+width: 960px;
+margin: 0 auto;
+}
+
+
+nav > ul > div > li {
+float: left;
+line-height: 20px;
+margin-right: 80px;
+position: relative;
+}
+nav > ul img {
+float: left;
+width: 80px;
+height: 60px;
+margin-top: 21px;
+margin-left: -200px;
+}
+nav > ul > div > li ul {width: 100%;  position: absolute;}
+nav > ul > div > li ul li {
+    white-space: nowrap;
+    z-index: 999;
+    }
+
+nav > ul > div > li ul li:first-child {
+    margin-top: 30px;
+}
+
+
+nav > ul > div > li ul li > a {
+    color: black;
+}
+nav > ul > div > li ul li > a:hover {
+    color: gray;
+}
+
+.menu-right {
+position: relative;
+float: right;
+display: inline-block;
+width: 200px;
+height: 50px;
+margin-top: 30px;
+}
+
+.menu-right > li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 14px;
+    margin: auto 0;
+
+}
+
+
+/*메인 영역*/
+
+
+
+/*푸터 영역 가로1518px 세로230px*/
+
+footer {
+    width: 100%;
+    height: 230px;
+}   
+
+
+.footer-reinsurance {
+
+    height: 100px;
+border: 1px solid #e5e5e5;
+list-style: none;
+text-align: center;
+
+
+}
+
+.footer-reinsurance li{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.footer-reinsurance a{
+    color: black;
+}
+
+.footer-reinsurance a:hover{
+    color: gray;
+}
+
+
+.popup_bg1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 230, 79, 0.2);
+  
+}
+.popup1_bg1:hover{
+
+    transition: 1s;
+}
+.popup1 {
+    position: fixed;
+    left: calc(50% - 200px);
+    top: calc(30% );
+    width: 400px;
+    max-height: auto;
+    background: #fff;
+    transition:  10s;
+    
+}
+
+.popup1 > p{
+    padding: 100px;
+    font-size: 12px;
+    transition:  10s;
+}
+
+.popup_bg2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    
+    z-index: 250;
+    opacity: 1;
+}
+.popup2 {
+    position: fixed;
+    left: calc(50% - 200px);
+    top: calc(30%);
+    width: 400px;
+    height: 200px;
+    background: #fff;
+}
+
+.popup2 > p{
+    padding: 100px;
+    font-size: 12px;
+}
+.popup_bg3 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    transition: opacity 0.4s ease;
+}
+.popup3 {
+    position: fixed;
+    left: calc(50% - 200px);
+    top: calc(30%);
+    width: 400px;
+    height: 200px;
+    background: #fff;
+}
+
+.popup3 > p{
+    padding: 80px;
+    font-size: 12px;
+}
+.popup_bg4 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    transition: opacity 0.4s ease;
+}
+.popup4 {
+    position: fixed;
+    left: calc(50% - 200px);
+    top: calc(30%);
+    width: 400px;
+    height: 200px;
+    background: #fff;
+}
+
+.popup4 > p{
+    padding: 40px;
+    font-size: 12px;
+}
+
+.footer-reinsurance li {
+display: inline-block;
+padding: 20px;
+font-size: 14px;
+}
+
+.fas {
+color: gray;
+}
+
+
+.footer1 {
+    height: 160px;
+    border: 1px solid gainsboro;
+    background-color:whitesmoke;
+}      
+
+.footer2 {
+float: left;
+margin-left: 300px;
+padding: 40px 60px 20px 150px;  
+font-size: 9px;
+
+
+}
+.footer3 {
+padding: 40px 60px 20px 150px;  
+float: left;
+font-size: 9px;
+}
+
+.footer4 {
+    height: 50px;
+    text-align: center;
+}
+
+.footer4 li {
+display: inline-block;
+padding: 20px;
+font-size: 13px;
+}
+
+.footer4 > ul {
+    display: inline-block;
+    text-align: center;
+}
+
+.korea {
+    display: inline-block;
+    float: right;
+    padding: 15px;
+    margin: 6px;
+    }
+
+.korea > img {
+width: 25px;
+margin: 0 auto;
+}
+
+.korea a {
+float: left;
+text-decoration: underline;
+font-size: 13px;
+}
