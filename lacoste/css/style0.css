@@ -141,15 +141,15 @@ main {
     color: #9b9b9b;
     background-size: cover;
     z-index: 0;
-    background-image: url(../img/로그인배경.png);
+   
 /* overflow 에 사용할 수 있는 값
 - visible : 기본 값입니다. 넘칠 경우 컨텐츠가 상자 밖으로 보임
 - hidden : 넘치는 부분은 잘려서 보여지지 않음
 - scroll : 스크롤바가 추가되어 스크롤할 수 있음 (가로, 세로 모두 추가)
 - auto : 컨텐츠 량에 따라 스크롤바를 추가할지 자동으로 결정( 필요에 따라 가로, 세로 별도로 추가될 수도 있음)
 */
-
 }
+
 
 /* main - aside 속성정의 */
 main > aside {    /* main > aside 선택  (카테고리 메뉴 + 베스트메뉴) */
@@ -2234,6 +2234,7 @@ color : rgb(68, 67, 67);
   text-align: center;
   
   vertical-align: middle;
+  background-image: url(../img/로그인배경.png);
 }
 #center-v {
   float :none;
@@ -2364,4 +2365,125 @@ color : rgb(68, 67, 67);
 }
 .logos{
   display: inline-block;
+}
+
+/* 결제페이지*/
+.payment{
+  height: 100%;
+ 
+}
+.payment-header > a > img{
+height: 100px;
+object-fit: cover;
+margin: 10px;
+}
+.payment-header{
+  height: 10%;
+
+}
+.payment-center-header{
+  margin: 0 auto;
+  display: block;
+  width: 18%;
+  height: 100px;
+  text-align: center;
+}
+.payment-center-header > li{
+  text-align: center;
+  float: left;
+  list-style-type: none;
+  width: 110px;
+ 
+  padding : 30px;
+}
+.payment-center-header > li>a{
+  color :rgb(29, 29, 29);
+  font-size: 50px;
+}
+
+.payment-center-header > li>span{
+  width: 500px;
+  font-size: 15px;
+  color: #000;
+}
+.payment-center {
+  float :none;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.payment-header > h1 {
+  width: 5%;
+}
+.steppayment {
+  display: block;
+  margin:  0 auto;
+  width: 920px;
+  height: 530px;
+ 
+}
+
+.steppayment > .leftcol {
+  float:left;
+  margin :  0;
+  padding  : 0;
+  width: 60%;
+  height:100%;
+  
+}
+.steppayment > .rightcol {
+  float:right;
+  margin :  0;
+  padding  : 0;
+  width: 40%;
+  height: 100%;
+
+}
+.leftpayment{
+  margin : 0;
+  width: 90%;
+  height: 20%;
+
+  margin :  10px;
+  background-color: rgb(255, 255, 255);
+}
+.leftpayment > h3 {
+  font-size: 22px;
+  color: #000;
+  padding-top: 40px;
+  
+}
+.leftpayment > a {
+  font-size: 18px;
+  color: #000;
+  padding-top: 40px;
+}
+.rightpayment{
+  margin : 0;
+  width: 90%;
+  height: 35%;
+
+  margin :  10px;
+  background-color: rgb(255, 255, 255);
+}
+.summary-products{
+  padding: 3px;
+
+  width: 288px;
+  height: 40px;
+}
+.summary-products > img {
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+.summary-products > p {
+  float: left;
+  font-size: 15px;
+  color: #000;
+  font-weight: bold;
+}
+.summary-products > span{
+  float: right;
 }
