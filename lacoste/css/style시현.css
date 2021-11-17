@@ -1,7 +1,4 @@
-
-
-
- * {
+* {
     margin: 0;
     padding: 0;
     
@@ -111,6 +108,7 @@ margin-top: 30px;
 footer {
     width: 100%;
     height: 230px;
+    display: inline-block;
 }   
 
 
@@ -259,17 +257,15 @@ color: gray;
 }      
 
 .footer2 {
-float: left;
-margin-left: 300px;
-padding: 40px 60px 20px 150px;  
-font-size: 9px;
-
-
+    float: left;
+    margin-left: 300px;
+    padding: 40px 60px 20px 150px;  
+    font-size: 9px;
 }
 .footer3 {
-padding: 40px 60px 20px 150px;  
-float: left;
-font-size: 9px;
+    padding: 40px 60px 20px 150px;  
+    float: left;
+    font-size: 9px;
 }
 
 .footer4 {
