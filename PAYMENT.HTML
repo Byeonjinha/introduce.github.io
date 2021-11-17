@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>게이마켓::대한민국 1등 온라인 쇼핑몰</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/style0.css"/>
+    <link rel="stylesheet" href="./css/style시현.css"/>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/styles능한.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <link rel="stylesheet" href="./css/style시현.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+var $firstMenu = $('.menu-left'),
+    $header = $('header');
+
+$('.menu-left > li > ul li').css({"display" : "none"});
+
+
+$firstMenu.mouseenter(function(){
+    $header.animate({height:'300px'},200);
+    $('.menu-left > li li').css({"display" : "block"});
+
+});    
+   
+$firstMenu.mouseleave(function(){
+    $header.stop().animate({height:'100px'},200);
+});   
+
+});
+
+
+
+/*푸터 영역*/
+$(function(){
+
+$(".flex1 > a").click(function(){
+$(".popup_bg1").css({"display" : "block"})
+document.documentElement.style.overflowY = "hidden";
+     document.body.scroll = "no"; 
+});
+
+
+$(".popup_bg1").click(function(){
+$(".popup_bg1").css({"display" : "none"})
+document.documentElement.style.overflowY = "auto";
+})
+
+
+$(".flex2 > a").click(function(){
+$(".popup_bg2").css({"display" : "block"})
+document.documentElement.style.overflowY = "hidden";
+    document.body.scroll = "no"; 
+})
+$(".popup_bg2").click(function(){
+$(".popup_bg2").css({"display" : "none"})
+document.documentElement.style.overflowY = "auto";
+})
+$(".flex3 > a").click(function(){
+$(".popup_bg3").css({"display" : "block"})
+document.documentElement.style.overflowY = "hidden";
+    document.body.scroll = "no"; 
+})
+$(".popup_bg3").click(function(){
+$(".popup_bg3").css({"display" : "none"})
+document.documentElement.style.overflowY = "auto";
+})
+$(".flex4 > a").click(function(){
+$(".popup_bg4").css({"display" : "block"})
+document.documentElement.style.overflowY = "hidden";
+    document.body.scroll = "no"; 
+})
+$(".popup_bg4").click(function(){
+$(".popup_bg4").css({"display" : "none"})
+document.documentElement.style.overflowY = "auto";
+})
+});    
+
+
+
+    </script>
+
+    <!-- <script>
+
+
+      $( document ).ready( function() {
+        
+        $( 'input[class=selectSize]' ).click( function() {
+          $( '.sizeSelectPage' ).show("slide", { direction: "right" }, function() {
+            $( this ).css( 'background-color', '#f5f1f1' );
+          } );
+        } );
+
+        $( 'i[name=x]'  ).click( function() {
+            $( '.sizeSelectPage' ).hide("slide", { direction: "right" }, function() {
+                $( this ).css( 'background-color', '#f5f1f1' );
+            } );  
+        });
+        $( 'i[name=x2]'  ).click( function() {
+            $( '.sizeGuidePage' ).hide("slide", { direction: "right" }, function() {
+                $( this ).css( 'background-color', '#f5f1f1' );
+            } );  
+        });
+        $( 'a[class=sizeGuide]'  ).click( function() {
+            $( '.sizeGuidePage' ).show("slide", { direction: "right" }, function() {
+                $( this ).css( 'background-color', '#f5f1f1' );
+          } );
+        });
+        
+        $( 'input[class=selectSize2]' ).click( function() {
+            var Size = $( this ).val();
+          $( '.sizeSelectPage' ).hide("slide", { direction: "right" }, function() {
+            $( 'input[class=selectSize]' ).val("Size - "+Size+" >");
+          } );
+        } );
+
+        $( 'a[class=sizeGuide2]' ).click( function() {
+          $( '.sizeGuidePage' ).show("slide", { direction: "right" }, function() {
+            $( this ).css( 'background-color', '#f5f1f1' );
+          } );
+        } );
+        $( 'a[class=cardadd]' ).click( function() {
+          $( '.cardhyeteckPage' ).show("slide", { direction: "right" }, function() {
+            $( this ).css( 'background-color', '#f5f1f1' );
+          } );
+        } );
+        $( 'i[name=x3]'  ).click( function() {
+            $( '.cardhyeteckPage' ).hide("slide", { direction: "right" }, function() {
+                $( this ).css( 'background-color', '#f5f1f1' );
+            } );  
+        });
+        $( 'input[class=hyeteckCheck]'  ).click( function() {
+            $( '.cardhyeteckPage' ).hide("slide", { direction: "right" }, function() {
+                $( this ).css( 'background-color', '#f5f1f1' );
+            } );  
+        });
+
+
+        
+      } );
+    </script> -->
+</head>
+<body>
+    <div id="payment-wrapper">
+        <header class="payment-header">
+                    <a ><img src="./img/4.png"></a>          
+        </header>
+        <main class = "payment">
+          
+            <section class="payment-center" style="background-color: rgb(236, 239, 241);"   >                
+                <div class = "payment-center-header">
+                    <li>
+                    <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
+                    <span>쇼핑백</span> 
+                    </li>
+                    <li>
+                    <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
+                    <span> 배송</span>
+                    </li>
+                    <li>
+                    <a href="#"><i class="fa fa-square" aria-hidden="true"></i></a>
+                    <span> 결제</span>
+                    <div>
+                    </li>
+                     
+                </div>
+                <div class = "steppayment">
+                    <div class = "leftcol">
+                        <div class = "leftpayment"> <h3>결제방법</h3> </div>
+                        <div class = "leftpayment"> <input type="radio" class = "payment-method" name= "payment-method"> <a href="#">네이버페이</a></div>
+                        <div class = "leftpayment"> <input type="radio" class = "payment-method" name= "payment-method"> <a href="#">신용카드/카카오페이 (모바일 ISP 결제불가)</a> </div>
+                        <div class = "leftpayment"> <input type="radio" class = "payment-method" name= "payment-method"> <a href="#">실시간계좌이체</a></div>
+                    </div>
+                    <div class = "rightcol">
+                        <div class = "rightpayment">
+                            <div class = "summary-products"><img src="img/대표1_썸네일.jpg" ><p>(남성) 베이직 라운드 MTM 셔츠</p><span>169,000 원</span></div>
+                            <div class = "summary-products"><img src="img/대표1_썸네일.jpg" ><p>(남성) 베이직 라운드 MTM 셔츠</p><span>169,000 원</span></div>
+                            <div class = "summary-products"><img src="img/대표1_썸네일.jpg" ><p>(남성) 베이직 라운드 MTM 셔츠</p><span>169,000 원</span></div>
+                        </div>
+                        
+                        <div class = "rightpayment"></div>
+                        <div class = "rightpayment"></div>
+                    </div>
+
+
+                </div>
+
+
+                </div>
+    
+         
+
+            </section>
+        </main>
+      
+    </div>    
+</body>
+</html>
