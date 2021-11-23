@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <link rel="stylesheet" href="./css/style0.css"/>
-    <link rel="stylesheet" href="./css/style시현.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+ 
     <link rel="stylesheet" href="./css/styles능한.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
@@ -21,6 +21,7 @@
     <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/jsscript.js"></script>
     <script>
 
     $(function(){
@@ -93,49 +94,47 @@
 <body>
     <div id="login-wrapper">
         <header>
-            <nav>
+            <div>  
+                <a href="#" class="logo">
+                    <img src="./img/4.png" alt="로고"/>
+                </a>
+        
                 <ul class="menu">
-    
-                    <a ><img src="./img/4.png"></a>
-                    
-                    <div class="menu-left">
-                        <li>men
-                            <ul>
-                                <li><a href="#">상의</a></li>
-                                <li><a href="#">하의</a></li>
-                                <li><a href="#">신발</a></li>
-                                <li><a href="#">악세서리</a></li>
-                            </ul>
-                        </li>
-                    
-                        <li>women
-                            <ul>
-                                <li><a href="#">상의</a></li>
-                                <li><a href="#">하의</a></li>
-                                <li><a href="#">신발</a></li>
-                                <li><a href="#">악세서리</a></li>
-                            </ul>
-                        </li>    
-    
-                        <li>kids
-                            <ul>
-                                <li><a href="#">상의</a></li>
-                                <li><a href="#">하의</a></li>
-                                <li><a href="#">신발</a></li>
-                            </ul>
-                        </li>    
-    
-                        <li><a href="#">about us</a>
-                            
-                        </li>
-                    </div>
-                </ul> 
-                <div class="menu-right">   
+                    <li><a href="#">Teens</a></li>                
+                    <li><a href="#">Twenties</a></li>
+                    <li><a href="#">Thirties+</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+        
+                <ol class="menu-right">   
                     <li><a href="#"><i class="fas fa-search fa-lg" style="color: darkslategray" ></i></a></li>    
                     <li><a href="#"><i class="far fa-id-badge fa-lg" style="color: darkslategray"></i></a></li>
                     <li><a href="#"><i class="fas fa-shopping-cart fa-lg" style="color: darkslategray"></i></a></li>
+                </ol>
+            </div>
+            <nav>
+                <div>
+                    <div class="sub-menu">
+                        <ol>
+                            <li><a href="#">Outer</a></li>
+                            <li><a href="#">Top</a></li>
+                            <li><a href="#">Pants</a></li>
+                        </ol>
+        
+                        <ol>
+                            <li><a href="#">Shirt</a></li>
+                            <li><a href="#">Knit</a></li>
+                            <li><a href="#">Cardigan</a></li>
+                        </ol>
+        
+                        <ol>
+                            <li><a href="#">Blouse</a></li>
+                            <li><a href="#">Ops</a></li>
+                            <li><a href="#">Skirt</a></li>
+                        </ol>
+                    </div>
                 </div>
-            </nav>    
+            </nav>
         </header>
 
         <main id= "register">
@@ -175,7 +174,9 @@
                                                 <span class="step"> step 3</span>
                                                 이메일 주소 :
                                             </label>
+
                                             <div class="clerafix"></div>
+
                                             <span class="email-input">
                                                 <input type="text" name="emailFirst" class="emailFirst" value="이메일을 입력하세요">
                                             </span>
@@ -207,7 +208,9 @@
                                             <span class="step"> step 5</span>
                                             생일 :
                                         </label>
-                                        <span class="select year">
+                                        <div class="clerafix"></div>
+                                        <div class="selectbirtharea">
+                                        <span class="select-year">
                                             <select name="birthday_year" class="birthday-year">
                                                 <option value="1981">1981</option>
                                                 <option value="1982">1982</option>
@@ -242,7 +245,7 @@
                                                 <option value="2011">2011</option>
                                             </select>
                                         </span>
-                                        <span class="select month">
+                                        <span class="select-month">
                                             <select name="birthday_month" class="birthday-month">
                                                 <option value="0">1</option>
                                                 <option value="1">2</option>
@@ -259,7 +262,7 @@
                                                
                                             </select>
                                         </span>
-                                        <span class="select day">
+                                        <span class="select-day">
                                             <select name="birthday_day" class="birthday-day">
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -295,6 +298,7 @@
                                                
                                             </select>
                                         </span>
+                                    </div>
                                     </div>
                                 </section>
                             </div>
@@ -415,7 +419,7 @@
                     <li><a href>사이즈가이드</a></li>
                 </ul>
                 <div class="korea">
-                    <img src="/img/OIP.jpg"><a href="">&nbsp;KOREA</a>
+                    <img src="./img/OIP.jpg"><a href="">&nbsp;KOREA</a>
                 </div>
             </div>
         </footer>

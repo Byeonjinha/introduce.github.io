@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="./css/style0.css"/>    
-    <link rel="stylesheet" href="./css/style시현.css"/>    
+    <link rel="stylesheet" href="./css/style.css"/>       
     <link rel="shortcut icon" href="./img/favicon.ico">
+    <script src="./js/jsscript.js"></script>
     <script>
        $( document ).ready( function() {
         $( 'article[class=smdgks]' ).show("slide", { direction: "right" },700, function() {
@@ -94,49 +94,47 @@ $(".popup_bg4").css({"display" : "none"})
 <body>
     <div id="wrapper">
       <header>
-        <nav>
+        <div>  
+            <a href="#" class="logo">
+                <img src="./img/4.png" alt="로고"/>
+            </a>
+    
             <ul class="menu">
-
-                <a href=""><img src="./img/4.png"></a>
-                
-                <div class="menu-left">
-                    <li>men
-                        <ul>
-                            <li><a href="#">상의</a></li>
-                            <li><a href="#">하의</a></li>
-                            <li><a href="#">신발</a></li>
-                            <li><a href="#">악세서리</a></li>
-                        </ul>
-                    </li>
-                
-                    <li>women
-                        <ul>
-                            <li><a href="#">상의</a></li>
-                            <li><a href="#">하의</a></li>
-                            <li><a href="#">신발</a></li>
-                            <li><a href="#">악세서리</a></li>
-                        </ul>
-                    </li>    
-
-                    <li>kids
-                        <ul>
-                            <li><a href="#">상의</a></li>
-                            <li><a href="#">하의</a></li>
-                            <li><a href="#">신발</a></li>
-                        </ul>
-                    </li>    
-
-                    <li><a href="#">about us</a>
-                        
-                    </li>
-                </div>
-            </ul> 
-            <div class="menu-right">   
+                <li><a href="#">Teens</a></li>                
+                <li><a href="#">Twenties</a></li>
+                <li><a href="#">Thirties+</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+    
+            <ol class="menu-right">   
                 <li><a href="#"><i class="fas fa-search fa-lg" style="color: darkslategray" ></i></a></li>    
                 <li><a href="#"><i class="far fa-id-badge fa-lg" style="color: darkslategray"></i></a></li>
                 <li><a href="#"><i class="fas fa-shopping-cart fa-lg" style="color: darkslategray"></i></a></li>
+            </ol>
+        </div>
+        <nav>
+            <div>
+                <div class="sub-menu">
+                    <ol>
+                        <li><a href="#">Outer</a></li>
+                        <li><a href="#">Top</a></li>
+                        <li><a href="#">Pants</a></li>
+                    </ol>
+    
+                    <ol>
+                        <li><a href="#">Shirt</a></li>
+                        <li><a href="#">Knit</a></li>
+                        <li><a href="#">Cardigan</a></li>
+                    </ol>
+    
+                    <ol>
+                        <li><a href="#">Blouse</a></li>
+                        <li><a href="#">Ops</a></li>
+                        <li><a href="#">Skirt</a></li>
+                    </ol>
+                </div>
             </div>
-        </nav>    
+        </nav>
     </header>
 
 
@@ -154,17 +152,17 @@ $(".popup_bg4").css({"display" : "none"})
 
 
                     <li>
-                      <h3 class="name">권능한 ( Back-end Engineer )</h3>
+                      <h3 class="aboutusname">권능한 ( Back-end Engineer )</h3>
                       <p class="desc">
                         <a >댓글을 통해 관심과 사랑을 먹고 자라나는 게이마켓 개발자입니다.</a>
                       </p>
                     </li>
 
                     <li>
-                      <i class="fa fa-github" aria-hidden="true"></i><a href ="https://github.com/lollolzz" target='_blank'>Github : https://github.com/lollolzz</a>
+                      <i class="fa fa-github" aria-hidden="true"></i><a href ="https://github.com/lollolzz" target='_blank'> Github : https://github.com/lollolzz</a>
                       <br>
                       <br>
-                      <i class="fa fa-envelope" aria-hidden="true"></i><a>Email : lollolzz1018@gmail</a>
+                      <i class="fa fa-envelope" aria-hidden="true"></i><a> Email : lollolzz1018@gmail</a>
                     </li>
                   </ul>
                 </article>
@@ -174,7 +172,7 @@ $(".popup_bg4").css({"display" : "none"})
                       <a  class="thumb"><img src="https://avatars.githubusercontent.com/u/88361327?v=4" alt="프로필" style="border-radius: 50% 50% 50% 50%;"/></a>
                     </li>
                     <li>
-                      <h3 class="name">김예은 ( Front-end Engineer )</h3>
+                      <h3 class="aboutusname">김예은 ( Front-end Engineer )</h3>
                       <p class="desc">
                         <a >누구보다 게이마켓 서비스에 애착을 가지고 있는 김예은입니다.</a>
                       </p>
@@ -182,10 +180,10 @@ $(".popup_bg4").css({"display" : "none"})
              
                      
                      <li>
-                      <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/whiteydoublee" target='_blank'>Github : https://github.com/whiteydoublee</a>
+                      <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/whiteydoublee" target='_blank'> Github : https://github.com/whiteydoublee</a>
                       <br>
                       <br>
-                      <i class="fa fa-envelope" aria-hidden="true"></i><a>Email : yeeunkim0701@gmail.com</a>
+                      <i class="fa fa-envelope" aria-hidden="true"></i><a> Email : yeeunkim0701@gmail.com</a>
                     </li>
                   </ul>
                 </article>
@@ -195,7 +193,7 @@ $(".popup_bg4").css({"display" : "none"})
                       <a  class="thumb"><img src="https://avatars.githubusercontent.com/u/88361213?v=4" alt="프로필" style="border-radius: 50% 50% 50% 50%;"/></a>
                     </li>
                     <li >
-                      <h3 class="name">박시현 ( Back-end Engineer )</h3>
+                      <h3 class="aboutusname">박시현 ( Back-end Engineer )</h3>
                       <p class="desc">
                         <a >게이마켓 백엔드 개발자 박시현입니다. 서버에 문제가 있거든 저에게 문의해주세요.</a>
                       </p>
@@ -203,10 +201,10 @@ $(".popup_bg4").css({"display" : "none"})
               
                     </li>
                     <li>
-                      <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/SihyunPark01" target='_blank'>Github : https://github.com/SihyunPark01</a>
+                      <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/SihyunPark01" target='_blank'> Github : https://github.com/SihyunPark01</a>
                       <br>
                       <br>
-                      <i class="fa fa-envelope" aria-hidden="true"></i><a>Email : maro0226@naver.com</a>
+                      <i class="fa fa-envelope" aria-hidden="true"></i><a> Email : maro0226@naver.com</a>
                     </li>
                   </ul>
                 </article>
@@ -216,17 +214,17 @@ $(".popup_bg4").css({"display" : "none"})
                       <a  class="thumb"><img src="https://avatars.githubusercontent.com/u/87685946?v=4"alt="프로필" style="border-radius: 50% 50% 50% 50%;"/></a>
                     </li>
                     <li >
-                      <h3 class="name">변진하 ( Back-end Engineer )</h3>
+                      <h3 class="aboutusname">변진하 ( Back-end Engineer )</h3>
                       <p class="desc">
                         <a >국방의 의무와 게이마켓을 겸업하고 있습니다.</a>
                       </p>
                     </li>
                
                     <li>
-                      <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/Byeonjinha" target='_blank'>Github : https://github.com/Byeonjinha</a>
+                      <i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/Byeonjinha" target='_blank'> Github : https://github.com/Byeonjinha</a>
                       <br>
                       <br>
-                      <i class="fa fa-envelope" aria-hidden="true"></i><a>Email : jinhaday@gmail</a>
+                      <i class="fa fa-envelope" aria-hidden="true"></i><a> Email : jinhaday@gmail</a>
                     </li>
                   </ul>
                 </article>
@@ -239,8 +237,8 @@ $(".popup_bg4").css({"display" : "none"})
           <div class="footer-reinsurance">
               <ul>
                   <li class="flex1">
-                      <a href="#">
-                      <i class="fas fa-sync-alt fa-lg" style="color: gray"></i>
+                      <a >
+                      <i class="fas fa-sync-alt fa-lg" style="color: gray; margin-left: 20px;"></i>
                       <br><br>무료반품
                       </a>
                       <div class="popup_bg1">
@@ -251,8 +249,8 @@ $(".popup_bg4").css({"display" : "none"})
       
                   </li>    
                   <li class="flex2">
-                      <a href="#">
-                          <i class="fas fa-shipping-fast fa-lg" style="color: gray"></i>
+                      <a >
+                          <i class="fas fa-shipping-fast fa-lg" style="color: gray; margin-left: 15px;"></i>
                           <br><br>무료배송
                       </a>
                       <div class="popup_bg2">
@@ -262,8 +260,8 @@ $(".popup_bg4").css({"display" : "none"})
                       </div>
                   </li>    
                   <li class="flex3">
-                      <a href="#">
-                      <i class="fas fa-credit-card fa-lg" style="color: gray"></i>
+                      <a >
+                      <i class="fas fa-credit-card fa-lg" style="color: gray; margin-left: 17px;"></i>
                       <br><br>안전결제
                       </a>
                       <div class="popup_bg3">
@@ -274,8 +272,8 @@ $(".popup_bg4").css({"display" : "none"})
                       </div>
                   </li>    
                   <li class="flex4">
-                      <a href="#">
-                      <i class="fas fa-mobile-alt fa-lg" style="color: gray"></i>
+                      <a >
+                      <i class="fas fa-mobile-alt fa-lg" style="color: gray; margin-left: 50px;"></i>
                       <br><br>도움이 필요하세요?
                       </a>
                       <div class="popup_bg4">
@@ -317,7 +315,7 @@ $(".popup_bg4").css({"display" : "none"})
                   <li><a href>사이즈가이드</a></li>
               </ul>
               <div class="korea">
-                  <img src="/img/OIP.jpg"><a href="">&nbsp;KOREA</a>
+                  <img src="./img/OIP.jpg"><a href="">&nbsp;KOREA</a>
               </div>
           </div>
       </footer>
