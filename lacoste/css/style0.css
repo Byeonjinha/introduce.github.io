@@ -2399,3 +2399,445 @@ margin: 10px;
   font-size: 15px;
   font-weight: bold;
 }
+
+
+/* Terms */
+#terms {
+  display : block;
+  padding: 6.5% 0 0 0;
+  text-align: center;
+  vertical-align: middle;
+}
+#terms-center-v {
+  float :none;
+
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  
+  text-align: center;
+}
+#terms-signup {
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+#terms-signup > h1 {
+  padding-left: 44px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  text-align: left;
+  border-bottom: 2px solid #000;
+  
+}
+.terms-terms{
+  width: 100%;
+}
+.terms-left{
+  width: 48%;
+  float: left;
+  margin-bottom: 40px;
+}
+.terms-right{
+  float: right;
+  width: 48%;
+  margin-bottom: 40px;
+}
+
+#terms-signup * {
+}
+#terms-signup h3 {
+  font-size: 14px;
+  margin-top: 26px;
+  margin-bottom: 6px;
+}
+#terms-signup h3 > span.essential {
+  color: #ef3f43;
+  margin-right: 5px;
+}
+#terms-signup h3 > span.optional {
+  color: #01c1c4;
+  margin-right: 5px;
+}
+
+#terms-signup textarea {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 10px;
+  border: 1px solid #bababa;
+  box-sizing: border-box;
+  resize: none;
+}
+#terms-signup label {
+  float: right;
+  font-size: 14px;
+}
+#terms-signup input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: bottom;
+}
+#terms-signup input.agree {
+  display: block;
+  background: #ef3f43;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 72px;
+  margin: 40px auto;
+  border: 0;
+  outline: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  
+}
+
+/* Register */
+#register {
+  margin-top: 30px;
+  display : block;
+  padding: 6.5% 0 0 0;
+  text-align: center;
+  vertical-align: middle;
+}
+#register-center-v {
+  float :none;
+  width: 75%;
+  height: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+#register-title{
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+#register-title > h1 {
+  padding-left: 44px;
+  margin-top: 40px;
+  padding-bottom: 25px;
+  margin-bottom: 24px;
+  font-size: 26px;
+  text-align: left;
+  border-bottom: 2px solid #000;
+  
+}
+.register-register{
+  width: 100%;
+  padding: 0 40px 0;
+  z-index: 1;
+}
+.register-all{
+  border-bottom: none;
+  padding: 0 0 30px;
+  overflow: visible;
+  margin-bottom: 0;
+}
+.register-left{
+  width: 48%;
+  float: left;
+  margin-bottom: 40px;
+
+}
+.register-left-in{
+  width: 100;
+  margin: 0;
+  min-width: 0;
+}
+
+.register-gender{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  width: 100;
+}
+.gender-inline{
+  text-transform: uppercase;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  color: #292929;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+.step{
+  top: 0;
+  background: #d70032;
+  color: white;
+  padding-top: 5px;
+  padding: 2px 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.gender-content-inline > label{
+  text-transform: uppercase;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  color: #606060;
+  cursor: pointer;
+  margin-right: 20px;
+  float: left;
+}
+.gender-content-inline > label > input{
+  background-color: #ebebe4;
+  margin-right: 5px;
+  top: 2px;
+  cursor: pointer;
+  color: #454545;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 0;
+}
+.register-name-email{
+  width: 100%;
+}
+.name{
+  margin-top: 20px;
+  width: 50%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+.name > label{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  color: #292929;
+  line-height: 1.7;
+  float: left;
+}
+.name > input{
+  margin-left: 50px;
+  padding: 8px 10px;
+  width: 100%;
+  cursor: auto;
+  border: 1px solid #ededed;
+  color: #454545;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 0;
+}
+
+.email{
+  width: 90% !important;
+  margin-left: 0;
+  margin-bottom: 20px;
+  float: left;
+}
+.email > label{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  color: #292929;
+  line-height: 1.7;
+  float: left;
+}
+.email-input {
+
+  margin-left: 52px;
+  display: inline-block;
+  text-transform: lowercase !important;
+}
+
+.emailFirst{
+  padding: 6px 10px;
+  width: 100%;
+  cursor: auto;
+  border: 1px solid #ededed;
+  text-transform: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #454545;
+}
+
+.input-select{
+  display: inline-block;
+
+}
+.emailLast{
+  padding: 6px 10px;
+  width: 100%;
+  cursor: auto;
+  border: 1px solid #ededed;
+  color: #454545;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 0;
+}
+.emailLast > option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2rem;
+  padding: 0px 2px 1px;
+}
+.register-mobile{
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+.register-mobile > label{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  float: left;
+  color: #292929;
+  margin-bottom: 5px;
+  display: inline-block;
+  line-height: 1.7;
+  cursor: pointer;
+
+}
+.clearfix{
+  clear: both;
+}
+.mobile{
+  width: 22% !important;
+  margin-right: 5px;
+  padding: 6px 10px;
+  cursor: auto;
+  border: 1px solid #ededed;
+  color: #454545;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 0;
+}
+.register-birthday{
+  margin-bottom: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 0 !important;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+.register-birthday > label{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  float: left;
+  color: #292929;
+  margin-bottom: 5px;
+  display: inline-block;
+  line-height: 1.7;
+  cursor: pointer;
+
+}
+.birthday-year{
+  width: 26% !important;
+  margin-right: 5px;
+  padding: 6px 10px;
+  cursor: auto;
+  border: 1px solid #ededed;
+  color: #454545;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 0;
+}
+.birthday-year > option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2rem;
+  padding: 0px 2px 1px;
+}
+.birthday-month{
+  width: 26% !important;
+  margin-right: 5px;
+  padding: 6px 10px;
+  cursor: auto;
+  border: 1px solid #ededed;
+  color: #454545;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 0;
+}
+.birthday-month > option{
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2rem;
+  padding: 0px 2px 1px;
+}
+.birthday-day{
+  width: 26% !important;
+  margin-right: 5px;
+  padding: 6px 10px;
+  cursor: auto;
+  border: 1px solid #ededed;
+  color: #454545;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 0;
+}
+.birthday-day > option{
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2rem;
+  padding: 0px 2px 1px;
+}
+.register-right{
+  float: right;
+  width: 48%;
+  margin-bottom: 40px;
+  padding-top: 12px;
+  padding-left: 10px !important;
+}
+.preferences-title{
+  float: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  color: #292929;
+  margin: 0;
+  padding-bottom: 10px;
+
+}
+.content-asset{
+  text-transform: none;
+  margin-left: 50px;
+  color: #606060;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.check-inline-outside{
+  padding-top: 20px;
+  float: left;
+  padding-left: 30px;
+}
+.label-subscribe{
+  width: 40%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  color: #606060;
+
+}
+.label-subscribe > input{
+  left: 0;
+  top: 3;
+  margin-right: 5px;
+  cursor: pointer;
+  color: #454545;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 0;
+}
+.register-button{
+  float: left;
+  margin-top: 40px;
+  margin-left: 50px;
+  padding: 0;
+  clear: both;
+}
+.btn-make{
+  margin: 0;
+  background-color: #292929;
+  font-size: 1.3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 16px 36px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background-color: #105a33;
+  color: white;
+}

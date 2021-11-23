@@ -13,125 +13,59 @@
         <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
         <link rel="stylesheet" href="./css/style시현.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script>
-            $(function(){
-    var $firstMenu = $('.menu-left'),
-        $header = $('header');
-    
-    $('.menu-left > li > ul li').css({"display" : "none"});
-   
-
-    $firstMenu.mouseenter(function(){
-        $header.animate({height:'300px'},200);
-        $('.menu-left > li li').css({"display" : "block"});
-
-    });    
-       
-    $firstMenu.mouseleave(function(){
-        $header.stop().animate({height:'100px'},200);
-    });   
-
-});
-
-
-
-/*푸터 영역*/
-$(function(){
-  
-$(".flex1 > a").click(function(){
-    $(".popup_bg1").css({"display" : "block"})
-    document.documentElement.style.overflowY = "hidden";
-         document.body.scroll = "no"; 
-});
-
-
-$(".popup_bg1").click(function(){
-$(".popup_bg1").css({"display" : "none"})
-document.documentElement.style.overflowY = "auto";
-})
-
-
-$(".flex2 > a").click(function(){
-$(".popup_bg2").css({"display" : "block"})
-    document.documentElement.style.overflowY = "hidden";
-        document.body.scroll = "no"; 
-})
-$(".popup_bg2").click(function(){
-$(".popup_bg2").css({"display" : "none"})
-document.documentElement.style.overflowY = "auto";
-})
-$(".flex3 > a").click(function(){
-$(".popup_bg3").css({"display" : "block"})
-    document.documentElement.style.overflowY = "hidden";
-        document.body.scroll = "no"; 
-})
-$(".popup_bg3").click(function(){
-$(".popup_bg3").css({"display" : "none"})
-document.documentElement.style.overflowY = "auto";
-})
-$(".flex4 > a").click(function(){
-$(".popup_bg4").css({"display" : "block"})
-    document.documentElement.style.overflowY = "hidden";
-        document.body.scroll = "no"; 
-})
-$(".popup_bg4").click(function(){
-$(".popup_bg4").css({"display" : "none"})
-document.documentElement.style.overflowY = "auto";
-})
-});    
-
-
-
-        </script>
+        <script src="./js/jsscript.js"></script>
     </head>
     <body>
+
+
         <header>
-            <nav>
+            <div>  
+                <a href="#" class="logo">
+                    <img src="./img/4.png" alt="로고"/>
+                </a>
+
                 <ul class="menu">
-    
-                    <a ><img src="./img/4.png"></a>
-                    
-                    <div class="menu-left">
-                        <li>men
-                            <ul>
-                                <li><a href="#">상의</a></li>
-                                <li><a href="#">하의</a></li>
-                                <li><a href="#">신발</a></li>
-                                <li><a href="#">악세서리</a></li>
-                            </ul>
-                        </li>
-                    
-                        <li>women
-                            <ul>
-                                <li><a href="#">상의</a></li>
-                                <li><a href="#">하의</a></li>
-                                <li><a href="#">신발</a></li>
-                                <li><a href="#">악세서리</a></li>
-                            </ul>
-                        </li>    
-    
-                        <li>kids
-                            <ul>
-                                <li><a href="#">상의</a></li>
-                                <li><a href="#">하의</a></li>
-                                <li><a href="#">신발</a></li>
-                            </ul>
-                        </li>    
-    
-                        <li><a href="#">about us</a>
-                            
-                        </li>
-                    </div>
-                </ul> 
-                <div class="menu-right">   
+                    <li><a href="#">Teens</a></li>                
+                    <li><a href="#">Twenties</a></li>
+                    <li><a href="#">Thirties+</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+
+                <ol class="menu-right">   
                     <li><a href="#"><i class="fas fa-search fa-lg" style="color: darkslategray" ></i></a></li>    
                     <li><a href="#"><i class="far fa-id-badge fa-lg" style="color: darkslategray"></i></a></li>
                     <li><a href="#"><i class="fas fa-shopping-cart fa-lg" style="color: darkslategray"></i></a></li>
+                </ol>
+            </div>
+            <nav>
+                <div>
+                    <div class="sub-menu">
+                        <ol>
+                            <li><a href="#">Outer</a></li>
+                            <li><a href="#">Top</a></li>
+                            <li><a href="#">Pants</a></li>
+                        </ol>
+
+                        <ol>
+                            <li><a href="#">Shirt</a></li>
+                            <li><a href="#">Knit</a></li>
+                            <li><a href="#">Cardigan</a></li>
+                        </ol>
+
+                        <ol>
+                            <li><a href="#">Blouse</a></li>
+                            <li><a href="#">Ops</a></li>
+                            <li><a href="#">Skirt</a></li>
+                        </ol>
+                    </div>
                 </div>
-            </nav>    
+            </nav>
         </header>
-        <!-- MainBanner -->
-        <section class="MainTop">
+
+
+        
+         <!-- MainBanner -->
+         <section class="MainTop">
             <div class="MainBanner">
                 <ul>
                     <li><img class="bannerimg" src="./img/bannerimg2.JPG" alt="배너이미지2"></li>
@@ -259,6 +193,9 @@ document.documentElement.style.overflowY = "auto";
         </section>
     </main>
     
+
+
+    <!-- 푸터 영역 -->
     <footer>
         <div class="footer-reinsurance">
             <ul>

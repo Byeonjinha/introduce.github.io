@@ -4,6 +4,9 @@
     
  }
 
+ a {text-decoration: none; color: #111;}
+ ul, ol {list-style: none; text-decoration: none;}
+
  body{
      width: 100%;
      height: 100%;
@@ -11,92 +14,88 @@
     }
 /*헤더 영역*/
 
-.menu li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    font-size: 14px;
-    text-align: center;
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: white;
+    z-index: 100;
 }
 
+header > div {
+    width: 1200px;
+    height: 150px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+header > div > ul {
+    display: inline-block;
+    margin: -16px;
+    margin-left: 80px;
 
-
-.menu > div > li {
-    margin-top: 30px;
-    padding: 20px;
 }    
 
-
-
-a {text-decoration: none;}
-
-a:active {
-    text-decoration: none;
-    color: black;
+header > div > ul > li {
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-header {
-    background-color: white;
+header > div > .logo > img {
+    width: 100px;
+    margin-top: 25px;
+}
+
+header > div > ol {
+    float: right;
+    margin-top: 65px;
+    margin-right: 40px;
+}
+
+header > div > ol > li {
+    float: left;
+    margin-left: 40px;
+}
+
+header > nav {
+    display: none;
     width: 100%;
     height: 150px;
-    overflow: hidden;
-    
+    background-color: white;
+    box-sizing: border-box;
 }
 
-nav {
-width: 960px;
-margin: 0 auto;
+header > nav > div {
+    width: 1200px;
+    height: 150px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
-
-nav > ul > div > li {
-float: left;
-line-height: 20px;
-margin-right: 80px;
-position: relative;
-}
-nav > ul img {
-float: left;
-width: 80px;
-height: 60px;
-margin-top: 21px;
-margin-left: -200px;
-}
-nav > ul > div > li ul {width: 100%;  position: absolute;}
-nav > ul > div > li ul li {
-    white-space: nowrap;
-    z-index: 999;
-    }
-
-nav > ul > div > li ul li:first-child {
-    margin-top: 30px;
+header > nav > div > div {
+    width: 700px;
+    margin: 0 auto;
 }
 
-
-nav > ul > div > li ul li > a {
-    color: black;
-}
-nav > ul > div > li ul li > a:hover {
-    color: gray;
-}
-
-.menu-right {
-position: relative;
-float: right;
-display: inline-block;
-width: 200px;
-height: 50px;
-margin-top: 30px;
-}
-
-.menu-right > li {
-    list-style: none;
+header > nav > div > div > ol {
     display: inline-block;
-    padding: 20px;
-    font-size: 14px;
-    margin: auto 0;
-
+    width: 25%;
+    margin-left: 23px;
+    margin-right: 27px;
 }
+
+header > nav > div > div > ol > li:nth-child(1) {
+    margin-top: 0;
+}
+
+header > nav > div > div > ol > li {
+    margin-top: 10px;
+    padding: 2px;
+}
+
 
 
 /*메인 영역*/
@@ -143,7 +142,7 @@ text-align: center;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(15, 230, 79, 0.2);
+    background: rgba(0,0,0,0.2);
   
 }
 .popup1_bg1:hover{
@@ -250,22 +249,29 @@ color: gray;
 }
 
 
-.footer1 {
-    height: 160px;
-    border: 1px solid gainsboro;
+.footer {
+    width: 100%;
+    height: 150px;
     background-color:whitesmoke;
+
 }      
 
+.footer1 {
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+
+}
+
 .footer2 {
-    float: left;
-    margin-left: 300px;
-    padding: 40px 60px 20px 150px;  
+    display: inline-block;
     font-size: 9px;
+    padding-top: 35px;
 }
 .footer3 {
-    padding: 40px 60px 20px 150px;  
-    float: left;
+    float: right;
     font-size: 9px;
+    padding-top: 35px;
 }
 
 .footer4 {
@@ -301,3 +307,147 @@ float: left;
 text-decoration: underline;
 font-size: 13px;
 }
+
+/* 카트(장바구니)페이지 */
+.payment-center-header{
+    margin: 0 auto;
+    display: block;
+    width: 18%;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section {
+    width: 100%;
+    height: 80%;
+    background-color:gainsboro;
+}
+
+.cart-product {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-color: white;
+
+}
+
+.customer {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.customer-message {
+    display: inline-block;
+    margin: 40px;
+    padding: 20px;
+}
+
+.customer-message > span {
+    font-size: 15px;
+    color: black;
+
+}   
+
+.cart-payment {
+    width: 100%;
+    height: 410px;
+    margin-top: 50px;
+    padding-top: 30px;
+    background-color: white;
+}
+.cart-center {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 36px;
+    box-sizing: border-box;
+}
+.cart-center-left {
+    float: left;
+    width: 48%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.cart-center-right {
+    float: right;
+    width: 48%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.cart-product-left {
+    float: left;
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cart-product-left > a > img {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+}
+
+.cart-product-right {
+    float: right;
+    width: 69%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cart-product-right > div {
+    padding: 15px;
+    color: #222;
+    font-size: 15px;
+    text-align: left;
+
+}
+.cart-product-right > select {
+    padding: 10px;
+    color: #222;
+}
+
+.cart-table {
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #222;
+}
+
+.cart-table td {
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.cart-table td:nth-child(2) {
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.cart-payment > input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 50px;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+}
+
+.cart-center1 {
+  
+  float :none;
+  width: 100%;
+  height: 1100px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+

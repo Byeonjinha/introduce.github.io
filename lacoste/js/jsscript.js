@@ -1,23 +1,16 @@
 
   /*헤더 영역*/
-$(function(){
-    var $firstMenu = $('.menu-left'),
-        $header = $('header');
-    
-    $('.menu-left > li > ul li').css({"display" : "none"});
-   
+  $(function(){
 
-    $firstMenu.mouseenter(function(){
-        $header.animate({height:'300px'},600);
-        $('.menu-left > li li').css({"display" : "block"});
+    $('.menu > li > a').mouseenter(function(){                   
+        $('header > nav').stop().slideDown(400);
+    });
 
-    });    
-       
-    $firstMenu.mouseleave(function(){
-        $header.stop().animate({height:'100px'},600);
-    });   
-
+    $('header > nav > div').mouseleave(function(){
+        $('header > nav').stop().slideUp(400);
+    });
 });
+
 
 
 
