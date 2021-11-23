@@ -1,0 +1,327 @@
+#wrap {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    margin: 0 auto;
+}
+#wrap .banners{
+    width: 100%;
+    height: 100px;
+    line-height: 30px;
+    margin-right: 520px;
+    padding: 0; 
+}
+
+.banners .bigbanner {
+    margin: 0 auto;
+    width: 110px;
+}
+
+#wrap .banners .bigbanner > p{
+    margin: 0 0 0px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ol {
+    list-style: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#wrap .banners .bigbanner > .fmenu > h2 {
+    padding: 0 0 10px;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+}
+
+li {
+    margin-left: 0;
+}
+
+#wrap .banners > .sub-banners > .subcate {
+    border: 0 solid #d7d5d5;
+    font-size: 0;
+    line-height: 0;
+    text-align:center;
+}
+
+#wrap .banners > .sub-banners > .subcate > li{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0 0px 0 0;font-size: 12px;
+    line-height: 14px;
+    vertical-align: top;
+    list-style: none;
+}
+
+#wrap .banners > .sub-banners > .subcate > li > a {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #777;
+}
+
+#wrap .clothes-lists  {
+    margin: 0;
+}
+
+.clothes-lists  .function {
+    overflow: hidden;
+    text-align: right;
+    line-height: 38px;
+    border: 0px solid #d7d5d5;
+}
+
+.clothes-lists .function  .prdCnt {
+    float: left;
+    padding: 0 0 0 8px;
+    color: #555;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.clothes-lists .function #type {
+    display: inline;
+    margin: 0 4px 0 0;
+    padding: 0;
+}
+
+.clothes-lists .function #type li {
+    display: inline;
+    padding: 0 0 0 10px;
+}
+
+.clothes-lists .function #type li:first-child {
+    background: none;
+}
+
+.clothes-lists .function #type li a {
+    color: #555;
+}
+
+.jinjja-clothes-lists #rows-and-columns {
+    display: table;
+    width: 100%;
+    font-size: 0px;
+    line-height: 0;
+}
+
+.jinjja-clothes-lists #rows-and-columns li.btn_1st-item {
+    width: 25%;
+    display: inline-block;
+    margin: 20px 0 30px;
+    color: #838383;
+    vertical-align: top;
+}
+
+.jinjja-clothes-lists #rows-and-columns li.btn_1st-item .box {
+    width: 235px;
+    float: left;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.jinjja-clothes-lists #rows-and-columns span.top {
+    display: block;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.jinjja-clothes-lists #rows-and-columns .prdImg {
+    position: relative;
+}
+
+.jinjja-clothes-lists #rows-and-columns .prdImg .thumb {
+    width: 235px;
+    height: 313px;
+}
+
+.jinjja-clothes-lists #rows-and-columns .prdImg .wishIcon {
+    position: absolute;
+    right: 5px;
+    bottom:5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.jinjja-clothes-lists #rows-and-columns .name {
+    padding: 7px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.jinjja-clothes-lists #rows-and-columns .name a {
+    color: #555;
+}
+
+.jinjja-clothes-lists #rows-and-columns .name .title_displaynone {
+    font-weight: normal;
+}
+.jinjja-clothes-lists #rows-and-columns .name .title_displaynone span {
+    font-size: 12px;
+    color: #555555;
+}
+
+.jinjja-clothes-lists #rows-and-columns .product-listitem {
+    margin: 0;
+    text-align: center;
+}
+
+.product-listitem li {
+    text-align: center;
+}
+
+.product-listitem li strong {
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.product-listitem li strong span {
+    font-size: 12px;
+    color: #555555;
+    vertical-align: top;
+}
+
+.product-listitem > .price > .title span {
+    font-weight: bold;
+}
+
+.product-listitem .price span.numbers {
+    font-size: 12px;
+    color: #555555;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.product-listitem .price #tax-type {
+    text-decoration: line-through;
+}
+
+.product-listitem .salePrice span {
+    font-size: 12px;
+    color: #ff4040;
+}
+
+.product-listitem .salePrice #tax-type {
+    font-size: 12px;
+    color: #555555;
+}
+
+.product-listitem .point .numeric {
+    font-size: 12px;
+    color: #555555;
+}
+
+.box .icon {
+    overflow: hidden;
+    zoom: 1;
+    text-align: center;
+}
+.box .button {
+    overflow: hidden;
+    zoom: 1;
+    text-align: center;
+}
+
+.box .button .bag {
+    padding: 7px 0 0 5px;
+}
+
+.box .button img {
+    cursor: pointer;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.box .button .option {
+    padding: 7px 0 0 5px;
+}
+
+.paging {
+    display: block;
+    width: 308px;
+    margin: 0 auto;
+    
+    text-align: center;
+    font-family: Verdana, "돋움", Dotum, sans-serif;
+}
+
+.paging > a {
+    float: left;
+}
+
+.paging > ol {
+    float: left;
+    padding: 0;
+}
+
+
+
+.paging img {
+    
+}
+
+.paging ol {
+
+   
+
+    font-size: 0;
+    line-height: 0;
+}
+
+.paging li {
+    display: inline-block;
+    margin: 0 0 0 -1px;
+    border: 1px solid #d7d5d5;
+    font-size: 12px;
+    color: #757575;
+    vertical-align: top;
+}
+
+.paging li a {
+    display: block;
+    width: 33px;
+    padding: 9px 0;
+    font-weight: bold;
+    line-height: 14px;
+    background: #fff;
+}
+
+.paging li a.this {
+    padding-bottom: 6px;
+    border-bottom: 3px solid #495164;
+    color: #495164;
+}
+

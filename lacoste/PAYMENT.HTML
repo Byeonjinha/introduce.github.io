@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>게이마켓::대한민국 1등 온라인 쇼핑몰</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/styles능한.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <link rel="stylesheet" href="./css/style시현.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+    <script>
+        $(function(){
+            
+            $('.hidepayment').css({"display" : "none"});                // 보이지않게 지정
+
+
+            var naverpay = $('div[name=naverpay]'),             //네이버페이
+                hidenaverpay = $('div[name=hidenaverpay]'),
+                paymentmethodnaver = $('input[name=payment-method-naver]') 
+                
+                kakaopay = $('div[name=kakaopay]'),             //카카오페이
+                hidekakaopay = $('div[name=hidekakaopay]'),
+
+
+                silsigan = $('div[name=silsigan]'),             //실시간이체
+                hidesilsigan = $('div[name=hidesilsigan]')
+
+
+                ;
+
+
+                naverpay.click(function(){         //네이버페이 클릭시
+                hidenaverpay.animate({height:'400px'},1000);
+                $('div[name=hidenaverpay]').css({"display" : "block"});
+                $('div[name=hidekakaopay]').css({"display" : "none"});
+                $('div[name=hidesilsigan]').css({"display" : "none"});
+                $('input[name=payment-method-naver]').prop('checked', true); 
+                $('input[name=payment-method-kakao]').prop('checked', false); 
+                $('input[name=payment-method-silsigan]').prop('checked', false); 
+                });
+
+                kakaopay.click(function(){         //실시간이체 클릭시
+                hidekakaopay.animate({height:'200px'},1000);
+                $('div[name=hidekakaopay]').css({"display" : "block"});
+                $('div[name=hidenaverpay]').css({"display" : "none"});
+                $('div[name=hidesilsigan]').css({"display" : "none"});
+                $('input[name=payment-method-kakao]').prop('checked', true); 
+                $('input[name=payment-method-naver]').prop('checked', false); 
+                $('input[name=payment-method-silsigan]').prop('checked', false); 
+                }); 
+
+                silsigan.click(function(){         //실시간이체 클릭시
+                hidesilsigan.animate({height:'150px'},1000);
+                $('div[name=hidesilsigan]').css({"display" : "block"});
+                $('div[name=hidenaverpay]').css({"display" : "none"});
+                $('div[name=hidekakaopay]').css({"display" : "none"});
+                $('input[name=payment-method-silsigan]').prop('checked', true); 
+                $('input[name=payment-method-naver]').prop('checked', false); 
+                $('input[name=payment-method-kakao]').prop('checked', false); 
+                });    
+
+           
+            });
+
+
+    </script>
+
+</head>
+<body>
+    <div id="payment-wrapper">
+        <header>
+            <div>  
+                <a href="#" class="logo">
+                    <img src="./img/4.png" alt="로고"/>
+                </a>
+        
+           
+        
+               
+            </div>
+    
+        </header>
+        <main class = "payment">
+          
+            <section class="payment-center" style="background-color: rgb(236, 239, 241);"   >                
+                <div class = "payment-center-header">
+                    <li>
+                    <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
+                    <span>쇼핑백</span> 
+                    </li>
+                    <li>
+                    <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
+                    <span> 배송</span>
+                    </li>
+                    <li>
+                    <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
+                    <span> 결제</span>
+                    <div>
+                    </li>
+                     
+                </div>
+                <div class = "steppayment">
+                    <div class = "leftcol">
+                        <div class = "leftpayment"> <h3>결제방법</h3> </div>
+                        <div class = "leftpayment" name = "naverpay"> <a > <input type="radio" class = "payment-method" name= "payment-method-naver"> 네이버페이</a>
+                            <div class="hidepayment" name="hidenaverpay">
+                                <p>
+                                주문 변경 시 카드사 혜택 및 할부 적용 여부는 해당 카드사 정책에 따라 변경될 수 있습니다.<br><br>
+                                네이버페이는 네이버ID로 별도 앱 설치 없이 신용카드 또는 은행계좌 정보를 등록하여 네이버페이 비밀번호로 결제할 수 있는 간편결제 서비스입니다.<br><br>
+                                결제 가능한 신용카드: 신한, 삼성, 현대, BC, 국민, 하나, 롯데, NH농협, 씨티<br><br>
+                                결제 가능한 은행: NH농협, 국민, 신한, 우리, 기업, SC제일, 부산, 경남, 수협, 우체국, 미래에셋대우. 광주, 대구, 전북, 새마을금고, 제주은행, 신협, 하나은행<br><br>
+                                네이버페이 카드 간편결제는 네이버페이에서 제공하는 카드사 별 무이자, 청구할인 혜택을 받을 수 있습니다.
+                                </p>
+                                <button class="orderBTN">결제하기</button>
+                            </div>
+                        </div>
+
+                        <div class = "leftpayment" name = "kakaopay"> <a > <input type="radio" class = "payment-method" name= "payment-method-kakao"> 신용카드/카카오페이 (모바일 ISP 결제불가)</a> 
+                            <div class="hidepayment" name = "hidekakaopay">
+                                <p>
+                                국민/BC 카드는 인터넷안전결제(ISP)를 통해서만 결제 가능합니다.<br><br>
+                                국민/BC 이외 카드는 안심클릭결제로 결제 진행 됩니다.
+                                </p>
+                                <button class="orderBTN">결제하기</button>
+                            </div>
+                        </div>
+
+                        <div class = "leftpayment" name = "silsigan"> <a > <input type="radio" class = "payment-method" name= "payment-method-silsigan"> 실시간계좌이체</a>
+                            <div class="hidepayment" name="hidesilsigan">
+                                <p>
+                                결제하기 클릭 시 KG 이니시스 계좌입력창으로 이동합니다
+                                </p>
+                                <button class="orderBTN">결제하기</button>
+                            </div>
+                        </div>
+                            
+                    </div>
+                    <div class = "rightcol">
+                        <div class = "rightpayment">
+                            <div class = "summary-products"><img src="img/대표1_썸네일.jpg" ><p>(남성) 베이직 라운드 MTM 셔츠</p><span>169,000 원</span></div>
+                            <div class = "summary-products"><img src="img/대표1_썸네일.jpg" ><p>(남성) 베이직 라운드 MTM 셔츠</p><span>169,000 원</span></div>
+                            <div class = "summary-products"><img src="img/대표1_썸네일.jpg" ><p>(남성) 베이직 라운드 MTM 셔츠</p><span>169,000 원</span></div>
+                        </div>
+                        
+                        <div class = "rightpayment"> 
+                            <div>
+                                <li><span style="font-weight: bold;">7개 상품</span>    <span  style="font-weight: bold;">823,000 원</span></li>
+                                <li><span>배송비</span>    <span>0 원</span></li>
+                                <li><span>seasonoff</span>    <span>- 137,100 원</span></li>
+                                <li><span>부가세 포함</span>    <span>0 원</span></li>
+                                <li><span>총 결제금액</span>    <span>685,900 원</span></li>
+                            </div>
+                        </div>
+                        <div class = "rightpayment">
+                            <div class = "address">
+                              
+                                <p class = address2>
+                                    <i class="fa fa-truck" aria-hidden="true"></i> 일반 배송
+                                </p>
+                                <p class = address2>
+                                    남성 변진하
+                                </p>
+                                <p class = address2>
+                                    대구 동구 첨단로 7 (신서동, 신용보증기금본점)
+                                    304호
+                                    동구
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                </div>
+    
+         
+
+            </section>
+        </main>
+      
+    </div>    
+</body>
+</html>
