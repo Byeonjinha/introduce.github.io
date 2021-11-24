@@ -558,14 +558,17 @@ h5.rating.star5 {background-position: 0 -200px;}
     font-size: 12px;
 }
 .sizeSelectPage{
+    z-index: 9999;
     display: none; height: 1000px; width: 900px; 
     position :fixed; 
 }
 #view .info > .summary .sizeGuidePage{
+    z-index: 9999;
     display: none; height: 1000px; width: 900px; 
     position :fixed; 
 }
 #view .info > .summary .cardhyeteckPage{
+    z-index: 9999;
     display: none; height: 1000px; width: 900px; 
     position :fixed; 
 }
@@ -1238,425 +1241,6 @@ color : rgb(68, 67, 67);
   color: #fff;
   box-sizing: border-box;
   margin-top: 10px;
-}
-
-/* 二쇰Ц寃곗젣 */
-#order {
-    padding: 16px;
-    box-sizing: border-box;
-}
-#order .product > input[name=del] {
-  border-color: #bdbdbd;
-  border-bottom-color: #828282;
-  background: #fafafa;
-  color: #4d4d4d;
-  padding: 6px 11px;
-  border-width: 1px;
-  margin-top: 6px;
-}
-#order .product > table {
-  width: 100%;  
-  border-collapse: collapse;
-  border-spacing: 0;
-  border-top: 2px solid #000;
-}
-#order .product > table th {
-  padding: 12px 0;    
-  background: #fff;
-  color: #383838;
-  font-size: 0.95em;
-  text-align: center;
-  letter-spacing: -0.1em;
-}
-#order .product > table tbody {}
-
-#order .product > table .empty {
-  display: none;
-}
-#order .product > table .empty td {
-  padding: 50px 0 !important;
-  text-align: center;
-  color: #777 !important;
-}
-
-#order .product > table tr {
-  border-bottom: 1px solid #d3d3d3;
-}
-
-#order .product > table td {
-  text-align: center;
-}
-
-
-#order .product > table td:last-child {
-  color:#ff006c;
-  font-weight: bold;
-}
-#order .product > table td > article {
-  overflow: hidden;
-}
-#order .product > table td > article > a {
-  float: left;
-  display: inline-block;
-}
-#order .product > table td > article > div {
-  float: left;
-  margin-top: 10px;
-}
-#order .product > table td > article > div a {
-  font-size: 15px;
-  font-family: 'Malgun Gothic', dotum, sans-serif;
-}
-#order .product > table td > article > div > p {
-  text-align: left;
-  color: #777;
-  margin-top: 4px;
-}
-#order .product > table article img {width: 80px;}
-#order .product > h3 {  
-  font-size: 15px;
-  font-weight: bold;
-  padding: 10px 0;
-
-}
-#order .product > h3 > span {
-  font-size: inherit;
-  font-weight: inherit;
-  color:#ff006c;
-
-}
-
-#order form section {
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-}
-
-#order form section > article {
-  width: 560px;
-  height: auto;
-  margin-bottom: 10px;  
-}
-
-#order form section > article > h1 {  
-  font-weight: bold;
-  font-size: 14px;  
-  padding: 6px 0;
-  border-bottom: 1px solid #111;  
-}
-
-#order form section > article > div {
-  padding: 6px;
-  box-sizing: border-box;
-}
-
-#order form section input {  
-  color: #555;
-  font-weight: bold;
-  outline: none;
-  padding: 2px 0;  
-}
-
-
-#order .delivery {}
-#order .delivery > table {
-  margin-top: 10px;
-}
-#order .delivery > table tr > td:nth-child(1) {  
-  padding: 6px;
-}
-
-#order .delivery > table input[name=addr1] {width: 400px;} 
-#order .delivery > table input[name=addr2] {width: 400px;}
-#order .delivery > table input[type=button] {
-  padding: 4px 6px;
-  border: 1px solid #ccc;
-  background-color: #F0F4F9;
-  border-color: #acc0e0;
-  color: #3371C9;
-  outline: none;
-}
-
-
-#order .discount {}
-#order .discount > div {
-  overflow: hidden;
-}
-#order .discount > div > p {
-  float: left;
-}
-#order .discount > div > label{
-  float: right;
-}
-
-#order .discount > div > label > input[type=text] {
-  display: inline-block;
-  outline: none;
-}
-#order .discount > div > label > input[type=button]{
-  padding: 4px 6px;
-  border: 1px solid #ccc;
-  background-color: #F0F4F9;
-  border-color: #acc0e0;
-  color: #3371C9;
-  outline: none;
-}
-
-
-#order .discount > div > span {
-  display: block;
-  margin-top: 20px;
-  color: #888;
-}
-#order .discount {}
-#order .payment {}
-#order .payment > div {
-  margin-bottom: 10px;
-}
-#order .payment > div > span {
-  display: inline-block;
-  color: #3a85c8;
-  margin: 6px 0;
-}
-#order .payment > div > p {}
-#order .payment > div label {
-  margin-right: 16px;
-}
-#order .payment > div input {
-  vertical-align: bottom;
-  margin-right: 4px;
-}
-#order .payment {}
-
-#order form section > .alert {
-  width: 560px;
-  background-color: #f7f7f7;
-  padding: 6px;
-  padding-left: 20px;
-  color: #999;
-  box-sizing: border-box;
-}
-
-#order form section > .alert > ul {
-  list-style: inherit;
-}
-
-#order form section > .alert > ul > li {
-  line-height: 20px;  
-}
-#order form section > .alert > ul > li > span {
-  position: relative;
-  left: -6px;
-}
-
-
-
-#order .info {
-  position: absolute;
-  right: 0;
-  top: 26px;
-  width: 360px;
-  height: 412px;
-  padding: 20px;
-  background: #fff;
-  border: 1px solid #d3d3d3;
-  box-sizing: border-box;
-}
-
-#order .info * {
-  font-weight: bold;  
-}
-
-
-#order .info > h2 {
-  width: 100%;
-  font-weight: bold;
-  font-size: 16px;
-  border-bottom: 1px solid #111;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  box-sizing: border-box;
-  color: #1e1e1e;
-}
-#order .info > table {width: 100%;}
-#order .info > table tr {}
-#order .info > table tr:nth-last-child(2) {}
-#order .info > table tr:nth-last-child(1) td {font-size: 20px;}
-#order .info > table tr:nth-last-child(1) td:last-child {
-  color: #ff006c;  
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#order .info > table td {
-  padding: 10px 0;
-  font-size: 14px;
-  color: #555;
-}
-#order .info > table td:last-child {
-  text-align: right;
-}
-#order .info > input[type=button] {
-  width: 100%;
-  height: 56px;
-  font-size: 26px;
-  border-width: 1px;
-  border-color: #d81818;
-  border-bottom-color: #9e1212;
-  background: #ed2f2f;
-  background-image: linear-gradient(#ed2f2f, #dd0e0e);
-  background-image: -webkit-linear-gradient(#ed2f2f, #dd0e0e);
-  color: #fff;
-  box-sizing: border-box;
-  margin-top: 10px;
-}
-
-/* 二쇰Ц�꾨즺 */
-#order-complete {
-    padding: 16px;
-    box-sizing: border-box;
-}
-#order-complete > section {}
-#order-complete > section > div {}
-#order-complete > section > div > h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  color: #555;
-  padding: 10px;
-}
-
-#order-complete > section > div > h2 > i {
-  font-size: 26px;
-}
-#order-complete > section > div > p {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-}
-
-#order-complete > section > section{}
-#order-complete > section > section > article{
-  margin-top: 16px;
-}
-#order-complete > section > section > article > h1 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #111;
-  padding: 6px 0;  
-}
-#order-complete table {
-  width: 100%;  
-  border-collapse: collapse;
-  border-spacing: 0;
-  border-top: 2px solid #000;
-}
-#order-complete table tr {
-  border-bottom: 1px solid #d3d3d3;
-}
-#order-complete table tr > th {
-  padding: 12px 0;    
-  background: #fff;
-  color: #383838;
-  font-size: 0.95em;
-  text-align: center;
-  letter-spacing: -0.1em;
-}
-#order-complete table tr > th:last-child {
-  width: 200px;
-}      
-
-#order-complete .product {}
-#order-complete .product table tr > td {
-  text-align: center;
-}      
-
-#order-complete .product table tr > td:last-child {
-  color:#ff006c;
-  font-weight: bold;
-  text-align: right;
-}
-#order-complete .product table tr > td > article {
-  overflow: hidden;
-}
-#order-complete .product table tr > td img {
-  float: left;
-  width: 80px;
-}
-#order-complete .product table tr > td div {
-  float: left;
-  margin-top: 10px;
-  text-align: left;
-}
-
-#order-complete .product .total > td > table {border: none;}
-#order-complete .product .total > td > table tr {border: none;}
-#order-complete .product .total > td > table tr:last-child span {
-  font-weight: bold;
-  color: #ff006c;
-}
-#order-complete .product .total > td > table td {
-  text-align: right;        
-  color: #111;
-  background: #f2f2f2;
-  font-weight: normal;
-  border-bottom: none;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-
-
-#order-complete .order {}
-#order-complete .order table {}
-#order-complete .order table tr {}
-#order-complete .order table tr > td {        
-  padding: 10px;
-  box-sizing: border-box;
-}
-#order-complete .order table span {
-  font-weight: bold;
-  color: #ff006c;
-}
-#order-complete .order table tr > td:nth-child(1) {width: 160px; background:#f2f2f2;}
-#order-complete .order table tr > td:nth-child(2) {width: auto;}
-#order-complete .order table tr > td:nth-child(3) {width: 100px; text-align: right; vertical-align: top; background:#f2f2f2;}
-#order-complete .order table tr > td:nth-child(4) {width: 100px; text-align: right; vertical-align: top; background:#f2f2f2;}
-
-
-
-#order-complete .delivery {}
-#order-complete .delivery table {}
-#order-complete .delivery table tr {}
-#order-complete .delivery table tr > td {
-  padding: 10px;
-  box-sizing: border-box;
-}
-#order-complete .delivery table tr > td:nth-child(1) {width: 160px; background:#f2f2f2;}
-#order-complete .delivery table tr > td:nth-child(3) {width: 200px; background:#f2f2f2;}
-
-#order-complete .alert {
-  width: 100%;
-  background-color: #f7f7f7;
-  padding: 10px;
-  padding-left: 24px;
-  color: #999;
-  box-sizing: border-box;
-}
-#order-complete .alert > h1 {margin-left: -12px;}
-
-#order-complete .alert > ul {
-  list-style: inherit;
-}
-
-#order-complete .alert > ul > li {
-  line-height: 20px;  
-}
-#order-complete .alert > ul > li > span {
-  position: relative;
-  left: -6px;
 }
 
 /* 검색 속성 */
@@ -3916,14 +3500,7 @@ margin: 10px;
 margin-top: 20px;
 }
 
-.delivery-center-header {
-margin: 0 auto;
-display: block;
-width: 30%;
-height: 100px;
-text-align: center;
-border: 1px solid orange;
-}
+
 
 .delivery-center-header > li{
 text-align: center;
@@ -3944,12 +3521,6 @@ font-size: 15px;
 color: #000;
 }
 
-.delivery-center {
-width: 50%;
-height: 100%;
-margin: 0 auto;
-border: 1px solid pink;
-}
 
 .delivery-center-left {
 float: left;
@@ -3965,15 +3536,7 @@ width: 48%;
 height: 100%;
 border: 1px solid blueviolet;
 }
-.delivery{
 
-  margin : 0;
-  width: 90%;
-  height: 35%;
-  list-style-type: none;
-  margin :  10px;
-  background-color: rgb(255, 255, 255);
-}
 .delivery > div > li {
   width: 100%;
   height: 20px;
@@ -4011,4 +3574,160 @@ border: 1px solid blueviolet;
   list-style-type: none;
   margin :  10px;
   background-color: rgb(255, 255, 255);
+}
+
+
+
+/*배송페이지*/
+.delivery{
+  height: 100%;
+ 
+}
+.delivery-header > a > img{
+height: 100px;
+object-fit: cover;
+margin: 10px;
+}
+.delivery-header{
+  height: 10%;
+
+}
+.delivery-center-header{
+  margin: 0 auto;
+  display: block;
+  width: 18%;
+  height: 100px;
+  text-align: center;
+}
+.delivery-center-header > li{
+  text-align: center;
+  float: left;
+  list-style-type: none;
+  width: 110px;
+ 
+  padding : 30px;
+}
+.delivery-center-header > li>a{
+  color :rgb(29, 29, 29);
+  font-size: 50px;
+}
+
+.delivery-center-header > li>span{
+  width: 500px;
+  font-size: 15px;
+  color: #000;
+}
+.delivery-center {
+
+  width: 100%;
+  height: 1100px;
+  margin-top: 150px;
+
+  text-align: center;
+}
+.delivery-header > h1 {
+  width: 5%;
+}
+.stepdelivery {
+  display: block;
+  margin:  0 auto;
+  width: 920px;
+  height: 530px;
+ 
+}
+
+.stepdelivery > .leftcol {
+  float:left;
+  margin :  0;
+  padding  : 0;
+  width: 60%;
+  height:100%;
+  
+}
+.stepdelivery > .rightcol {
+  float:right;
+  margin :  0;
+  padding  : 0;
+  width: 40%;
+  height: 100%;
+
+}
+.leftdelivery{
+  display: inline-block;
+  
+  width: 90%;
+  min-height: 20%;
+
+  margin-top : 10px;
+  background-color: rgb(255, 255, 255);
+  
+}
+.leftdelivery > h3 {
+  font-size: 22px;
+  color: #000;
+  padding-top: 40px;
+  
+}
+.leftdelivery > a {
+  float: left;
+  margin: 47px 0 0 30px;
+  font-size: 18px;
+  color: #000;
+ 
+}
+
+.hidedelivery {
+  background-color:  rgb(255, 255, 255);
+  height: 0px;
+  float: left;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  color: #000;
+}
+.hidedelivery > p {
+  padding: 20px 50px 20px 50px;
+  float: left;
+  width: 100%;
+  text-align: left;
+  font-size: 13px;
+  color: #000;
+}
+.rightdelivery{
+
+  margin : 0;
+  width: 90%;
+  height: 35%;
+  list-style-type: none;
+  margin :  10px;
+  background-color: rgb(255, 255, 255);
+}
+.rightdelivery > div > li {
+  width: 100%;
+  height: 20px;
+ 
+}
+.rightdelivery > div > li > span:nth-child(1){
+  float: left;
+  height: 20px;
+  width: 40%;
+  font-size: 18px;
+  margin :3px 18px 5px 20px;
+  padding-top: 17px;
+  padding-left: 15px;
+  color :rgb(20, 20, 20)
+}
+.rightdelivery > div > li > span:nth-child(2){
+  float:right;
+  text-align: right;
+  height: 20px;
+  width: 40%;
+  font-size: 18px;
+  margin: 3px 20px 5px 0px;
+  padding-top: 17px;
+  padding-right: 15px;
+  color :rgb(20, 20, 20)
+}
+.delivery-wrapper{
+  margin: 0 auto;
 }
