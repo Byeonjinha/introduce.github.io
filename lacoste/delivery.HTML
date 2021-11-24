@@ -21,83 +21,21 @@
     <link rel="stylesheet" href="./css/style시현.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    
-    <script>
-        $(function(){
-            
-            $('.hidepayment').css({"display" : "none"});                // 보이지않게 지정
-
-
-            var naverpay = $('div[name=naverpay]'),             //네이버페이
-                hidenaverpay = $('div[name=hidenaverpay]'),
-                paymentmethodnaver = $('input[name=payment-method-naver]') 
-                
-                kakaopay = $('div[name=kakaopay]'),             //카카오페이
-                hidekakaopay = $('div[name=hidekakaopay]'),
-
-
-                silsigan = $('div[name=silsigan]'),             //실시간이체
-                hidesilsigan = $('div[name=hidesilsigan]')
-
-
-                ;
-
-
-                naverpay.click(function(){         //네이버페이 클릭시
-                hidenaverpay.animate({height:'400px'},1000);
-                $('div[name=hidenaverpay]').css({"display" : "block"});
-                $('div[name=hidekakaopay]').css({"display" : "none"});
-                $('div[name=hidesilsigan]').css({"display" : "none"});
-                $('input[name=payment-method-naver]').prop('checked', true); 
-                $('input[name=payment-method-kakao]').prop('checked', false); 
-                $('input[name=payment-method-silsigan]').prop('checked', false); 
-                });
-
-                kakaopay.click(function(){         //실시간이체 클릭시
-                hidekakaopay.animate({height:'200px'},1000);
-                $('div[name=hidekakaopay]').css({"display" : "block"});
-                $('div[name=hidenaverpay]').css({"display" : "none"});
-                $('div[name=hidesilsigan]').css({"display" : "none"});
-                $('input[name=payment-method-kakao]').prop('checked', true); 
-                $('input[name=payment-method-naver]').prop('checked', false); 
-                $('input[name=payment-method-silsigan]').prop('checked', false); 
-                }); 
-
-                silsigan.click(function(){         //실시간이체 클릭시
-                hidesilsigan.animate({height:'150px'},1000);
-                $('div[name=hidesilsigan]').css({"display" : "block"});
-                $('div[name=hidenaverpay]').css({"display" : "none"});
-                $('div[name=hidekakaopay]').css({"display" : "none"});
-                $('input[name=payment-method-silsigan]').prop('checked', true); 
-                $('input[name=payment-method-naver]').prop('checked', false); 
-                $('input[name=payment-method-kakao]').prop('checked', false); 
-                });    
-
-           
-            });
-
-
-    </script>
 
 </head>
 <body>
-    <div id="payment-wrapper">
+    <div id="delivery-wrapper">
         <header>
             <div>  
                 <a href="#" class="logo">
                     <img src="./img/4.png" alt="로고"/>
-                </a>
-        
-           
-        
-               
+                </a> 
             </div>
-    
         </header>
-        <main class = "payment">
+        <main class = "delivery">
           
-            <section class="payment-center" style="background-color: rgb(236, 239, 241);"   >                
-                <div class = "payment-center-header">
+            <section class="delivery-center" style="background-color: rgb(236, 239, 241);"   >                
+                <div class = "delivery-center-header">
                     <li>
                     <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i></a>
                     <span>쇼핑백</span> 
@@ -113,20 +51,20 @@
                     </li>
                      
                 </div>
-                <div class = "steppayment">
+                <div class = "stepdelivery">
                     <div class = "leftcol">
-                        <div class = "leftpayment"> <h3>배송</h3> </div>
-                        <div class = "leftpayment" name = "naverpay"> <a > <input type="radio" class = "payment-method" name= "payment-method-naver"> 당일배송-4000원<br>
+                        <div class = "leftdelivery"> <h3>배송</h3> </div>
+                        <div class = "leftdelivery" name = "naverpay"> <a > <input type="radio" class = "delivery-method" name= "delivery-method"> 당일배송-4000원<br>
                             당일배송은 오전 00시 01분부터 오후 12시까지 결제 완료한 서울 지역 주문에 한하여 진행됩니다. 오후 12시 이후 및 주말/공휴일 주문의 경우 돌아오는 첫 영업일 기준으로 순차적으로 배송되며, 빠른 배송진행을 위해 당일배송 신청 후, 주소변경 및 주문취소는 불가합니다</a>
                         
                         </div>
 
-                        <div class = "leftpayment" name = "kakaopay"> <a > <input type="radio" class = "payment-method" name= "payment-method-kakao"> 일반배송-무료<br>
+                        <div class = "leftdelivery" name = "kakaopay"> <a > <input type="radio" class = "delivery-method" name= "delivery-method"> 일반배송-무료<br>
                             입금 확인 후 3~4일 이내(공휴일 제외)에 배달됩니다 (나의 라코스테 폴로 등 일부 품목 제외) 그러나 배송기간 중 휴일이 포함되어 있거나 제품의 재고 상황에 따라 기간이 다소 지연될 수도 있습니다.</a> 
                           
                         </div>
 
-                        <div class = "leftpayment" name = "silsigan"> <a > 라코스테 선물 포장서비스<br>
+                        <div class = "leftdelivery" name = "silsigan"> <a > 라코스테 선물 포장서비스<br>
                             무료로 선물포장 서비스를 제공하고 있습니다.
                             선물포장은 라코스테 쇼핑백과 리본 포장이 되어 발송되며
                             주문하신 제품의 종류나 크기 그리고 수량에 따라
@@ -141,13 +79,13 @@
                             
                     </div>
                     <div class = "rightcol">
-                        <div class = "rightpayment">
+                        <div class = "rightdelivery">
                             <div class = "summary-products"><img src="img/대표1_썸네일.jpg" ><p>(남성) 베이직 라운드 MTM 셔츠</p><span>169,000 원</span></div>
                             <div class = "summary-products"><img src="img/대표1_썸네일.jpg" ><p>(남성) 베이직 라운드 MTM 셔츠</p><span>169,000 원</span></div>
                             <div class = "summary-products"><img src="img/대표1_썸네일.jpg" ><p>(남성) 베이직 라운드 MTM 셔츠</p><span>169,000 원</span></div>
                         </div>
                         
-                        <div class = "rightpayment"> 
+                        <div class = "rightdelivery"> 
                             <div>
                                 <li><span style="font-weight: bold;">7개 상품</span>    <span  style="font-weight: bold;">823,000 원</span></li>
                                 <li><span>배송비</span>    <span>0 원</span></li>
