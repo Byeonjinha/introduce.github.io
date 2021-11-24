@@ -74,6 +74,18 @@
             pager: false,               
             easing: 'linear',           
         });
+        $('#slider13 > ul').bxSlider({   
+            pager: false,               
+            easing: 'linear',           
+        });
+        $('#slider14 > ul').bxSlider({   
+            pager: false,               
+            easing: 'linear',           
+        });
+        $('#slider15 > ul').bxSlider({   
+            pager: false,               
+            easing: 'linear',           
+        });
       });
     $(function(){
         $('main > aside > .catelist >a:nth-child(1)').click(function(){
@@ -188,6 +200,33 @@
           $('body,html').animate({scrollTop: absoluteTop-230},1000);
           return false;
         });
+        $('main > aside > .catelist >a:nth-child(14)').click(function(){
+          const slider = document.getElementById('slider13'); // 요소의 id 값이 target이라 가정
+          const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
+          const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
+          const scrolledTopLength = window.pageYOffset;
+          const absoluteTop = scrolledTopLength + relativeTop;
+          $('body,html').animate({scrollTop: absoluteTop-230},1000);
+          return false;
+        });
+        $('main > aside > .catelist >a:nth-child(15)').click(function(){
+          const slider = document.getElementById('slider14'); // 요소의 id 값이 target이라 가정
+          const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
+          const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
+          const scrolledTopLength = window.pageYOffset;
+          const absoluteTop = scrolledTopLength + relativeTop;
+          $('body,html').animate({scrollTop: absoluteTop-230},1000);
+          return false;
+        });
+        $('main > aside > .catelist >a:nth-child(16)').click(function(){
+          const slider = document.getElementById('slider15'); // 요소의 id 값이 target이라 가정
+          const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
+          const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
+          const scrolledTopLength = window.pageYOffset;
+          const absoluteTop = scrolledTopLength + relativeTop;
+          $('body,html').animate({scrollTop: absoluteTop-230},1000);
+          return false;
+        });
         });
 
         
@@ -229,7 +268,10 @@
                 <a href="#">9. 빅데이터플랫폼아키텍쳐설계<br> <br> </a> 
                 <a href="#">10. 분석용데이터구축<br> <br>  </a> 
                 <a href="#">11. 머신러닝기반데이터분석<br> <br> </a> 
-                <a href="#">12. 탐색적데이터분석<br> <br> <br> </a> 
+                <a href="#">12. 탐색적데이터분석<br> <br> </a> 
+                <a href="#">13. 통계기반데이터분석<br> <br> </a> 
+                <a href="#">14. 텍스트데이터분석<br> <br> </a> 
+                <a href="#">15. 빅데이터분석시각화<br> <br> <br> </a> 
           </article>
       </aside>
       
@@ -422,6 +464,53 @@
                     <li><a href="#"><img src="./12탐색적데이터분석/슬라이드5.PNG" alt="item5"></a></li>
                     <li><a href="#"><img src="./12탐색적데이터분석/슬라이드6.PNG" alt="item6"></a></li>
                     <li><a href="#"><img src="./12탐색적데이터분석/슬라이드7.PNG" alt="item7"></a></li>
+  
+                </ul>
+            </section>
+            <span>13. 통계기반데이터분석</span>
+            <section id="slider13">
+                <ul>
+                    <li><a href="#"><img src="./13통계기반데이터분석/슬라이드1.PNG" alt="item1"></a></li>
+                    <li><a href="#"><img src="./13통계기반데이터분석/슬라이드2.PNG" alt="item2"></a></li>
+                    <li><a href="#"><img src="./13통계기반데이터분석/슬라이드3.PNG" alt="item3"></a></li>
+                    <li><a href="#"><img src="./13통계기반데이터분석/슬라이드4.PNG" alt="item4"></a></li>
+                    <li><a href="#"><img src="./13통계기반데이터분석/슬라이드5.PNG" alt="item5"></a></li>
+                    <li><a href="#"><img src="./13통계기반데이터분석/슬라이드6.PNG" alt="item6"></a></li>
+                    <li><a href="#"><img src="./13통계기반데이터분석/슬라이드7.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./13통계기반데이터분석/슬라이드8.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./13통계기반데이터분석/슬라이드9.PNG" alt="item7"></a></li>
+  
+                </ul>
+            </section>
+            <span>14. 텍스트데이터분석</span>
+            <section id="slider14">
+                <ul>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드1.PNG" alt="item1"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드2.PNG" alt="item2"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드3.PNG" alt="item3"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드4.PNG" alt="item4"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드5.PNG" alt="item5"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드6.PNG" alt="item6"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드7.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드8.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드9.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드10.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드11.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드12.PNG" alt="item7"></a></li>
+                    <li><a href="#"><img src="./14텍스트데이터분석/슬라이드13.PNG" alt="item7"></a></li>
+                    
+                </ul>
+            </section>
+            <span>15. 빅데이터분석시각화</span>
+            <section id="slider15">
+                <ul>
+                    <li><a href="#"><img src="./15빅데이터분석결과시각화/슬라이드1.PNG" alt="item1"></a></li>
+                    <li><a href="#"><img src="./15빅데이터분석결과시각화/슬라이드2.PNG" alt="item2"></a></li>
+                    <li><a href="#"><img src="./15빅데이터분석결과시각화/슬라이드3.PNG" alt="item3"></a></li>
+                    <li><a href="#"><img src="./15빅데이터분석결과시각화/슬라이드4.PNG" alt="item4"></a></li>
+                    <li><a href="#"><img src="./15빅데이터분석결과시각화/슬라이드5.PNG" alt="item5"></a></li>
+                    <li><a href="#"><img src="./15빅데이터분석결과시각화/슬라이드6.PNG" alt="item6"></a></li>
+                    <li><a href="#"><img src="./15빅데이터분석결과시각화/슬라이드7.PNG" alt="item7"></a></li>
   
                 </ul>
             </section>
