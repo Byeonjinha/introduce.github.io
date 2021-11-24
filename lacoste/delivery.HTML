@@ -53,18 +53,25 @@
                 </div>
                 <div class = "stepdelivery">
                     <div class = "leftcol">
-                        <div class = "leftdelivery"> <h3>배송</h3> </div>
-                        <div class = "leftdelivery" name = "naverpay"> <a > <input type="radio" class = "delivery-method" name= "delivery-method"> 당일배송-4000원<br>
-                            당일배송은 오전 00시 01분부터 오후 12시까지 결제 완료한 서울 지역 주문에 한하여 진행됩니다. 오후 12시 이후 및 주말/공휴일 주문의 경우 돌아오는 첫 영업일 기준으로 순차적으로 배송되며, 빠른 배송진행을 위해 당일배송 신청 후, 주소변경 및 주문취소는 불가합니다</a>
+                   
+                        <div class = "leftdelivery" name = "delivery-baesong">
+                            <h3>배송</h3> 
+                            <a > <input type="radio" class = "delivery-method" name= "delivery-method"> 당일배송 - <strong>4000원</strong><br></a>
+                            <p>당일배송은 오전 00시 01분부터 오후 12시까지 결제 완료한 서울 지역 주문에 한하여 진행됩니다. 오후 12시 이후 및 주말/공휴일 주문의 경우 돌아오는 첫 영업일 기준으로 순차적으로 배송되며, 빠른 배송진행을 위해 당일배송 신청 후, 주소변경 및 주문취소는 불가합니다</p>
                         
-                        </div>
-
-                        <div class = "leftdelivery" name = "kakaopay"> <a > <input type="radio" class = "delivery-method" name= "delivery-method"> 일반배송-무료<br>
-                            입금 확인 후 3~4일 이내(공휴일 제외)에 배달됩니다 (나의 라코스테 폴로 등 일부 품목 제외) 그러나 배송기간 중 휴일이 포함되어 있거나 제품의 재고 상황에 따라 기간이 다소 지연될 수도 있습니다.</a> 
+                            <a > <input type="radio" class = "delivery-method" name= "delivery-method"> 일반배송 - <strong>무료</strong> <br></a> 
+                            <p>입금 확인 후 3~4일 이내(공휴일 제외)에 배달됩니다 (나의 라코스테 폴로 등 일부 품목 제외) 그러나 배송기간 중 휴일이 포함되어 있거나 제품의 재고 상황에 따라 기간이 다소 지연될 수도 있습니다.</p>
                           
                         </div>
-
-                        <div class = "leftdelivery" name = "silsigan"> <a > 라코스테 선물 포장서비스<br>
+                        <div class = "leftdelivery" name = "delivery-pojangservice"> <h3 > 배송지<br></h3>
+                            <div class = "deliveryaddress">
+                                <p>김게이</p>
+                                <p>부산광역시 사하구 하단동 낙동대로 519번길 1 304호</p>
+                            </div>
+                     
+                        </div>
+                        <div class = "leftdelivery" name = "delivery-pojangservice"> <h3> 라코스테 선물 포장서비스<br> </h3> 
+                            <p>
                             무료로 선물포장 서비스를 제공하고 있습니다.
                             선물포장은 라코스테 쇼핑백과 리본 포장이 되어 발송되며
                             주문하신 제품의 종류나 크기 그리고 수량에 따라
@@ -73,8 +80,9 @@
                             사이즈가 큰상품이나 많은 수량의 상품 주문시 선물 박스가 아닌
                             쇼핑백에 리본포장으로 발송될 수 있는점 양해 부탁 드립니다.
                             위 사항들은 교환 및 반품, 환불의 사유가 될 수 없습니다.
-                            </a>
-                          
+                        </p>
+                           
+                            <p><input type="checkbox" name="delivery-agree" /> 선물포장추가</p>
                         </div>
                             
                     </div>
@@ -86,14 +94,16 @@
                         </div>
                         
                         <div class = "rightdelivery"> 
-                            <div>
+                            <div class = "rightdelivery-naeyong">
                                 <li><span style="font-weight: bold;">7개 상품</span>    <span  style="font-weight: bold;">823,000 원</span></li>
                                 <li><span>배송비</span>    <span>0 원</span></li>
                                 <li><span>seasonoff</span>    <span>- 137,100 원</span></li>
                                 <li><span>부가세 포함</span>    <span>0 원</span></li>
                                 <li><span>총 결제금액</span>    <span>685,900 원</span></li>
-                     
-                                <button class="orderBTN">결제하기</button>
+                              
+                            </div>
+                            <div class = "rightdelivery-BTN">
+                            <button class="delivery-orderBTN">결제하기</button>
                             </div>
                         </div>
             
