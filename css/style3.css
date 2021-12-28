@@ -2,7 +2,7 @@
 * {
   margin: 0;                /* 바깥 여백 */
   padding: 0;               /* 내부 여백 */
-  font: normal 25px '돋움체';   /* 폰트 설정  */
+
 
   font-family: 'Noto Sans KR', sans-serif;}
 
@@ -13,7 +13,6 @@ a {text-decoration: none; color: rgb(145, 144, 144) ;}  /* text-decoration CSS �
   position: relative;
   width: 100%;  /*  넓이 100% */
   height: 100%;
-  padding-top: calc(10/1000*100%);
   background-image: url(../img/alley-ge7df62e32_1920.jpg); 
   background-attachment: fixed;
   
@@ -22,54 +21,63 @@ a {text-decoration: none; color: rgb(145, 144, 144) ;}  /* text-decoration CSS �
 }
 /* header 속성정의 */
 header {
-    width: 100%;
-    height: 197px;      /* 위에서 197px 의 거리 */
- 
-    background-size: cover;
-    z-index: 0;
+  width: 100%;  /* 위에서 197px 의 거리 */
+  background-size: cover;
+  z-index: 0;
 }
 header > div {    
-    width: 100%;            
-    box-sizing: border-box;  /* box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성 // border-box 는  테두리를 기준으로 크기를 정함*/
-    height: 100vw;
-    background-size: cover;
-  }
+  width: 100%;            
+  box-sizing: border-box;  /* box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성 // border-box 는  테두리를 기준으로 크기를 정함*/
+  height: 100vw;
+  background-size: cover;
+}
+
+
 header > .top {     /* header 의 .(클래스 선택자) top */
   
-    height: 100px;
-    border-bottom: 1px solid #e9e9e9;  /*요소 테두리의 아래쪽 스타일을 지정 1px , solid(실선) , 선색  */
-    padding-bottom : 10px;
-  }
+  height: 60%;
+  border-bottom: 1px solid #e9e9e9;  /*요소 테두리의 아래쪽 스타일을 지정 1px , solid(실선) , 선색  */
+
+}
+
 
 header > .top > div {
-  width: 1000px;
-  height: 100%;
+  height: 70px;
   margin: 0 auto;     /* margin 바깥여백 0  , auto는 가로 중앙에 배치한다는 의미 */        
   text-align:center;  /* text-align 속성은 텍스트의 정렬 방향을 의미 */
-   
+  padding : 5px;
+  
+}
+
+header > .top > div {
+  height: 70px;
+  margin: 0 auto;     /* margin 바깥여백 0  , auto는 가로 중앙에 배치한다는 의미 */        
+  text-align:center;  /* text-align 속성은 텍스트의 정렬 방향을 의미 */
+  padding : 5px;
+  
 }
 
 header > .top > div > a {     /* <a> 태그는 하이퍼링크를 걸어주는 태그 */
+border : 2px solid rgb(38, 27, 100); 
+outline : 3px solid #f3f3f3; 
   display: inline-block; /* display 속성은 웹페이지 상에서 엘리먼트들이 어떻게 보여지고 다른 엘리먼트와 어떻게 상호 배치되는지를 결정*/
   /* 속성이 inline으로 지정된 엘리먼트는 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 */
   /* 속성이 block으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지 */    
   /* 속성이 inline-block으로 지정된 엘리먼트는 기본적으로 inline 엘리먼트처럼 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 */
   height: 100%;
-  line-height: 100px;  /* line-height는 줄 높이를 정하는 속성 */
-  width: 230px;
-  border-left: 5px solid #232d58; /* border-left 는 요소의 왼쪽 테두리를 설정 */
-  border-right: 5px solid #232d58;       /* 내부 여백 */
+  line-height:70px;  /* line-height는 줄 높이를 정하는 속성 */
+  
+  width: 10% ;
+  font-size: 20px;
   color: rgb(145, 144, 144);
   background-color:  #e4fafa;
   border-radius: 10px 10px 10px 10px;
-  border : 4px solid rgb(38, 27, 100); 
-  outline : 4px solid #f3f3f3; 
+
 }
 header > .top > div > a:nth-child(1).button {
   width: 200px; 
 	height: 123px;  
 	position: fixed;  
-	left:calc(50% - 100px); 
 	top:-123px;
 		transition:0.5s;
 	-webkit-transition:0.5s;
@@ -84,7 +92,6 @@ header > .top > div > a:hover { /* a:link 방문하기전의 링크 / a:visited 
 
 /* main 속성 정의 */
 main {           
-    width: 1200px;
     height: auto;
     margin: 0 auto;            
     overflow: hidden;
@@ -106,15 +113,14 @@ main > aside {    /* main > aside 선택  (카테고리 메뉴 + 베스트메뉴
     height: 100%;
 }
 
-main > aside > .catelist1  {
-  border : 4px solid rgb(38, 27, 100); 
-  outline : 4px solid #f3f3f3; 
+main > aside > .catelist1 {
+  border : 2px solid rgb(38, 27, 100); 
+  outline : 3px solid #f3f3f3; 
     position: fixed;
-    top: 230px;
-    margin-left : -300px;
-    padding-top: 40px;
-    font-size: 10px;
-    width: 300px;
+    top: 150px;
+    margin-left:10px;
+    padding-top: 20px;
+    width: 240px;
     height: auto;
     box-sizing: border-box;
     z-index: 2;
@@ -122,12 +128,12 @@ main > aside > .catelist1  {
     border-radius: 10px 10px 10px 10px ;
 }
 
+
+
 main > aside > .catelist1 >a {
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 20px;
 }
-
-
 
 main > aside > .catelist1 > ol {
     width: 100%;
@@ -141,27 +147,27 @@ main > aside > .catelist1 > ol > li {
 }
 
 
-main > aside > .catelist1 >a {
-    font-size: 20px;
+main > aside > .catelist >a {
+  font-size: 15px;
+  margin-left: 20px;
 }
 
 main > aside > .catelist1 >a:nth-child(1) {
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 20px;
 }
 main > aside > .catelist1 >a:hover {
   color: rgb(80, 80, 80); 
   border-bottom: 1px solid #444;
 }
-main > aside > .catelist2  {
-  border : 4px solid rgb(38, 27, 100); 
-  outline : 4px solid #f3f3f3; 
+main > aside > .catelist2 {
+  border : 2px solid rgb(38, 27, 100); 
+  outline : 3px solid #f3f3f3; 
     position: fixed;
     top: 230px;
-    margin-left : -300px;
+    margin-left:10px;
     padding-top: 40px;
-    font-size: 10px;
-    width: 300px;
+    width: 240px;
     height: auto;
     box-sizing: border-box;
     z-index: 2;
@@ -170,7 +176,7 @@ main > aside > .catelist2  {
 }
 
 main > aside > .catelist2 >a {
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 20px;
 }
 
@@ -188,12 +194,9 @@ main > aside > .catelist2 > ol > li {
 }
 
 
-main > aside > .catelist2 >a {
-    font-size: 20px;
-}
 
 main > aside > .catelist2 >a:nth-child(1) {
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 20px;
 }
 main > aside > .catelist2 >a:hover {
