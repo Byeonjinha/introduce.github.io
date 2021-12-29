@@ -133,10 +133,12 @@ main > aside > .catelist1 {
 main > aside > .catelist1 >a {
   font-size: 15px;
   margin-left: 20px;
+  display: none;
 }
 
 main > aside > .catelist1 > ol {
     width: 100%;
+
 }
 main > aside > .catelist1 > ol > li {
     width: 100%;
@@ -319,5 +321,9 @@ footer {
 }
 .bigdata_paging > a{
 
+  margin: 5px;
+}
+.bigdata_paging > a:nth-child(1){
+  color: #111;
   margin: 5px;
 }
