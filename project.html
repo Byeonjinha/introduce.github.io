@@ -23,7 +23,26 @@
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
 </style>
-    <script>                            // script  데이터와 실행 가능한 코드를 문서에 포함할 때 사용
+    <script>
+        $( document ).ready( function() {
+
+      $( 'a[class=1]' ).show("slide", { direction: "right" },100, function() {
+        } );
+    });
+    setInterval(function() { 
+      $( 'a[class=2]'  ).show("slide", { direction: "right" },100, function() {
+        } );
+      },200);
+      setInterval(function() { 
+        $( 'a[class=3]').show("slide", { direction: "right" },100, function() {
+        } );
+      },400);
+      setInterval(function() { 
+        $( 'a[class=4]').show("slide", { direction: "right" },100, function() {
+        } );
+      },600);  
+  
+    // script  데이터와 실행 가능한 코드를 문서에 포함할 때 사용
       $(document).ready(function(){     // 문서가 준비되면 매개변수로 넣은 콜백 함수를 실행
 
         $('#slider1 > ul').bxSlider({   // 이미지 슬라이더 사용 
@@ -51,12 +70,12 @@
 
 
     $(function(){
-        $('main > aside > .catelist >a:nth-child(1)').click(function(){
+        $('a[class=1]').click(function(){
   
             $('body,html').animate({scrollTop:0},1000);
             return false;
           });
-        $('main > aside > .catelist >a:nth-child(2)').click(function(){  //클릭했을 때
+        $('a[class=2]').click(function(){  //클릭했을 때
           const slider = document.getElementById('slider1'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -65,7 +84,7 @@
           $('body,html').animate({scrollTop: absoluteTop-300},1000);
           return false;
         });
-        $('main > aside > .catelist >a:nth-child(3)').click(function(){
+        $('a[class=3]').click(function(){
           const slider = document.getElementById('slider2'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -74,7 +93,7 @@
           $('body,html').animate({scrollTop: absoluteTop-300},1000);
           return false;
         });
-        $('main > aside > .catelist >a:nth-child(4)').click(function(){
+        $('a[class=4]').click(function(){
           const slider = document.getElementById('slider3'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -83,24 +102,7 @@
           $('body,html').animate({scrollTop: absoluteTop-300},1000);
           return false;
         });
-        $('main > aside > .catelist >a:nth-child(5)').click(function(){
-          const slider = document.getElementById('slider4'); // 요소의 id 값이 target이라 가정
-          const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
-          const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
-          const scrolledTopLength = window.pageYOffset;
-          const absoluteTop = scrolledTopLength + relativeTop;
-          $('body,html').animate({scrollTop: absoluteTop-300},1000);
-          return false;
-        });
-        $('main > aside > .catelist >a:nth-child(6)').click(function(){
-          const slider = document.getElementById('slider5'); // 요소의 id 값이 target이라 가정
-          const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
-          const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
-          const scrolledTopLength = window.pageYOffset;
-          const absoluteTop = scrolledTopLength + relativeTop;
-          $('body,html').animate({scrollTop: absoluteTop-300},1000);
-          return false;
-        });
+  
       });
   </script>          <!-- 스크립트 종료 선언-->                  
 </head>
@@ -124,10 +126,10 @@
 
           <!-- 베스트상품 배너 -->
           <article class="catelist">   <!-- <article> 태그는 해당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의할 때 사용합니다. -->
-                <a href="#">목록<br> <br></a> 
-                <a href="#">1. 팜스토리_Spring<br> <br> </a> 
-                <a href="#">2. K마켓<진행중><br> <br> </a> 
-                <a href="#">3. AJAX(쇼핑몰)<br> <br> <br></a> 
+                <a href="#" class='1'>목록<br> <br></a> 
+                <a href="#" class='2'>1. 팜스토리_Spring<br> <br> </a> 
+                <a href="#" class='3'>2. K마켓<진행중><br> <br> </a> 
+                <a href="#" class='4'>3. AJAX(쇼핑몰)<br> <br> <br></a> 
           </article>
       </aside>
       
