@@ -111,11 +111,13 @@ main > aside > .catelist {
     z-index: 2;
     background-color: #e4fafa;
     border-radius: 10px 10px 10px 10px ;
+    
 }
 
 main > aside > .catelist >a {
     font-size: 15px;
     margin-left: 20px;
+    display: none; 
 }
 
 main > aside > .catelist >a:nth-child(1) {
