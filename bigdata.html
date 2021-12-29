@@ -23,7 +23,58 @@
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
 </style>
-    <script>                              // script  데이터와 실행 가능한 코드를 문서에 포함할 때 사용
+ <script>
+        $( document ).ready( function() {
+
+      $( 'a[class=1]' ).show("slide", { direction: "right" },100, function() {
+        } );
+    });
+    setInterval(function() { 
+      $( 'a[class=2]'  ).show("slide", { direction: "right" },100, function() {
+        } );
+      },200);
+      setInterval(function() { 
+        $( 'a[class=3]').show("slide", { direction: "right" },100, function() {
+        } );
+      },400);
+      setInterval(function() { 
+        $( 'a[class=4]').show("slide", { direction: "right" },100, function() {
+        } );
+      },600);
+      setInterval(function() { 
+        $( 'a[class=5]').show("slide", { direction: "right" },100, function() {
+        } );
+      },800);
+      setInterval(function() { 
+        $( 'a[class=6]').show("slide", { direction: "right" },100, function() {
+        } );
+      },1000);
+      setInterval(function() { 
+        $( 'a[class=7]').show("slide", { direction: "right" },100, function() {
+        } );
+      },1200);
+      setInterval(function() { 
+        $( 'a[class=8]').show("slide", { direction: "right" },100, function() {
+        } );
+      },1400);
+      setInterval(function() { 
+        $( 'a[class=9]').show("slide", { direction: "right" },100, function() {
+        } );
+      },1600);
+      setInterval(function() { 
+        $( 'a[class=10]').show("slide", { direction: "right" },100, function() {
+        } );
+      },1800); setInterval(function() { 
+        $( 'a[class=11]').show("slide", { direction: "right" },100, function() {
+        } );
+      },2000);
+      setInterval(function() { 
+        $( 'div[class=bigdata_paging]').show("slide", { direction: "right" },100, function() {
+        } );
+      },2200);  
+  </script>
+    <script>    
+                              // script  데이터와 실행 가능한 코드를 문서에 포함할 때 사용
       $(document).ready(function(){     // 문서가 준비되면 매개변수로 넣은 콜백 함수를 실행
         
         $('#slider1 > ul').bxSlider({   // 이미지 슬라이더 사용 
@@ -88,7 +139,7 @@
         });
       });
     $(function(){
-        $('main > aside > .catelist1 >a:nth-child(1)').click(function(){
+        $('a[class=1]').click(function(){
             $('body,html').animate({scrollTop:0},1000);
             return false;
           });
@@ -96,7 +147,7 @@
             $('body,html').animate({scrollTop:0},1000);
             return false;
           });
-        $('main > aside > .catelist1 >a:nth-child(2)').click(function(){
+        $('a[class=2]').click(function(){
           const slider = document.getElementById('slider1'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -105,7 +156,7 @@
           $('body,html').animate({scrollTop: absoluteTop-230},1000);
           return false;
         });
-        $('main > aside > .catelist1 >a:nth-child(3)').click(function(){
+        $('a[class=3]').click(function(){
           const slider = document.getElementById('slider2'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -114,7 +165,7 @@
           $('body,html').animate({scrollTop: absoluteTop-230},1000);
           return false;
         });
-        $('main > aside > .catelist1 >a:nth-child(4)').click(function(){
+        $('a[class=4]').click(function(){
           const slider = document.getElementById('slider3'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -123,7 +174,7 @@
           $('body,html').animate({scrollTop: absoluteTop-230},1000);
           return false;
         });
-        $('main > aside > .catelist1 >a:nth-child(5)').click(function(){
+        $('a[class=5]').click(function(){
           const slider = document.getElementById('slider4'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -132,7 +183,7 @@
           $('body,html').animate({scrollTop: absoluteTop-230},1000);
           return false;
         });
-        $('main > aside > .catelist1 >a:nth-child(6)').click(function(){
+        $('a[class=6]').click(function(){
           const slider = document.getElementById('slider5'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -141,7 +192,7 @@
           $('body,html').animate({scrollTop: absoluteTop-230},1000);
           return false;
         });
-        $('main > aside > .catelist1 >a:nth-child(7)').click(function(){
+        $('a[class=7]').click(function(){
           const slider = document.getElementById('slider6'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -150,7 +201,7 @@
           $('body,html').animate({scrollTop: absoluteTop-230},1000);
           return false;
         });
-        $('main > aside > .catelist1 >a:nth-child(8)').click(function(){
+        $('a[class=8]').click(function(){
           const slider = document.getElementById('slider7'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -159,7 +210,7 @@
           $('body,html').animate({scrollTop: absoluteTop-230},1000);
           return false;
         });
-        $('main > aside > .catelist1 >a:nth-child(9)').click(function(){
+        $('a[class=9]').click(function(){
           const slider = document.getElementById('slider8'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -168,7 +219,7 @@
           $('body,html').animate({scrollTop: absoluteTop-230},1000);
           return false;
         });
-        $('main > aside > .catelist1 >a:nth-child(10)').click(function(){
+        $('a[class=10]').click(function(){
           const slider = document.getElementById('slider9'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -177,7 +228,7 @@
           $('body,html').animate({scrollTop: absoluteTop-230},1000);
           return false;
         });
-        $('main > aside > .catelist1 >a:nth-child(11)').click(function(){
+        $('a[class=11]').click(function(){
           const slider = document.getElementById('slider10'); // 요소의 id 값이 target이라 가정
           const clientRect = slider.getBoundingClientRect(); // DomRect 구하기 (각종 좌표값이 들어있는 객체)
           const relativeTop = clientRect.top; // Viewport의 시작지점을 기준으로한 상대좌표 Y 값.
@@ -236,13 +287,15 @@
 
             $('article[name=catelist1]').css("display","block");
             $('article[name=catelist2]').css("display","none");
- 
+            $('a[class=pg_1]').css("color", "#111");
+            $('a[class=pg_2]').css("color", "rgb(145, 144, 144)");
         });
         $('.bigdata_paging > a:nth-child(2)').click(function(){
 
             $('article[name=catelist1]').css("display","none");
             $('article[name=catelist2]').css("display","block");
-
+            $('a[class=pg_1]').css("color", "rgb(145, 144, 144)");
+            $('a[class=pg_2]').css("color", "#111");
         });
     });
         
@@ -272,19 +325,19 @@
 
           <!-- 베스트상품 배너 -->
           <article class="catelist1" name="catelist1">   <!-- <article> 태그는 해당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의할 때 사용합니다. -->
-                <a href="#">목록<br> <br></a> 
-                <a href="#">1. 빅데이터환경분석<br> <br></a> 
-                <a href="#">2. 빅데이터분석기획<br> <br></a> 
-                <a href="#">3. 빅데이터수집시스템개발<br> <br></a> 
-                <a href="#">4. 빅데이터저장시스템개발 <br> <br> </a> 
-                <a href="#">5. 빅데이터처리시스템개발<br> <br></a> 
-                <a href="#">6. 빅데이터분석시스템개발<br> <br></a> 
-                <a href="#">7. 빅데이터품질관리시스템개발<br> <br></a> 
-                <a href="#">8. 빅데이터플랫폼테스트<br> <br></a> 
-                <a href="#">9. 빅데이터플랫폼아키텍쳐설계<br> <br> </a> 
-                <a href="#">10. 분석용데이터구축<br> <br>  </a> 
-                <div class = "bigdata_paging">
-                <a href="#here">1</a><a href="#here">2</a>
+                <a href="#" class='1'>목록<br> <br></a> 
+                <a href="#"class='2'>1. 빅데이터환경분석<br> <br></a> 
+                <a href="#"class='3'>2. 빅데이터분석기획<br> <br></a> 
+                <a href="#"class='4'>3. 빅데이터수집시스템개발<br> <br></a> 
+                <a href="#"class='5'>4. 빅데이터저장시스템개발 <br> <br> </a> 
+                <a href="#"class='6'>5. 빅데이터처리시스템개발<br> <br></a> 
+                <a href="#"class='7'>6. 빅데이터분석시스템개발<br> <br></a> 
+                <a href="#"class='8'>7. 빅데이터품질관리시스템개발<br> <br></a> 
+                <a href="#"class='9'>8. 빅데이터플랫폼테스트<br> <br></a> 
+                <a href="#"class='10'>9. 빅데이터플랫폼아키텍쳐설계<br> <br> </a> 
+                <a href="#"class='11'>10. 분석용데이터구축<br> <br>  </a> 
+                <div class = "bigdata_paging" style="display: none;">
+                <a href="#here"class="pg_1">1</a><a href="#here"class="pg_2">2</a>
                 </div>   
           </article>
           <article class="catelist2" name="catelist2" style="display:none">  
@@ -295,7 +348,7 @@
             <a href="#">14. 텍스트데이터분석<br> <br> </a> 
             <a href="#">15. 빅데이터분석시각화<br> <br> <br> </a> 
             <div class = "bigdata_paging">
-                <a href="#here">1</a><a href="#here">2</a>
+                <a href="#here" class="pg_1">1</a><a href="#here" class="pg_2">2</a>
                 </div>  
           </article>
     
