@@ -229,8 +229,8 @@ main > section >span {
 }
 
 main > section > section {
-  border : 4px solid rgb(38, 27, 100); 
-  outline : 4px solid #f3f3f3; 
+  border : 2px solid rgb(38, 27, 100); 
+  outline : 3px solid #f3f3f3; 
   padding: 20px;
   width: 1000px;
   margin: 10px;
