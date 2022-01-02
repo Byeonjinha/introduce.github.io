@@ -1,0 +1,141 @@
+<HTML>
+  <HEAD>
+      <TITLE>해피CGI</TITLE>
+  <script type="text/javascript">
+  <!--
+  
+  window.onerror         = new Function("return true");
+  document.onselectstart = new Function("return false");
+  
+  nx  = 0;
+  ny  = 0;
+  xm  = 0;
+  ym  = -1000000;
+  O   = 0;
+  
+  /////////////
+  VS  = .2;
+  S   = 5000;
+  W   = 500;
+  H   = 320;
+  FX  = 1.1;
+  /////////////
+  
+  function CObj(parent,x,y,txt){
+      o = document.createElement("span");
+      o.style.position='absolute';
+      o.innerHTML = txt;
+      document.getElementById("sp").appendChild(o);
+      this.obj  = o.style;
+      this.x   = x;
+      this.y   = y;
+      this.x0  = x;
+      this.y0  = y;
+      this.anim = function () {
+          with(this){
+              dx = xm - x;
+              dy = ym - y;
+              d = Math.sqrt(dx * dx + dy * dy);
+              obj.left = x = x - S / d * (dx / d) + (x0 - x) * VS;
+              obj.top  = y = y - S / d * (dy / d) + (y0 - y) * VS;
+              if(parent)parent.anim();
+          }
+      }
+  }
+  
+  function run(){
+      O.anim();
+      setTimeout("run()", 16);
+  }
+  
+  document.onmousemove = function(e){
+      if (window.event) e = window.event;
+      xm = (e.x || e.clientX) - nx;
+      ym = (e.y || e.clientY) - ny;
+  }
+  
+  function resize(){
+      nx = document.body.offsetWidth * .5;
+      ny = document.body.offsetHeight * .5;
+  }
+  onresize = resize;
+  
+  function fontWidth(word){
+      // arial font
+      var S = "a68b68c68d68e68f31g68h68i31j31k68l31m108n68o68p68q68r39s68t39u68v50w90x68y68z68A90B90C90D90E90F78G98H90I28J59K90L68M108N90O98P90Q98R90S90T68U90V90W130X68Y90Z68'30.42!29?68-41/41=72";
+      var l = word.length;
+      var s = 0;
+      var x = 0;
+      var c = 0;
+      for(i=0;i<l;i++){
+          c = word.charAt(i);
+          x = S.indexOf(c);
+          if(c>="0" && c<="9")s+=69;
+          else if(x>=0)s+=parseInt(S.substring(x+1,x+4));
+          else s+=68;
+      }
+      return s/10;
+  }
+  
+  onload = function(){
+  
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      T = [
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+          "",
+          "",
+          "",
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+          "해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI 해피CGI",
+      ];
+     
+      // Replace
+      var R = {"Wikipedia": "<div style='color:#FF8000'>Wikipedia</div>", "click": "<div style='color:#FFFFFF'><font color=white>click</font></div>"};
+      /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+      resize();
+      x = 0;
+      y = 0;
+      for(j in T){
+          Tx = T[j].split(" ");
+          // justify
+          xt = 0;
+          for(i in Tx){
+              txt = Tx[i];
+              xt += fontWidth(txt);
+          }
+          if(Tx.length)sP = (W - xt) / (Tx.length-1); else sP = 0;
+          // insert word
+          for(i in Tx){
+              txt = Tx[i];
+              if(txt) {
+                  O = new CObj(O, -(W/2)+x, -(H/2)+y, R[txt]!=undefined?R[txt]:txt);
+                  x += FX*(fontWidth(txt)+sP);
+              }
+          }
+          y += 18;
+          x = 0;
+      }
+      // big click !!!
+      O = new CObj(O, -50, -20, "<div style='font-size:48px;font-weight:bold;'>Planning Mind Map!</div>");
+      run();
+  }
+  //-->
+  </script>
+  </head>
+  <body background="img/sample.jpg">
+  
+  
+  <div id="sp" style="position:absolute;left:50%;top:50%;"></div>
+  
+  
+  </body></html>3
