@@ -21,48 +21,58 @@ a {text-decoration: none; color:rgb(145, 144, 144);}  /* text-decoration CSS 단
   z-index: 0;
 }
 
+
 /* header 속성정의 */
 header {
-    width: 100%;  /* 위에서 197px 의 거리 */
-    background-size: cover;
-    z-index: 0;
+  width: 100%;
+  background-size: cover;
+  z-index: 0;
 }
-
 header > div {    
-    width: 100%;            
-    box-sizing: border-box;  /* box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성 // border-box 는  테두리를 기준으로 크기를 정함*/
-    height: 100vw;
-    background-size: cover;
-  }
-
-
-header > .top {     /* header 의 .(클래스 선택자) top */
-  
-    height: 60%;
-    border-bottom: 1px solid #e9e9e9;  /*요소 테두리의 아래쪽 스타일을 지정 1px , solid(실선) , 선색  */
-  
+width: 100%;            
+box-sizing: border-box;  /* box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성 // border-box 는  테두리를 기준으로 크기를 정함*/
+height: 100vw;
+background-size: cover;
 }
+header > .top {     /* header 의 .(클래스 선택자) top */
 
+  height: 60%;
+  border-bottom: 1px solid #e9e9e9;  /*요소 테두리의 아래쪽 스타일을 지정 1px , solid(실선) , 선색  */
+
+}
 header > .top > div {
-    height: 70px;
-    margin: 0 auto;     /* margin 바깥여백 0  , auto는 가로 중앙에 배치한다는 의미 */        
-    text-align:center;  /* text-align 속성은 텍스트의 정렬 방향을 의미 */
-    padding : 5px;
-    
+height: 70px;
+margin: 0 auto;     /* margin 바깥여백 0  , auto는 가로 중앙에 배치한다는 의미 */        
+text-align:center;  /* text-align 속성은 텍스트의 정렬 방향을 의미 */
+padding : 5px;
+
 }
 
 
 header > .top > div > a {     /* <a> 태그는 하이퍼링크를 걸어주는 태그 */
 
-    display: inline-block; /* display 속성은 웹페이지 상에서 엘리먼트들이 어떻게 보여지고 다른 엘리먼트와 어떻게 상호 배치되는지를 결정*/
-    /* 속성이 inline으로 지정된 엘리먼트는 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 */
-    /* 속성이 block으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지 */    
-    /* 속성이 inline-block으로 지정된 엘리먼트는 기본적으로 inline 엘리먼트처럼 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 */
-    height: 100%;
-    line-height:70px;  /* line-height는 줄 높이를 정하는 속성 */
-    
-    width: 10% ;
-   
+display: inline-block; /* display 속성은 웹페이지 상에서 엘리먼트들이 어떻게 보여지고 다른 엘리먼트와 어떻게 상호 배치되는지를 결정*/
+/* 속성이 inline으로 지정된 엘리먼트는 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 */
+/* 속성이 block으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지 */    
+/* 속성이 inline-block으로 지정된 엘리먼트는 기본적으로 inline 엘리먼트처럼 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치 */
+height: 100%;
+line-height:70px;  /* line-height는 줄 높이를 정하는 속성 */
+
+width: 10% ;
+
+
+}
+
+header > .top > div > a:nth-child(1).button {
+width: 200px; 
+height: 123px;  
+position: fixed;  
+left:calc(50% - 100px); 
+top:-123px;
+  transition:0.5s;
+-webkit-transition:0.5s;
+-moz-transition:0.5s;
+
 
 }
 
@@ -296,13 +306,15 @@ margin: 20px;
 main> section>section>ul>li{
 
   position: relative;
-
+  color :black;
   margin-right: 10px;
   float:right;
   width: 600px;
 }
 
-
+main> section>section>ul>li>a{
+  color:black;
+}
 section>section>img:hover{ /* img 마우스 오버시*/
   cursor:pointer;
   transform:scale(1.3); /* 마우스 오버시 이미지 크기를 1.1 배만큼 확대시킨다. */
