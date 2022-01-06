@@ -137,6 +137,40 @@
             pager: false,               
             easing: 'linear',           
         });
+
+        function startTime() {
+    var today = new Date();
+    var hr = today.getHours();
+    var min = today.getMinutes();
+    var sec = today.getSeconds();
+    ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+    hr = (hr == 0) ? 12 : hr;
+    hr = (hr > 12) ? hr - 12 : hr;
+    //Add a zero in front of numbers<10
+    hr = checkTime(hr);
+    min = checkTime(min);
+    sec = checkTime(sec);
+    document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
+    
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var curWeekDay = days[today.getDay()];
+    var curDay = today.getDate();
+    var curMonth = months[today.getMonth()];
+    var curYear = today.getFullYear();
+    var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
+    document.getElementById("date").innerHTML = date;
+    
+    var time = setTimeout(function(){ startTime() }, 500);
+}
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+startTime();
+
       });
     $(function(){
         $('a[class=1]').click(function(){
@@ -289,6 +323,7 @@
             $('article[name=catelist2]').css("display","none");
             $('a[class=pg_1]').css("color", "#111");
             $('a[class=pg_2]').css("color", "rgb(145, 144, 144)");
+            $('div[class=clockdate-wrapper]').css("top", "70px"); 
         });
         $('.bigdata_paging > a:nth-child(2)').click(function(){
 
@@ -296,7 +331,9 @@
             $('article[name=catelist2]').css("display","block");
             $('a[class=pg_1]').css("color", "rgb(145, 144, 144)");
             $('a[class=pg_2]').css("color", "#111");
+            $('div[class=clockdate-wrapper]').css("top", "150px"); 
         });
+      
     });
         
   </script>          <!-- 스크립트 종료 선언-->                  
@@ -305,16 +342,13 @@
   <div id="wrapper"> 
     
     <header>
-    
-      <div class="top">   <!-- class : '복수'의 요소에 스타일을 적용  -->
-       
+      <div class="top">  <!-- class : '복수'의 요소에 스타일을 적용  -->
         <div>
-          
-          <a href="./index.html"><i class="far fa-address-card"></i>&nbsp;소개</a>  <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
-          <a href="./project.html"><i class="fas fa-bars"></i>&nbsp;프로젝트</a>   <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
-          <a href="./bigdata.html"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;빅데이터수업</a>  <!-- a 태그, href로 주소참조 (hypertext reference 줄임말) -->
-          <a href="./gominjoong.html"><i class="fas fa-child"></i>&nbsp;고민중</a> <!-- 아이콘 태그  -->
-        </div>
+          <a href="./index.html"><span><i class="far fa-address-card"></i>&nbsp;소개</span><span><i class="far fa-address-card"></i>&nbsp;소개</span></a>
+          <a href="./project.html"><span><i class="fas fa-bars"  aria-hidden="true"></i>&nbsp;프로젝트</span><span><i class="fas fa-bars"  aria-hidden="true"></i>&nbsp;프로젝트</span></a>
+          <a href="./bigdata.html"><span><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;빅데이터수업</span><span><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;빅데이터수업</span></a>
+          <a href="./gominjoong.html"><span><i class="fas fa-child"  aria-hidden="true"></i>&nbsp;고민중</span><span><i class="fas fa-child"  aria-hidden="true"></i>&nbsp;고민중</span></a>
+      </div>
     </div>
 
 
@@ -322,7 +356,12 @@
     <main>       <!-- <main> 태그는 해당 문서의 <body> 요소의 주 콘텐츠(main content)를 정의할 때 사용 -->
       <!-- 카테고리/베스트 상품 영역 -->
       <aside>   <!-- <aside> 태그는 페이지의 다른 콘텐츠들과 약간의 연관성을 가지고 있지만, 해당 콘텐츠들로부터 분리시킬 수 있는 콘텐츠로 구성된 페이지 영역을 정의할 때 사용-->
-
+        <div id="clockdate">
+          <div class="clockdate-wrapper">
+            <div id="clock"></div>
+            <div id="date"></div>
+          </div>
+        </div>
           <!-- 베스트상품 배너 -->
           <article class="catelist1" name="catelist1">   <!-- <article> 태그는 해당 문서나 페이지 또는 사이트와는 완전히 독립적으로 구성할 수 있는 요소를 정의할 때 사용합니다. -->
                 <a href="#" class='1'>목록<br> <br></a> 
